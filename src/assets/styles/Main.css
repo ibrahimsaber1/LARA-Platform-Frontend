@@ -1,4 +1,26 @@
 
+/* ----------------------------------------------------------------------- */
+/* ----------------------- the main section css ----------------------------- */
+
+
+
+/* .main {
+
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    min-height: 100vh;
+    height: auto;
+    max-width: 90% ;
+    border-radius: 32px;
+    padding: 3rem;
+    border: 1px rgb(216, 216, 216) solid;
+
+} */
+
 .main {
     background-color: rgb(255, 255, 255);
     position: relative; /* Changed from absolute to relative */
@@ -60,6 +82,7 @@
     padding: 10px;
     font-size: 0.9rem;
     border-radius: 8px;
+    border: 1px solid gray;
 }
 
 .filter-btn, .sort-btn {

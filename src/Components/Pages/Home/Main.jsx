@@ -15,12 +15,14 @@ export default function Main() {
     {/* Search and Filter Section */}
     <div className="raw">
       <div className="search-filter-section d-flex align-items-center mb-4 col-lg-4">
-        <input type="text" className="form-control search-input w-75" placeholder="Search the assistant name" />
-        <button className="btn btn-outline-secondary filter-btn w-10">Type <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+        <input type="text" className=" search-input w-75" placeholder="Search the assistant name" />
+
+        <button className="btn  filter-btn w-10">Type <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 6L8 10L12 6" stroke="#232323" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
-        <button className="btn btn-outline-secondary sort-btn w-10">
+        <button className="btn sort-btn w-10">
           <svg width={22} height={18} viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18.5 5H3.5" stroke="#232323" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M16 9H6" stroke="#232323" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

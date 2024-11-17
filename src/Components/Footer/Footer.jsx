@@ -4,12 +4,12 @@ import "../../assets/styles/Footer.css";
 
 export default function Footer() {
   return (
-    <footer class="footer-section text-center">
-        <div class="container">
-            <p class="footer-text">© All rights reserved to Platform Developers</p>
-        </div>
-    </footer>
-    
+<footer className="footer-section text-center">
+  <div className="container">
+    <p className="footer-text">© All rights reserved to Platform Developers</p>
+  </div>
+</footer>
+
 
   )
 }

@@ -3,6 +3,7 @@ import "../../assets/styles/Header.css";
 
 const Header = () => {
   return (
+    
 <header className="background-color px-5">
   <div className="background-overlay" />
   {/* the navbar section  */}
