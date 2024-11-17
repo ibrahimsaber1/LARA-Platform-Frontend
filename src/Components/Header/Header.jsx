@@ -11,7 +11,7 @@ const Header = () => {
     <div className="container-fluid">
       {/* the logo */}
       <a className="navbar-brand mylogo" href="/">
-        <img className="" src="src/assets/images/lara-icon.png" alt />
+        <img className="" src="src/assets/images/lara-icon.png" alt="LARA AI voice assistance icon" />
       </a>
       <button
         className="navbar-toggler"
