@@ -1,4 +1,6 @@
 import React from 'react'
+import "../../../assets/styles/Overlay.css"; 
+
 
 export default function Overlay() {
   return (
