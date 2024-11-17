@@ -7,36 +7,38 @@
   import Footer from './Components/Footer/Footer';
   import Home from './Components/Pages/Home/Home';
 
-  function App() {
 
-    const location = useLocation(); // Access the current route
-    
-    // Routes where Header and Footer should NOT appear
-      const noHeaderOrFooter = ['/login', '/signup'];
-    return (
 
-      <>
-        {/* Conditionally render Header and Footer */}
-        {!noHeaderOrFooter.includes(location.pathname) && <Header />}
+function App() {
 
-        
-        <Routes>
-          <Route path="" element={<Home/>} />
+  const location = useLocation(); // Access the current route
+  
+  // Routes where Header and Footer should NOT appear
+    const noHeaderOrFooter = ['/login', '/signup'];
+  return (
 
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
+    <>
+      {/* Conditionally render Header and Footer */}
+      {!noHeaderOrFooter.includes(location.pathname) && <Header />}
 
-        {!noHeaderOrFooter.includes(location.pathname) && <Footer />}
+      
+      <Routes>
+        <Route path="" element={<Home/>} />
 
-      </>
-    );
-  }
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
 
-  export default function AppWrapper() {
-    return (
-      <Router>
-        <App />
-      </Router>
-    );
-  }
+      {!noHeaderOrFooter.includes(location.pathname) && <Footer />}
+
+    </>
+  );
+}
+
+export default function AppWrapper() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}
