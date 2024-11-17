@@ -5,8 +5,8 @@ const Header = () => {
   return (
     
 <header className="background-color px-5">
-  <div className="background-overlay" />
-  {/* the navbar section  */}
+  <div className="background-overlay" ></div>
+
   <nav className="mynavbar navbar navbar-expand-lg navbar-dark">
     <div className="container-fluid">
       {/* the logo */}

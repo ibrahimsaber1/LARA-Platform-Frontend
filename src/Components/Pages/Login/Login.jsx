@@ -4,7 +4,7 @@ import "../../../assets/styles/Login.css";
 
 export default function Login() {
   return (
-<div className="background-color">
+<div className="login-background">
   <div className="background-overlay" /> {/* Transparent overlay for image */}
   <div className="container d-flex justify-content-center align-items-center vh-100">
     <div className="card-signup shadow-lg col-lg-4 col-md-8 col-sm-10">
