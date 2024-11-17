@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import "../../../assets/styles/Login.css"; 
+
 
 export default function Signup() {
   return (
@@ -7,7 +10,7 @@ export default function Signup() {
   <div className="container d-flex justify-content-center align-items-center vh-100">
     <div className="card-signup shadow-lg col-lg-4 col-md-8 col-sm-10">
       <div className="card-body text-center p-4">
-        <img src="src/assets/images/lara-icon.png" alt="App Icon" className="w-50 mb-3" />
+        <img src="src/assets/images/lara-icon.png" alt="App Icon" className="form-img mb-3" />
         <form>
           <div className="mb-3">
             <input type="text" className="form-control" placeholder="Full Name" required />
@@ -30,7 +33,7 @@ export default function Signup() {
           </button>
         </form>
         <p className="text-center mt-3 text-light">
-          <a href="#" className="text-white">Instead, you can login</a>
+          <Link to="/login" className="text-white">Instead, you can login</Link>
         </p>
       </div>
     </div>

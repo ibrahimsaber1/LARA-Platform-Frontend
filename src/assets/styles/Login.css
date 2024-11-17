@@ -39,6 +39,9 @@
     border-radius: 10px;
 }
 
+.form-img{
+    width: 11rem;
+}
 
 /* Input styling for transparent background */
 .form-control {
