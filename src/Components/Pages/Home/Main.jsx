@@ -16,7 +16,7 @@ export default function Main() {
     <div className="raw">
       <div className="search-filter-section d-flex align-items-center mb-4 col-lg-4">
         
-        <input type="text" className=" search-input w-75" placeholder="Search the assistant name" />
+        <input type="text" className="search-input w-75" placeholder="Search the assistant name" />
 
         <button className="btn  filter-btn w-10">Type <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 6L8 10L12 6" stroke="#232323" strokeLinecap="round" strokeLinejoin="round" />
