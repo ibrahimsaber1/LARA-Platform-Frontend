@@ -37,10 +37,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: Lara Plus Assistant</h5>
               <span className="status-badge">Just Created</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Default General Purpose <br />
               Script Assistant Specific in writing script...
@@ -60,10 +60,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: Another Assistant</h5>
               <span className="status-badge">Just Updated</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Advanced General Purpose <br />
               This assistant specializes in advanced tasks...
@@ -83,10 +83,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: New Assistant</h5>
               <span className="status-badge">In Progress</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Beginner Purpose <br />
               Script Assistant in development...
@@ -106,10 +106,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: Lara Plus Assistant</h5>
               <span className="status-badge">Just Created</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Default General Purpose <br />
               Script Assistant Specific in writing script...
@@ -129,10 +129,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: Another Assistant</h5>
               <span className="status-badge">Just Updated</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Advanced General Purpose <br />
               This assistant specializes in advanced tasks...
@@ -152,10 +152,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: New Assistant</h5>
               <span className="status-badge">In Progress</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Beginner Purpose <br />
               Script Assistant in development...
@@ -175,10 +175,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: Lara Plus Assistant</h5>
               <span className="status-badge">Just Created</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Default General Purpose <br />
               Script Assistant Specific in writing script...
@@ -198,10 +198,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: Another Assistant</h5>
               <span className="status-badge">Just Updated</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Advanced General Purpose <br />
               This assistant specializes in advanced tasks...
@@ -221,10 +221,10 @@ export default function Main() {
       <div className="col-lg-4 col-md-6">
         <div className="assistant-card card">
           <div className="card-body">
-            <dic className="cart-title-badge">
+            <div className="cart-title-badge">
               <h5 className="card-title">Title: New Assistant</h5>
               <span className="status-badge">In Progress</span>
-            </dic>
+            </div>
             <p className="card-text text-muted">
               Type: Beginner Purpose <br />
               Script Assistant in development...

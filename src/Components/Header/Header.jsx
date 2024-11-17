@@ -11,10 +11,18 @@ const Header = () => {
     <div className="container-fluid">
       {/* the logo */}
       <a className="navbar-brand mylogo" href="/">
-        <img className src="src/assets/images/lara-icon.png" alt />
+        <img className="" src="src/assets/images/lara-icon.png" alt />
       </a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon" />
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
       </button>
       {/* the meddle navbar icons  */}
       <div className="collapse navbar-collapse meddle-icons" id="navbarSupportedContent">
