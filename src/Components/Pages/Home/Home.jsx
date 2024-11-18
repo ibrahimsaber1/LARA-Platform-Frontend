@@ -16,10 +16,7 @@ export default function Home() {
 
   return (
     <div>
-      {/* Main Component */}
       <Main onShowCreateAssistant={handleShowCreateAssistant} />
-
-      {/* Create Assistant Component */}
       <div
         className={`create-assistant-wrapper ${
           showCreateAssistant ? 'open' : ''
@@ -27,8 +24,6 @@ export default function Home() {
       >
         <CreateAssistant onClose={handleHideCreateAssistant} />
       </div>
-
-      {/* Overlay Component */}
       <Overlay />
     </div>
   );

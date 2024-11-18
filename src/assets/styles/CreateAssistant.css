@@ -1,45 +1,21 @@
 /* ------------------------------------------------------------------------ */
 /* ------------------- Add responsiveness for smaller screens ------------- */
 
-/* @media (max-width: 768px) {
-  .create-assistant {
-        width: 70%;
-    }
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .create-assistant-wrapper ,.create-assistant {
+    width: 100%; /* Adjust width for medium screens */
+  }
 }
 
 @media (max-width: 576px) {
-  .create-assistant {
-        width: 100%;
-    }
-} */
-/* @media (max-width: 768px) {
-  .form-control,
-  .form-select,
-  .form-color-input {
-    width: 100%;
-  }
-
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-
-  .upload-area {
-    font-size: 14px;
-  }
-
-  .custom-btn {
-    font-size: 14px;
-    padding: 10px;
+  .create-assistant-wrapper ,.create-assistant{
+    width: 100%; /* Full width for small screens */
   }
 }
-
-.file-upload-container {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 15px;
-} */
-
-
 
 /* ----------------form  */
 
@@ -49,7 +25,7 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 40%;
+  min-width: 40%;
   min-height: 150vh;
   background-color: #fff;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
@@ -61,25 +37,18 @@
   right: 0;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .create-assistant-wrapper {
-    width: 100%; /* Adjust width for medium screens */
-  }
-}
-
-@media (max-width: 576px) {
-  .create-assistant-wrapper {
-    width: 100%; /* Full width for small screens */
-  }
-}
 
 /* Styling for the CreateAssistant Content */
 .create-assistant {
-  width: 100%; /* Fill the wrapper */
-  height: 100%; /* Full height of the wrapper */
-  padding: 20px; /* Add padding inside the component */
-  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%; /* Adjust width of the sliding panel */
+  height: 100vh; /* Take full height of the viewport */
+  background-color: #fff; /* Panel background color */
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow vertical scrolling within the panel */
+  padding: 20px;
 }
 
 /* Header inside the form */
@@ -234,12 +203,6 @@ textarea.form-control {
   color: #333;
 }
 
-/* .file-note {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 20px;
-
-} */
 
 .file-note {
   font-size: 14px;
