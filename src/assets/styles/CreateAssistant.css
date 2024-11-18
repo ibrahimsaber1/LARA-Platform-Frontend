@@ -161,12 +161,30 @@ textarea.form-control {
   color: #333;
 }
 
-.file-note {
+/* .file-note {
   font-size: 14px;
   color: #777;
   margin-bottom: 20px;
 
+} */
+
+.file-note {
+  font-size: 14px;
+  color: #777;
+  /* cursor: pointer;  */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0px;
+  margin-bottom: 20px;
+
 }
+
+.file-note i {
+  font-size: 18px;
+  color: #000;
+} 
+
 
 .file-note:hover{
   cursor: pointer;
