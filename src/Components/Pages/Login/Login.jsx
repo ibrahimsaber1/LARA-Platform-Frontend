@@ -12,10 +12,10 @@ export default function Login() {
         <img src="src/assets/images/lara-icon.png" alt="App Icon" className="form-img mb-3" />
         <form>
           <div className="mb-3">
-            <input type="email" className="form-control" placeholder="Email Address" required />
+            <input type="email" className="form-control-1" placeholder="Email Address" required />
           </div>
           <div className="mb-3">
-            <input type="password" className="form-control" placeholder="Password" required />
+            <input type="password" className="form-control-1" placeholder="Password" required />
           </div>
           <p className="text-center mt-3 text-white ">
             <a href="#" className="text-white">Forgot your password?</a>

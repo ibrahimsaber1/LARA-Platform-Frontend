@@ -13,13 +13,13 @@ export default function Signup() {
         <img src="src/assets/images/lara-icon.png" alt="App Icon" className="form-img mb-3" />
         <form>
           <div className="mb-3">
-            <input type="text" className="form-control" placeholder="Full Name" required />
+            <input type="text" className="form-control-1 " placeholder="Full Name" required />
           </div>
           <div className="mb-3">
-            <input type="email" className="form-control" placeholder="Email Address" required />
+            <input type="email" className="form-control-1" placeholder="Email Address" required />
           </div>
           <div className="mb-3">
-            <input type="password" className="form-control" placeholder="Password" required />
+            <input type="password" className="form-control-1" placeholder="Password" required />
           </div>
           <button type="submit" className="btn btn-outline-secondary w-100 mb-3 glow-on-hover ">Sign Up</button>
           <div className="or">

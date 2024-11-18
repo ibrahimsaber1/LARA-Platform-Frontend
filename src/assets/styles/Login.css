@@ -44,20 +44,24 @@
 }
 
 /* Input styling for transparent background */
-.form-control {
-    background-color: transparent; /* Make background transparent */
-    border: 1px solid rgba(255, 255, 255, 0.6); /* Light border for visibility */
-    color: white; /* White text color for contrast */
+.form-control-1 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+    /* color: #000; */
+    background-color: #000;
 }
 
-.form-control::placeholder {
+
+.form-control-1::placeholder {
     color: rgba(255, 255, 255, 0.6); /* Lighter placeholder text */
 }
 
-.form-control:focus {
+.form-control-1:focus {
     border-color: #ffffff; /* Bright border on focus */
     box-shadow: none; /* Remove default bootstrap shadow */
-    background-color: #000000;
     color: rgb(255, 255, 255); /* Lighter placeholder text */
 
 
