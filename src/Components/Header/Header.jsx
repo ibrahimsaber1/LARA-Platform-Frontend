@@ -1,5 +1,6 @@
 import React from "react";
 import "../../assets/styles/Header.css"; 
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -34,7 +35,7 @@ const Header = () => {
               <path d="M10.2553 3.10012L4.91531 6.07015C3.70531 6.74015 2.71533 8.42013 2.71533 9.80013V15.4502C2.71533 16.8302 3.70531 18.5101 4.91531 19.1801L10.2553 22.1502C11.3953 22.7802 13.2653 22.7802 14.4053 22.1502L19.7453 19.1801C20.9553 18.5101 21.9453 16.8302 21.9453 15.4502V9.80013C21.9453 8.42013 20.9553 6.74015 19.7453 6.07015L14.4053 3.10012C13.2553 2.46012 11.3953 2.46012 10.2553 3.10012Z" stroke="#FDEEEB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M17.325 13.8602V10.2003L7.83496 4.72021" stroke="#FDEEEB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <a className="nav-link active text-white" aria-current="page" href="#"> Assistants Space</a>
+            <Link className="nav-link active text-white" aria-current="page" to="/assistantsspace"> Assistants Space</Link>
           </li>
           <li className="nav-item ">
             <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

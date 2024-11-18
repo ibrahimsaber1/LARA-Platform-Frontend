@@ -7,6 +7,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Pages/Home/Home';
 import Error404 from './Components/Error404/Error404';
+import AssistantsSpace from './Components/AssistantsSpace/AssistantsSpace';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       
       <Routes>
         <Route path="" element={<Home/>} />
+        <Route path="/assistantsspace" element={<AssistantsSpace/>} />
         <Route path="*" element={<Error404/>} />
 
         <Route path="/login" element={<Login />} />

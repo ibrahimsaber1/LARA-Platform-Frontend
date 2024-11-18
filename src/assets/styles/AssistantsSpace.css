@@ -1,0 +1,117 @@
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------- the main section css ----------------------------- */
+
+
+.main-space {
+    background-color: rgb(255, 255, 255);
+    position: relative; /* Changed from absolute to relative */
+    top: 0; /* Removed top as it is no longer necessary */
+    margin-top: -8rem;
+    /* left: 20%; */
+    right: 25%;
+    transform: translateX(28%); /* Only horizontally center the main section */
+    z-index: 10;
+    min-height: 100vh;
+    height: auto;
+    max-width: 90%;
+    border-radius: 32px;
+    padding: 3rem;
+    border: 1px rgb(216, 216, 216) solid;
+}
+
+.assistants-space-container {
+    background-color: #fff;
+    position: relative;
+    margin-top: -8rem;
+    right: 25%;
+
+    transform: translateX(33%); /* Adjust horizontal centering */
+    z-index: 10;
+    min-height: 100vh;
+    max-width: 90%; /* Adjust width for better responsiveness */
+    border-radius: 32px;
+    padding: 3rem;
+    border: 1px solid rgb(216, 216, 216);
+  }
+
+/* --------------- */
+
+/* Main Container */
+
+  
+  /* Header Section */
+  .assistants-header-section {
+    margin-bottom: 20px;
+  }
+  
+  .assistants-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .assistants-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .assistants-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+  
+  .assistants-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid gray;
+  }
+  
+  .go-back-btn {
+    margin-right: 10px;
+  }
+  
+  .history-btn {
+    margin-left: 10px;
+  }
+  
+  /* AI Voice Section */
+  .ai-voice-section {
+    margin-top: 50px;
+  }
+  
+  .ai-voice-image {
+    width: 30rem; /* Adjust width for better responsiveness */
+    max-width: 100%; /* Ensure it fits smaller screens */
+    border-radius: 12px; /* Optional for a polished look */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .assistants-space-container {
+      max-width: 90%; /* Reduce max width for smaller screens */
+    }
+  
+    .assistants-title {
+      font-size: 1.5rem;
+    }
+  
+    .assistants-btn {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  
+    .ai-voice-image {
+      width: 25rem;
+    }
+  }
+  
+
+
+  
