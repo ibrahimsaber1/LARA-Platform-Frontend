@@ -12,7 +12,7 @@
         width: 100%;
     }
 } */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .form-control,
   .form-select,
   .form-color-input {
@@ -37,33 +37,63 @@
   display: flex;
   justify-content: flex-start;
   margin-bottom: 15px;
-}
+} */
 
 
 
 /* ----------------form  */
-.create-assistant {
-  /* background-color: #88df80; */
-  background-color: #fff;
-  position: absolute;
+
+
+/* Wrapper for sliding effect */
+.create-assistant-wrapper {
+  position: fixed;
   top: 0;
-  right: 0;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  right: -100%;
+  width: 40%;
+  min-height: 150vh;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
   z-index: 1500;
-  min-width: 40%;
-  margin: auto;
 }
 
+.create-assistant-wrapper.open {
+  right: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .create-assistant-wrapper {
+    width: 100%; /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .create-assistant-wrapper {
+    width: 100%; /* Full width for small screens */
+  }
+}
+
+/* Styling for the CreateAssistant Content */
+.create-assistant {
+  width: 100%; /* Fill the wrapper */
+  height: 100%; /* Full height of the wrapper */
+  padding: 20px; /* Add padding inside the component */
+  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+
+/* Header inside the form */
+/* ------------------------------- */
+/* ------------------------------- */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-
-  /* background-color: #61c466; */
 }
 
+
+/* ------------------------------- */
 .header h2 {
   font-size: 25px;
 
