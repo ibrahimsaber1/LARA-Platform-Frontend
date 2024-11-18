@@ -1,0 +1,184 @@
+.create-assistant {
+  /* background-color: #88df80; */
+  background-color: #fff;
+
+  position: absolute;
+  top: 50;
+  /* right: 0; */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1500;
+  width: 50%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  /* background-color: #61c466; */
+}
+
+.header h2 {
+  font-size: 25px;
+
+}
+.go-back{
+  /* background-color: red; */
+  padding: 8px;
+  border-radius: 25px;
+  border: 1px gray solid;
+
+}
+
+.go-back:hover {
+  background-color: #000;
+  color: white;
+
+}
+
+
+.go-back:hover .go-back-btn {
+  background-color: #000;
+  color: white;
+
+}
+
+
+.go-back-btn i{
+  margin-right: 5px;
+}
+
+.go-back-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  /* color: #000; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* -------------------- form styling  ----------------------- */
+
+.form-group {
+  margin-bottom: 1.5rem;
+  /* color: #000; */
+
+}
+
+.form-group label{
+  margin-bottom: 0.6rem;
+  /* color: #000; */
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #000;
+
+}
+
+.form-control:focus::placeholder{
+  color: #fff; 
+  opacity: 1; 
+}
+
+.form-control::placeholder {
+  color: #000; /* Black color for the placeholder */
+  opacity: 1; /* Ensures full opacity */
+}
+
+
+.form-select{
+  font-size: 14px;
+}
+
+label.form-control{
+  color: #000;
+}
+
+.form-color-input {
+  width: 100%;
+  height: 38px; /* Adjust height to match other inputs */
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  appearance: none; /* Removes default browser styling */
+}
+
+.form-color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-color-input::-webkit-color-swatch {
+  border: none; /* Remove inner border */
+}
+
+
+textarea.form-control {
+  resize: none;
+  height: 100px;
+}
+
+.upload-section .upload-area {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  text-align: center;
+  color: #777;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.upload-section .file-size-note {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.data-source {
+  display: flex;
+  gap: 10px;
+}
+
+.data-file {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.file-note {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+
+}
+
+.file-note:hover{
+  cursor: pointer;
+}
+
+.custom-btn{
+  background-color: #000;
+  border: 1ps solid gray;
+}
+
+
+.custom-btn:hover{
+  background-color: #fff;
+  color: #000;
+}
