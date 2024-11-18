@@ -1,11 +1,12 @@
-  import React from 'react';
-  import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router-dom';
 
-  import Login from './Components/Pages/Login/Login';
-  import Signup from './Components/Pages/Signup/Signup';
-  import Header from './Components/Header/Header';
-  import Footer from './Components/Footer/Footer';
-  import Home from './Components/Pages/Home/Home';
+import Login from './Components/Pages/Login/Login';
+import Signup from './Components/Pages/Signup/Signup';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import Home from './Components/Pages/Home/Home';
+import Error404 from './Components/Error404/Error404';
 
 
 
@@ -24,6 +25,7 @@ function App() {
       
       <Routes>
         <Route path="" element={<Home/>} />
+        <Route path="*" element={<Error404/>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
