@@ -18,7 +18,7 @@ export default function Main() {
         
         <input type="text" className="search-input w-75" placeholder="Search the assistant name" />
 
-        <button className="btn  filter-btn w-10">Type <i class="fa-sharp-duotone fa-solid fa-caret-down"></i>
+        <button className="btn  filter-btn w-10">Type <i className="fa-sharp-duotone fa-solid fa-caret-down"></i>
         </button>
         <button className="btn sort-btn w-10">
           <svg width={22} height={18} viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
