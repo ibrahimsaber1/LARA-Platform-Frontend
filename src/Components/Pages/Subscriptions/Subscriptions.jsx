@@ -40,12 +40,12 @@ const Subscriptions = () => {
       <div className="row justify-content-center mt-4">
         {/* Free Plan */}
         <div className="col-md-4 col-sm-12">
-          <div className="card">
-              <h5 className="card-title">Free</h5>
-              <h2 className="card-price">$0</h2>
-              <p className="card-text">out the most advanced AI audio.</p>
+          <div className="subscriptions-card">
+              <h5 className="subscriptions-card-title">Free</h5>
+              <h2 className="subscriptions-card-price">$0</h2>
+              <p className="subscriptions-card-text">out the most advanced AI audio.</p>
               <button className="btn btn-dark">Subscribe</button>
-              <ul className="card-features">
+              <ul className="subscriptions-card-features">
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
               </ul>
@@ -54,14 +54,14 @@ const Subscriptions = () => {
 
         {/* Podcaster Plan */}
         <div className="col-md-4 col-sm-12">
-          <div className="card highlighted-card">
+          <div className="subscriptions-card highlighted-subscriptions-card">
               <p className="most-chosen-badge">Most Chosen</p>
-              <h5 className="card-title">Podcaster</h5>
+              <h5 className="subscriptions-card-title">Podcaster</h5>
               <p className="discount-badge">First month 50% off</p>
-              <h2 className="card-price">$3</h2>
-              <p className="card-text">out the most advanced AI audio.</p>
+              <h2 className="subscriptions-card-price">$3</h2>
+              <p className="subscriptions-card-text">out the most advanced AI audio.</p>
               <button className="btn btn-dark">Subscribe</button>
-              <ul className="card-features">
+              <ul className="subscriptions-card-features">
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
               </ul>
@@ -70,12 +70,12 @@ const Subscriptions = () => {
 
         {/* Pro Plan */}
         <div className="col-md-4 col-sm-12">
-          <div className="card">
-              <h5 className="card-title">Pro</h5>
-              <h2 className="card-price">$15</h2>
-              <p className="card-text">out the most advanced AI audio.</p>
+          <div className="subscriptions-card">
+              <h5 className="subscriptions-card-title">Pro</h5>
+              <h2 className="subscriptions-card-price">$15</h2>
+              <p className="subscriptions-card-text">out the most advanced AI audio.</p>
               <button className="btn btn-dark">Subscribe</button>
-              <ul className="card-features">
+              <ul className="subscriptions-card-features">
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
               </ul>

@@ -56,7 +56,7 @@
 
   /* ------------------------------- */
   /* Card Styles */
-  .card {
+  .subscriptions-card {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 16px;
@@ -66,7 +66,7 @@
     position: relative;
   }
   
-  .highlighted-card {
+  .highlighted-subscriptions-card {
     border: 2px solid #ffffff;
     box-shadow: 0px 6px 15px rgba(59, 130, 246, 0.2);
   }
@@ -91,7 +91,7 @@
     text-align: center;
   }
   
-  .card-title {
+  .subscriptions-card-title {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 3rem;
@@ -108,13 +108,13 @@
     margin-bottom: 1rem;
   }
   
-  .card-price {
+  .subscriptions-card-price {
     font-size: 2rem;
     font-weight: bold;
     color: #3b82f6;
   }
   
-  .card-text {
+  .subscriptions-card-text {
     font-size: 0.95rem;
     color: #6b7280;
     margin-bottom: 1rem;
@@ -137,13 +137,13 @@
   }
   
   /* Features List */
-  .card-features {
+  .subscriptions-card-features {
     list-style: none;
     padding: 0;
     margin-top: 1rem;
   }
   
-  .card-features li {
+  .subscriptions-card-features li {
     font-size: 0.9rem;
     color: #4b5563;
     margin: 0.5rem 0;
@@ -159,11 +159,11 @@
 
         transform: translateX(0%); /* Adjust horizontal centering */
     }
-    .card {
+    .subscriptions-card {
       margin-bottom: 1.5rem;
     }
   
-    .card-price {
+    .subscriptions-card-price {
       font-size: 1.8rem;
     }
   }

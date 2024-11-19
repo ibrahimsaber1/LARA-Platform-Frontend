@@ -115,4 +115,23 @@
   
 
 
-  
+  /* -*------------------------ */
+
+
+  /* Sidebar overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-overlay.open {
+  transform: translateX(0);
+}
