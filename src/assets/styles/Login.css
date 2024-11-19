@@ -66,6 +66,37 @@
 
 }
 
+/* Ensure the parent container is positioned relatively */
+.mb-3.position-relative {
+    position: relative;
+  }
+  
+  /* Style the password input field to have padding on the right */
+  .form-control-1 {
+    width: 100%;
+    padding-right: 2.5rem; /* Adjust based on icon size */
+  }
+  
+  /* Style the eye icon */
+  .toggle-password-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 1.2rem; /* Adjust size as needed */
+    transition: color 0.3s ease;
+  }
+  
+  .toggle-password-icon:hover,
+  .toggle-password-icon:focus {
+    color: #555;
+    outline: none;
+  }
+  
+
+
 /* Custom button styling */
 
 .btn-holder{
