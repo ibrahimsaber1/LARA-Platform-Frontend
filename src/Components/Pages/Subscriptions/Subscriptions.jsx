@@ -32,7 +32,7 @@ const Subscriptions = () => {
         }`}
         onClick={() => handleToggle("annually")}
       >
-        Annually (First month is free)
+        Annually <br /> (First month is free)
       </button>
     </div>
     

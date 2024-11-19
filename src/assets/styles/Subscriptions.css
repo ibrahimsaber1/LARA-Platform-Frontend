@@ -37,7 +37,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 0 5px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-size: 500;
 }
 
@@ -54,7 +54,7 @@
 
 
 
-  /* ------------------- */
+  /* ------------------------------- */
   /* Card Styles */
   .card {
     background-color: #ffffff;
@@ -149,7 +149,8 @@
     margin: 0.5rem 0;
   }
   
-  /* Responsive Adjustments */
+/* ------------------------------------------------------------------------------------------ */
+  /* ------------------------- Responsive Adjustments ---------------------------*/
   @media (max-width: 768px) {
     .subscriptions-container {
         max-width: 100%;
