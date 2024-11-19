@@ -73,6 +73,25 @@
     border: 1px solid gray;
   }
   
+
+  .Show-Statistics-btn{
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+
+  .Show-Statistics-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid gray;
+  }
+  
   .go-back-btn {
     margin-right: 10px;
   }

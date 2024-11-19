@@ -27,7 +27,7 @@
   right: -100%;
   min-width: 40%;
   min-height: 150vh;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.97); /* Optional: semi-transparent background */
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease-in-out;
   z-index: 1500;
@@ -45,7 +45,6 @@
   right: 0;
   width: 100%; /* Adjust width of the sliding panel */
   height: 100vh; /* Take full height of the viewport */
-  background-color: #fff; /* Panel background color */
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   overflow-y: auto; /* Allow vertical scrolling within the panel */
   padding: 20px;

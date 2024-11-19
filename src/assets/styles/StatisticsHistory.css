@@ -2,31 +2,33 @@
 
 /* Container Styling */
 .statistics-history {
-    position: relative;
+    position: fixed; /* Changed to fixed */
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.97); /* Optional: semi-transparent background */
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-    min-height: 100vh; /* Ensure full viewport height */
-    z-index: 1500;
+    z-index: 1500; /* Increased z-index */
+}
 
-  }
-  
-  /* Header Styling */
-  .statistics-header {
+/* Header Styling */
+.statistics-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .statistics-title {
+}
+
+.statistics-title {
     font-size: 25px;
     color: #000;
-  }
-  
-  /* Go Back Button Styling */
-  .statistics-go-back-btn {
+}
+
+/* Go Back Button Styling */
+.statistics-go-back-btn {
     background-color: transparent;
     border: none;
     font-size: 16px;
@@ -38,51 +40,51 @@
     border-radius: 25px;
     border: 1px solid gray;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .statistics-go-back-btn:hover {
+}
+
+.statistics-go-back-btn:hover {
     background-color: #000;
     color: white;
-  }
-  
-  .statistics-go-back-btn .icon {
+}
+
+.statistics-go-back-btn .icon {
     margin-right: 5px;
     color: inherit; /* Inherit color for icon */
-  }
-  
-  /* Form Styling */
-  .statistics-form {
+}
+
+/* Form Styling */
+.statistics-form {
     margin-bottom: 20px;
-  }
-  
-  /* Progress Section */
-  .statistics-progress-section .progress {
+}
+
+/* Progress Section */
+.statistics-progress-section .progress {
     height: 20px;
     background-color: #e0e0e0;
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-  .statistics-progress-section .progress-bar {
+}
+
+.statistics-progress-section .progress-bar {
     height: 100%;
     background-color: #000;
     width: 50%; /* Dynamic width as per usage */
-  }
-  
-  .statistics-progress-section .progress-info {
+}
+
+.statistics-progress-section .progress-info {
     margin-top: 5px;
     font-size: 14px;
     color: #555;
-  }
-  
-  /* Tabs Section */
-  .statistics-tabs-section .statistics-tabs {
+}
+
+/* Tabs Section */
+.statistics-tabs-section .statistics-tabs {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-  }
-  
-  .tab-btn {
+}
+
+.tab-btn {
     background-color: #f7f7f7;
     border: 1px solid #ccc;
     padding: 10px 15px;
@@ -92,27 +94,27 @@
     align-items: center;
     gap: 5px;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .tab-btn .icon {
+}
+
+.tab-btn .icon {
     color: #555;
-  }
-  
-  .tab-btn.active {
+}
+
+.tab-btn.active {
     background-color: #000;
     color: #fff;
-  }
-  
-  .tab-btn.active .icon {
+}
+
+.tab-btn.active .icon {
     color: #fff;
-  }
-  
-  /* Data Sources Section */
-  .statistics-data-sources .add-files-section {
+}
+
+/* Data Sources Section */
+.statistics-data-sources .add-files-section {
     margin-bottom: 20px;
-  }
-  
-  .add-files-btn {
+}
+
+.add-files-btn {
     background-color: #000;
     border: 1px solid gray;
     color: #fff;
@@ -120,14 +122,14 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .add-files-btn:hover {
+}
+
+.add-files-btn:hover {
     background-color: #fff;
     color: #000;
-  }
-  
-  .files-list .file-card {
+}
+
+.files-list .file-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,52 +137,51 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-  
-  .file-info {
+}
+
+.file-info {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .file-name {
+}
+
+.file-name {
     font-size: 16px;
     color: #000;
-  }
-  
-  .file-size {
+}
+
+.file-size {
     font-size: 14px;
     color: #555;
-  }
-  
-  .file-actions .file-action-btn {
+}
+
+.file-actions .file-action-btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
     color: #555;
     transition: color 0.3s;
-  }
-  
-  .file-actions .file-action-btn:hover {
+}
+
+.file-actions .file-action-btn:hover {
     color: #000;
-  }
-  
-  /* History Content */
-  .statistics-history-content {
+}
+
+/* History Content */
+.statistics-history-content {
     font-size: 16px;
     color: #333;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     .statistics-history {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .statistics-history {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
+}

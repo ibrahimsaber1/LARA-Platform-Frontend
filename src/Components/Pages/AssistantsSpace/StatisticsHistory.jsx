@@ -1,4 +1,6 @@
+// StatisticsHistory.jsx
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import { History, FileText, Trash2, Download, ChevronDown, ArrowLeft } from 'lucide-react';
 import "../../../assets/styles/StatisticsHistory.css";
 
@@ -105,4 +107,9 @@ function StatisticsHistory({ onClose }) {
   );
 }
 
-export default StatisticsHistory;
+export default function StatisticsHistoryPortal(props) {
+  return ReactDOM.createPortal(
+    <StatisticsHistory {...props} />,
+    document.getElementById('portal-root') // Ensure this matches the ID in your HTML
+  );
+}
