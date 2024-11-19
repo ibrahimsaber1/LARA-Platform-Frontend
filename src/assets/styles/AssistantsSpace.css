@@ -87,7 +87,8 @@
   }
   
   .ai-voice-image {
-    width: 30rem; /* Adjust width for better responsiveness */
+    margin-top: 3rem;
+    width: 20rem; /* Adjust width for better responsiveness */
     max-width: 100%; /* Ensure it fits smaller screens */
     border-radius: 12px; /* Optional for a polished look */
   }

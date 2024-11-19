@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/styles/AssistantsSpace.css"; 
+import "../../../assets/styles/AssistantsSpace.css"; 
 
 export default function AssistantsSpace() {
   return (
@@ -8,8 +8,8 @@ export default function AssistantsSpace() {
       <div className="assistants-header-section d-flex justify-content-between align-items-center">
         <h1 className="assistants-title">Lara Assistant Title</h1>
         <div className="assistants-buttons">
-          <button className="assistants-btn go-back-btn">Go back to the assistants space</button>
-          <button className="assistants-btn history-btn">Check the history</button>
+          <button className="assistants-btn go-back-btn">Back</button>
+          <button className="assistants-btn history-btn">History</button>
         </div>
       </div>
 

@@ -3,11 +3,14 @@ import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router
 
 import Login from './Components/Pages/Login/Login';
 import Signup from './Components/Pages/Signup/Signup';
+
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Pages/Home/Home';
 import Error404 from './Components/Error404/Error404';
-import AssistantsSpace from './Components/AssistantsSpace/AssistantsSpace';
+import AssistantsSpace from './Components/Pages/AssistantsSpace/AssistantsSpace';
+import Subscriptions from './Components/Pages/Subscriptions/Subscriptions';
+
 
 
 
@@ -27,6 +30,7 @@ function App() {
       <Routes>
         <Route path="" element={<Home/>} />
         <Route path="/assistantsspace" element={<AssistantsSpace/>} />
+        <Route path="/subscriptions" element={<Subscriptions/>} />
         <Route path="*" element={<Error404/>} />
 
         <Route path="/login" element={<Login />} />

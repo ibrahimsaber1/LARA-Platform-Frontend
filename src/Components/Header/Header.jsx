@@ -52,7 +52,7 @@ const Header = () => {
               <path d="M24.3556 10.4828C24.83 13.0118 24.4512 15.6268 23.2787 17.9173C22.1062 20.2078 20.2064 22.0441 17.8773 23.1381C15.5483 24.2321 12.922 24.5217 10.4105 23.9616C7.89906 23.4015 5.64467 22.0234 4.00118 20.0434M1.52434 14.7574C1.04993 12.2283 1.42869 9.61336 2.60119 7.32286C3.77369 5.03237 5.67355 3.19603 8.00257 2.10206C10.3316 1.00809 12.9579 0.71843 15.4694 1.27853C17.9809 1.83864 20.2352 3.2168 21.8787 5.19672" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M21.8792 1.00781V5.47541H17.4116" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <a className="nav-link active text-white" aria-current="page" href="#">Subscriptions</a>
+            <Link className="nav-link active text-white" aria-current="page" to="subscriptions">Subscriptions</Link>
           </li>
           <li className="nav-item ">
             <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
