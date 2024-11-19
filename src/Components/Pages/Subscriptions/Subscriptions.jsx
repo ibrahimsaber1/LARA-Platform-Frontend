@@ -1,64 +1,85 @@
-import React from 'react';
-import "../../../assets/styles/Subscriptions.css"; 
+
+
+import React, { useState } from 'react';
+import "../../../assets/styles/Subscriptions.css";
 
 const Subscriptions = () => {
-  return (
-    <div className="container my-5">
-      {/* Toggle for Monthly and Annually */}
-      <div className="text-center mb-4">
-        <button className="btn btn-outline-primary mx-2">Monthly</button>
-        <button className="btn btn-outline-secondary mx-2">Annually (First month is free)</button>
-      </div>
+  const [activeToggle, setActiveToggle] = useState("monthly"); // Default to "monthly"
 
+  const handleToggle = (type) => {
+    setActiveToggle(type);
+  };
+
+  return(
+    <div className="subscriptions-container">
+      {/* Header with toggle */}
+      
+      <div className="toggle-container">
+      {/* Monthly Button */}
+      <button
+        className={`toggle-btn monthly-btn ${
+          activeToggle === "monthly" ? "active" : ""
+        }`}
+        onClick={() => handleToggle("monthly")}
+      >
+        Monthly
+      </button>
+
+      {/* Annually Button */}
+      <button
+        className={`toggle-btn annually-btn ${
+          activeToggle === "annually" ? "active" : ""
+        }`}
+        onClick={() => handleToggle("annually")}
+      >
+        Annually (First month is free)
+      </button>
+    </div>
+    
       {/* Subscription Cards */}
-      <div className="row justify-content-center">
+      <div className="row justify-content-center mt-4">
         {/* Free Plan */}
-        <div className="col-md-3 text-center">
+        <div className="col-md-4 col-sm-12">
           <div className="card">
-            <div className="card-body">
               <h5 className="card-title">Free</h5>
-              <h2>$0</h2>
-              <p className="card-text">Out the most advanced AI audio.</p>
-              <button className="btn btn-primary btn-block">Subscribe</button>
-              <ul className="list-unstyled mt-3">
+              <h2 className="card-price">$0</h2>
+              <p className="card-text">out the most advanced AI audio.</p>
+              <button className="btn btn-dark">Subscribe</button>
+              <ul className="card-features">
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
               </ul>
-            </div>
           </div>
         </div>
 
         {/* Podcaster Plan */}
-        <div className="col-md-3 text-center">
-          <div className="card">
-            <div className="card-body">
+        <div className="col-md-4 col-sm-12">
+          <div className="card highlighted-card">
+              <p className="most-chosen-badge">Most Chosen</p>
               <h5 className="card-title">Podcaster</h5>
-              <p className="badge bg-success">First month 50% off</p>
-              <h2>$3</h2>
-              <p className="card-text">Out the most advanced AI audio.</p>
-              <button className="btn btn-primary btn-block">Subscribe</button>
-              <ul className="list-unstyled mt-3">
+              <p className="discount-badge">First month 50% off</p>
+              <h2 className="card-price">$3</h2>
+              <p className="card-text">out the most advanced AI audio.</p>
+              <button className="btn btn-dark">Subscribe</button>
+              <ul className="card-features">
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
               </ul>
             </div>
-          </div>
         </div>
 
         {/* Pro Plan */}
-        <div className="col-md-3 text-center">
+        <div className="col-md-4 col-sm-12">
           <div className="card">
-            <div className="card-body">
               <h5 className="card-title">Pro</h5>
-              <h2>$15</h2>
-              <p className="card-text">Out the most advanced AI audio.</p>
-              <button className="btn btn-primary btn-block">Subscribe</button>
-              <ul className="list-unstyled mt-3">
+              <h2 className="card-price">$15</h2>
+              <p className="card-text">out the most advanced AI audio.</p>
+              <button className="btn btn-dark">Subscribe</button>
+              <ul className="card-features">
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
                 <li>✔ 10,000 Characters per month (~10 min audio)</li>
               </ul>
             </div>
-          </div>
         </div>
       </div>
     </div>
