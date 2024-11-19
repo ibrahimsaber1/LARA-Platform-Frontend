@@ -50,20 +50,19 @@
     border: 1px solid gray;
     border-radius: 5px;
     font-size: 14px;
-    /* color: #000; */
+    color: #ffffff;
     background-color: #000;
 }
 
 
 .form-control-1::placeholder {
-    color: rgba(255, 255, 255, 0.6); /* Lighter placeholder text */
+    color: rgba(255, 255, 255, 0.6); 
 }
 
 .form-control-1:focus {
-    border-color: #ffffff; /* Bright border on focus */
-    box-shadow: none; /* Remove default bootstrap shadow */
-    color: rgb(255, 255, 255); /* Lighter placeholder text */
-
+    border-color: #ffffff; 
+    box-shadow: none; 
+    /* color: rgb(255, 255, 255);  */
 
 }
 
