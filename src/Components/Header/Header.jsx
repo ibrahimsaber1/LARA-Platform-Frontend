@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "../../assets/styles/Header.css"; 
 import { Link } from "react-router-dom";
 
 const Header = () => {
+
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const   
+ savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === 'dark');
+    }
+  }, []);
+
+  useEffect(()   => {
+    const theme = isDarkMode ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+    document.body.classList.toggle('dark-theme', isDarkMode);
+  }, [isDarkMode]);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     
 <header className="background-color px-5">
@@ -62,12 +84,19 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="logout-countner collapse navbar-collapse" id="navbarSupportedContent">
+
+      <div className="logout-countner collapse navbar-collapse " id="navbarSupportedContent">
         <div className="logout nav-item d-flex justify-content-start align-items-center">
-          <svg width={14} height={21} viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M3.379 1.28971L7.069 0.709715C10.289 0.203715 11.899 -0.0502853 12.949 0.848715C14 1.74671 14 3.37671 14 6.63671V9.62072H8.08L10.78 6.24471L9.22 4.99471L5.22 9.99471L4.72 10.6207L5.22 11.2447L9.22 16.2447L10.78 14.9947L8.08 11.6207H14V14.6037C14 17.8637 14 19.4937 12.95 20.3917C11.9 21.2897 10.29 21.0367 7.069 20.5317L3.379 19.9517C1.766 19.6977 0.96 19.5717 0.48 19.0097C2.98023e-08 18.4477 0 17.6327 0 16.0007V5.24071C0 3.60871 2.98023e-08 2.79171 0.48 2.23071C0.96 1.66971 1.766 1.54271 3.379 1.28971Z" fill="black" />
-          </svg>    
-          <a className="navbar-brand text-dark ms-2" href="#">Sign Out</a>
+
+                    <button className="dark-mode-toggle" onClick={toggleTheme}>
+                  {isDarkMode ? '🌙' : '☀️'}
+                </button>
+
+          <a className="navbar-brand  ms-2" href="#">
+
+            <i class="fa-duotone fa-solid fa-right-from-bracket"></i></a>
+
+          {/* <a className="navbar-brand  ms-2" href="#">Sign Out</a> */}
         </div>
       </div>
     </div>

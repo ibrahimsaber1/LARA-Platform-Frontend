@@ -27,7 +27,7 @@ const Main = ({ onShowCreateAssistant }) => {
             Type <i className="fa-sharp fa-solid fa-caret-down"></i>
           </button>
           <button className="btn sort-btn w-10">
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
