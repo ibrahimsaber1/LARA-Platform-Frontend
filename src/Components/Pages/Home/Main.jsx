@@ -27,35 +27,7 @@ const Main = ({ onShowCreateAssistant }) => {
             Type <i className="fa-sharp fa-solid fa-caret-down"></i>
           </button>
           <button className="btn sort-btn w-10">
-            <svg
-              width={22}
-              height={18}
-              viewBox="0 0 22 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18.5 5H3.5"
-                stroke="#232323"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M16 9H6"
-                stroke="#232323"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M14 13H8"
-                stroke="#232323"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+          <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
