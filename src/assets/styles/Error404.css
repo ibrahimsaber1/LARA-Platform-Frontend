@@ -13,6 +13,7 @@
     right: 0;
     width: 100%;
     margin-top: -9rem;
+    border-radius: 32px;
   }
   
   .error-content {
@@ -60,19 +61,6 @@
     }
   }
   
-
-/* --------------------------------------------------*/
-/* -------------Responsive Adjustments------------------*/
-
-/* Extra Small Devices */
-@media only screen and (max-width: 599px) {
-  .error-page {
-
-    margin-top: -14rem;
-  }
-
-}
-
 
 
 /* Small Devices (portrait tablets and large phones, 600px and up) */

@@ -3,6 +3,7 @@ import "../../assets/styles/Error404.css";
 
 const Error404 = () => {
   return (
+    <main className="container ">
     <div className="error-page">
       <div className="error-content">
         <div className="error-illustration">
@@ -13,6 +14,7 @@ const Error404 = () => {
         </button>
       </div>
     </div>
+    </main>
   );
 };
 

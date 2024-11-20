@@ -25,7 +25,7 @@ export default function Login() {
                 <input 
                   type={passwordVisible ? 'text' : 'password'} 
                   className="form-control-1" 
-                  placeholder="Password" 
+                  placeholder="Password"  
                   required 
                 />
                 <i
