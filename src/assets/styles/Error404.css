@@ -60,3 +60,64 @@
     }
   }
   
+
+/* --------------------------------------------------*/
+/* -------------Responsive Adjustments------------------*/
+
+/* Extra Small Devices */
+@media only screen and (max-width: 599px) {
+  .error-page {
+
+    margin-top: -14rem;
+  }
+
+}
+
+
+
+/* Small Devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .error-page {
+
+    margin-top: -12rem;
+  }
+}
+
+/* Medium Devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .error-page {
+
+    margin-top: -14rem;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 72px;
+  }
+
+  .error-btn {
+    
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* Large Devices (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .error-page {
+
+    margin-top: -8rem;
+  }
+  }
+
+
+@media only screen and (min-width: 1400px) {
+  .error-page {
+
+    margin-top: -20rem;
+  }
+  }
+
