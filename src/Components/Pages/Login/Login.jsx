@@ -44,13 +44,13 @@ export default function Login() {
           <p className="text-center mt-3 text-white ">
             <a href="#" className="text-white">Forgot your password?</a>
           </p>
-          <button type="submit" className="btn btn-outline-secondary w-100 mb-3 glow-on-hover">Login</button>
+          <button type="submit" className="btn btn-linear-effect w-100 mb-3 glow-on-hover">Login</button>
           <div className="or">
             <div className="line" />
             <p>Or</p>
             <div className="line" />
           </div>
-          <button type="button" className="google-signin btn-outline-secondary">
+          <button type="button" className="google-signin btn-linear-effect">
             <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" />
             Continue with Google
           </button>

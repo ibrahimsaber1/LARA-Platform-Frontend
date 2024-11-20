@@ -103,20 +103,21 @@
     position: relative;
 }
 
-.btn-outline-secondary {
-    color: #c3c6ca; /* Secondary text color */
-    border-color: #c3c6ca; /* Secondary border color */
+.btn-linear-effect {
+    color: #c3c6ca; 
+    border-color: #c3c6ca;
     position: relative; /* Needed for pseudo-elements */
-    /* overflow: hidden; */
+    background-color: #000;
+
 }
 
-.btn-outline-secondary:hover {
+.btn-linear-effect:hover {
     background-color: #000000; /* Dark background color on hover */
     color: white; /* White text color on hover */
     border-color: #6c757d; /* Match border color to background */
 }
 
-.btn-outline-secondary:before {
+.btn-linear-effect:before {
     content: '';
     background: linear-gradient(45deg, yellow, orange, red, orange, yellow);
     position: absolute;
@@ -132,11 +133,11 @@
     transition: opacity .3s ease-in-out;
 }
 
-.btn-outline-secondary:hover:before{
+.btn-linear-effect:hover:before{
     opacity: 1;
 }
 
-.btn-outline-secondary:after{
+.btn-linear-effect:after{
     z-index: -1;
     content: '';
     position: absolute;
@@ -191,3 +192,26 @@
     width: 20px;
     margin-right: 10px;
 }
+
+
+/* --------------------------------------------------*/
+/* -------------Responsive Adjustments------------------*/
+
+/* Extra Small Devices */
+@media only screen and (max-width: 599px) {
+    .card-signup {
+        width: 95%;
+    }
+  
+  }
+  
+  
+  
+  /* Small Devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .subscriptions-container {
+      margin-top: -12rem;
+  
+    }
+  }
+  

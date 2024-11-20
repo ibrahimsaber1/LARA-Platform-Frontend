@@ -56,7 +56,7 @@ export default function Signup() {
               </div>
               <button 
                 type="submit" 
-                className="btn btn-outline-secondary w-100 mb-3 glow-on-hover"
+                className="btn btn-linear-effect w-100 mb-3 glow-on-hover"
               >
                 Sign Up
               </button>
@@ -67,7 +67,7 @@ export default function Signup() {
               </div>
               <button 
                 type="button" 
-                className="google-signin btn-outline-secondary"
+                className="google-signin btn-linear-effect"
               >
                 <img 
                   src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" 
