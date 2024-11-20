@@ -1,24 +1,24 @@
 /* Main Container */
 .subscriptions-container {
-    background-color: #fff;
-    position: relative;
-    margin-top: -8rem;
-    right: 25%;
+  background-color: #fff;
+  position: relative;
+  margin-top: -20rem;
+  right: 25%;
+  transform: translateX(33%); /* Adjust horizontal centering */
+  z-index: 10;
+  min-height: 100vh;
+  max-width: 90%;
+  border-radius: 32px;
+  padding: 3rem;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
 
-    transform: translateX(33%); /* Adjust horizontal centering */
-    z-index: 10;
-    min-height: 100vh;
-    max-width: 90%; /* Adjust width for better responsiveness */
-    border-radius: 32px;
-    padding: 3rem;
-    border: 1px solid rgb(216, 216, 216);
-  }
-  
 /* Toggle Container */
 .toggle-container {
   display: flex;
   justify-content: space-between;
-  background-color: #e5e7eb;
+  background-color: #f4f4f4;
   border-radius: 12px;
   padding: 5px;
   max-width: 27rem;
@@ -30,141 +30,205 @@
   flex: 1; /* Make both buttons take equal width */
   padding: 0.5rem 1rem;
   border-radius: 12px;
-  background-color: #e5e7eb;
-  color: #212529;
+  background-color: #f4f4f4;
+  color: #333;
   font-weight: 500;
-  border: none;
+  border: 1px solid #ddd;
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 0 5px;
   font-size: 0.95rem;
-  font-size: 500;
 }
 
-/* Active Button */
 .toggle-btn.active {
-  background-color: #212529; /* Blue background for active state */
-  color: #ffffff; /* White text for active button */
+  background-color: #333; /* Dark background for active state */
+  color: #fff; /* White text for active button */
 }
 
-/* Hover Effect */
-/* .toggle-btn:hover {
-  background-color: #2563eb; 
-} */
+/* ------------------------------- */
+/* Card Styles */
+.subscriptions-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+/* Hover effect for cards */
+.subscriptions-card:hover {
+  transform: translateY(-10px); /* Card slightly rises on hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
 
+/* Highlighted Subscription Card */
+.highlighted-subscriptions-card {
+  border: 2px solid #333; /* Dark border for highlight */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+  transform: translateY(-20px); /* Slightly lift the card */
+  z-index: 2; /* Make it stand above the other cards */
+  transition: all 0.3s ease; /* Smooth transition */
+}
 
-  /* ------------------------------- */
-  /* Card Styles */
+/* Add a stronger hover effect on the highlighted card */
+.highlighted-subscriptions-card:hover {
+  transform: translateY(-30px); /* Lift the card even higher on hover */
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.most-chosen-badge {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscriptions-card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.discount-badge {
+  font-size: 0.85rem;
+  color: #333;
+  background-color: #e5e5e5;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.subscriptions-card-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subscriptions-card-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Subscribe Button */
+.btn-dark {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #222;
+}
+
+/* Features List */
+.subscriptions-card-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.subscriptions-card-features li {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+/* Details Section for each plan */
+.subscriptions-card-details {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.subscriptions-card-details strong {
+  font-weight: bold;
+}
+
+/* ------------------------- Responsive Adjustments ---------------------------*/
+@media (max-width: 768px) {
+  .subscriptions-container {
+    max-width: 100%;
+    right: 0%;
+    padding: 1rem;
+    transform: translateX(0%); /* Adjust horizontal centering */
+  }
+
   .subscriptions-card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 16px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin: 1rem;
-    position: relative;
+    margin-bottom: 1.5rem;
   }
-  
-  .highlighted-subscriptions-card {
-    border: 2px solid #ffffff;
-    box-shadow: 0px 6px 15px rgba(59, 130, 246, 0.2);
-  }
-  
-  /* .card-body {
-    
-  } */
-  
-  .most-chosen-badge {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    right: 0rem;
-    background-color: #212529;
-    color: #ffffff;
-    padding: 1rem 1rem;
-    border-top-left-radius:12px ;
-    border-top-right-radius:12px ;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .subscriptions-card-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .discount-badge {
-    font-size: 0.85rem;
-    color: #22c55e;
-    background-color: #d1fae5;
-    padding: 0.3rem 0.6rem;
-    border-radius: 8px;
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
-  
-  .subscriptions-card-price {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #3b82f6;
-  }
-  
-  .subscriptions-card-text {
-    font-size: 0.95rem;
-    color: #6b7280;
-    margin-bottom: 1rem;
-  }
-  
-  /* Subscribe Button */
-  .subscribe-btn {
-    background-color: #3b82f6;
-    border: none;
-    color: #fff;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .subscribe-btn:hover {
-    background-color: #2563eb;
-  }
-  
-  /* Features List */
-  .subscriptions-card-features {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-  }
-  
-  .subscriptions-card-features li {
-    font-size: 0.9rem;
-    color: #4b5563;
-    margin: 0.5rem 0;
-  }
-  
-/* ------------------------------------------------------------------------------------------ */
-  /* ------------------------- Responsive Adjustments ---------------------------*/
-  @media (max-width: 768px) {
-    .subscriptions-container {
-        max-width: 100%;
-        right: 0%;
-        padding: 1rem;
 
-        transform: translateX(0%); /* Adjust horizontal centering */
-    }
-    .subscriptions-card {
-      margin-bottom: 1.5rem;
-    }
-  
-    .subscriptions-card-price {
-      font-size: 1.8rem;
-    }
+  .subscriptions-card-price {
+    font-size: 1.8rem;
   }
-  
+}
+
+/* --------------------------------------------------*/
+/* -------------Responsive Adjustments------------------*/
+
+/* Extra Small Devices */
+@media only screen and (max-width: 599px) {
+  .subscriptions-container {
+    margin-top: -14rem;
+
+  }
+
+}
+
+
+
+/* Small Devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .subscriptions-container {
+    margin-top: -12rem;
+
+  }
+}
+
+/* Medium Devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .subscriptions-container {
+    margin-top: -14rem;
+
+  }
+}
+
+
+/* Large Devices (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .subscriptions-container {
+    margin-top: -8rem;
+
+  }
+  }
+
+
+@media only screen and (min-width: 1400px) {
+  .subscriptions-container {
+    margin-top: -20rem;
+
+  }
+  }
+
+
+

@@ -161,7 +161,7 @@
     .main {
         max-width: 100%;
         padding: 2rem;
-        margin-top: -10rem; /* Adjusted margin for smaller screens */
+        margin-top: -14rem; /* Adjusted margin for smaller screens */
         right: 20%;
         transform: translateX(20%);
     }
