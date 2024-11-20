@@ -23,7 +23,7 @@
 /* Dark Theme Overrides */
 .dark-theme {
   --background-color: #121212;
-  --text-color: #ffffff;
+  --text-color: #ffffff !important;
   --navbar-bg: #000000;
   --link-color: #ffffff;
   --link-hover-color: #cccccc;

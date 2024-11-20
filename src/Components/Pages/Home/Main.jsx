@@ -42,7 +42,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: Lara Plus Assistant</h5>
               <span className="status-badge">Just Created</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Default General Purpose <br />
               Script Assistant Specific in writing script...
             </p>
@@ -50,7 +50,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '75%'}} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 12.37K</span>
               <span>Available Requests: 2579</span>
             </div>
@@ -65,7 +65,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: Another Assistant</h5>
               <span className="status-badge">Just Updated</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Advanced General Purpose <br />
               This assistant specializes in advanced tasks...
             </p>
@@ -73,7 +73,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '60%'}} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 8.92K</span>
               <span>Available Requests: 3401</span>
             </div>
@@ -88,7 +88,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: New Assistant</h5>
               <span className="status-badge">In Progress</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Beginner Purpose <br />
               Script Assistant in development...
             </p>
@@ -96,7 +96,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '40%'}} aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 5.12K</span>
               <span>Available Requests: 1800</span>
             </div>
@@ -111,7 +111,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: Lara Plus Assistant</h5>
               <span className="status-badge">Just Created</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Default General Purpose <br />
               Script Assistant Specific in writing script...
             </p>
@@ -119,7 +119,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '75%'}} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 12.37K</span>
               <span>Available Requests: 2579</span>
             </div>
@@ -134,7 +134,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: Another Assistant</h5>
               <span className="status-badge">Just Updated</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Advanced General Purpose <br />
               This assistant specializes in advanced tasks...
             </p>
@@ -142,7 +142,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '60%'}} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 8.92K</span>
               <span>Available Requests: 3401</span>
             </div>
@@ -157,7 +157,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: New Assistant</h5>
               <span className="status-badge">In Progress</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Beginner Purpose <br />
               Script Assistant in development...
             </p>
@@ -165,7 +165,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '40%'}} aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 5.12K</span>
               <span>Available Requests: 1800</span>
             </div>
@@ -180,7 +180,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: Lara Plus Assistant</h5>
               <span className="status-badge">Just Created</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Default General Purpose <br />
               Script Assistant Specific in writing script...
             </p>
@@ -188,7 +188,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '75%'}} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 12.37K</span>
               <span>Available Requests: 2579</span>
             </div>
@@ -203,7 +203,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: Another Assistant</h5>
               <span className="status-badge">Just Updated</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Advanced General Purpose <br />
               This assistant specializes in advanced tasks...
             </p>
@@ -211,7 +211,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '60%'}} aria-valuenow={60} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 8.92K</span>
               <span>Available Requests: 3401</span>
             </div>
@@ -226,7 +226,7 @@ const Main = ({ onShowCreateAssistant }) => {
               <h5 className="card-title">Title: New Assistant</h5>
               <span className="status-badge">In Progress</span>
             </div>
-            <p className="card-text text-muted">
+            <p className="card-text">
               Type: Beginner Purpose <br />
               Script Assistant in development...
             </p>
@@ -234,7 +234,7 @@ const Main = ({ onShowCreateAssistant }) => {
             <div className="progress">
               <div className="progress-bar" role="progressbar" style={{width: '40%'}} aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} />
             </div>
-            <div className="usage-info d-flex justify-content-between text-muted mt-2">
+            <div className="usage-info d-flex justify-content-between mt-2">
               <span>Tokens Used: 5.12K</span>
               <span>Available Requests: 1800</span>
             </div>
