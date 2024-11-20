@@ -63,9 +63,9 @@ const Main = ({ onShowCreateAssistant }) => {
     {/* Assistant Card */}
     <div className="row g-3"> {/* Add Bootstrap's "g-3" for gutter spacing */}
       {/* Assistant Card 1 */}
-      <div className="col-lg-4 col-md-6">
-        <div className="assistant-card card">
-          <div className="card-body">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+        <div className="assistant-card card ">
+          <div className="card-body ">
             <div className="cart-title-badge">
               <h5 className="card-title">Title: Lara Plus Assistant</h5>
               <span className="status-badge">Just Created</span>
@@ -86,7 +86,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 2 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -109,7 +109,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 3 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -132,7 +132,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 1 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col ">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -155,7 +155,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 2 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -178,7 +178,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 3 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -201,7 +201,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 1 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -224,7 +224,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 2 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -247,7 +247,7 @@ const Main = ({ onShowCreateAssistant }) => {
         </div>
       </div>
       {/* Assistant Card 3 */}
-      <div className="col-lg-4 col-md-6">
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col ">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
