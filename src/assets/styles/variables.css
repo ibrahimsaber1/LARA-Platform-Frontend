@@ -1,0 +1,41 @@
+/* src/assets/styles/variables.css */
+
+/* Light Theme Variables */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-bg: #f8f9fa;
+  --link-color: #000000;
+  --link-hover-color: #555555;
+  --logout-bg: #000000;
+  --logout-text: #ffffff;
+  --button-bg: #000000;
+  --button-text: #ffffff;
+  --button-hover-bg: #ffffff;
+  --button-hover-text: #000000;
+  --border-color: rgb(216, 216, 216);
+  --badge-bg: #00c853;
+  --badge-text: #ffffff;
+  --progress-bg: #e0e0e0;
+  --progress-bar-bg: #757575;
+}
+
+/* Dark Theme Overrides */
+.dark-theme {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-bg: #000000;
+  --link-color: #ffffff;
+  --link-hover-color: #cccccc;
+  --logout-bg: #ffffff;
+  --logout-text: #000000;
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --button-hover-bg: #000000;
+  --button-hover-text: #ffffff;
+  --border-color: rgb(80, 80, 80);
+  --badge-bg: #00c853;
+  --badge-text: #ffffff;
+  --progress-bg: #424242;
+  --progress-bar-bg: #bdbdbd;
+}

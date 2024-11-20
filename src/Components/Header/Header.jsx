@@ -1,56 +1,38 @@
-import React, { useState, useEffect } from 'react';
+// src/Components/Header/Header.jsx
+import React, { useContext } from 'react';
 import "../../assets/styles/Header.css"; 
 import { Link } from "react-router-dom";
+import { ThemeContext } from '../../Context/ThemeContext/ThemeContext'; // Adjust the path as necessary
 
 const Header = () => {
-
-
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const   
- savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setIsDarkMode(savedTheme === 'dark');
-    }
-  }, []);
-
-  useEffect(()   => {
-    const theme = isDarkMode ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
-    document.body.classList.toggle('dark-theme', isDarkMode);
-  }, [isDarkMode]);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
   return (
-    
-<header className="background-color px-5">
-  <div className="background-overlay" ></div>
+    <header className="background-color px-5">
+      <div className="background-overlay"></div>
 
-  <nav className="mynavbar navbar navbar-expand-lg navbar-dark">
-    <div className="container-fluid">
-      {/* the logo */}
-      <a className="navbar-brand mylogo" href="/">
-        <img className="" src="src/assets/images/lara-icon.png" alt="LARA AI voice assistance icon" />
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      {/* the meddle navbar icons  */}
-      <div className="collapse navbar-collapse meddle-icons" id="navbarSupportedContent">
-        <ul className="navbar-nav meddle-icons">
-          <li className="nav-item ">
+      <nav className="mynavbar navbar navbar-expand-lg navbar-dark">
+        <div className="container-fluid">
+          {/* the logo */}
+          <Link className="navbar-brand mylogo" to="/">
+            <img src="src/assets/images/lara-icon.png" alt="LARA AI voice assistance icon" />
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          {/* the meddle navbar icons  */}
+          <div className="collapse navbar-collapse meddle-icons" id="navbarSupportedContent">
+            <ul className="navbar-nav meddle-icons">
+              <li className="nav-item ">
+
             <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.49512 8.06006L12.3251 13.17L21.0951 8.09003" stroke="#FDEEEB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M12.3252 22.2302V13.1602" stroke="#FDEEEB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -59,6 +41,7 @@ const Header = () => {
             </svg>
             <Link className="nav-link active text-white" aria-current="page" to="/assistantsspace"> Assistants Space</Link>
           </li>
+
           <li className="nav-item ">
             <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.49512 8.06006L12.3251 13.17L21.0951 8.09003" stroke="#FDEEEB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -86,20 +69,19 @@ const Header = () => {
       </div>
 
       <div className="logout-countner collapse navbar-collapse " id="navbarSupportedContent">
-        <div className="logout nav-item d-flex justify-content-start align-items-center">
+            <div className="logout nav-item d-flex justify-content-start align-items-center">
+              <button className="dark-mode-toggle" onClick={toggleTheme} aria-label="Toggle Dark Mode">
+                {isDarkMode ? '🌙' : '☀️'}
+              </button>
 
-                    <button className="dark-mode-toggle" onClick={toggleTheme}>
-                  {isDarkMode ? '🌙' : '☀️'}
-                </button>
+              <Link className="navbar-brand ms-2" to="/logout">
+                <i className="fa-solid fa-right-from-bracket"></i>
+              </Link>
+            </div>
+          </div>
 
-          <a className="navbar-brand  ms-2" href="#">
-
-            <i class="fa-duotone fa-solid fa-right-from-bracket"></i></a>
-
-          {/* <a className="navbar-brand  ms-2" href="#">Sign Out</a> */}
-        </div>
-      </div>
     </div>
+
   </nav>
 </header>
 

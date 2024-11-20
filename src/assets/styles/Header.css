@@ -90,10 +90,10 @@ header{
     font-size: 24px;
   }
   
-  /* .dark-theme {
-    background-color: #333;
+  .dark-theme {
+    background-color: #000000;
     color: #fff;
-  } */
+  }
 
 
 .logout-countner{
