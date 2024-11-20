@@ -27,7 +27,7 @@
   right: -100%;
   min-width: 40%;
   min-height: 150vh;
-  background-color: rgba(255, 255, 255, 0.97); /* Optional: semi-transparent background */
+  background-color: var(--background-color);
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease-in-out;
   z-index: 1500;
@@ -64,6 +64,8 @@
 /* ------------------------------- */
 .header h2 {
   font-size: 25px;
+      color: var(--text-color);
+
 
 }
 .go-back{
