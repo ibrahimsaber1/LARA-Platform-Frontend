@@ -23,9 +23,17 @@ const Main = ({ onShowCreateAssistant }) => {
             className="search-input w-75"
             placeholder="Search the assistant name"
           />
-          <button className="btn filter-btn w-10">
+          {/* <button className="btn filter-btn w-10">
             Type <i className="fa-sharp fa-solid fa-caret-down"></i>
-          </button>
+          </button> */}
+
+
+          <select className="filter-btn">
+                <option>Type</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+
           <button className="btn sort-btn w-10">
           <i className="fa-solid fa-bars"></i>
           </button>

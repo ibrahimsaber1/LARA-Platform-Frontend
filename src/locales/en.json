@@ -1,0 +1,26 @@
+{
+    "terms_service": "Terms Of Service",
+    "manage_privacy": "Manage Privacy",
+    "manage_cookies": "Manage Cookies",
+    "shared":{
+        "products_services": "Products & Services",
+        "competency_management": "Competency Management",
+        "personalized_learning": "Personalized Learning",
+        "gamified_learning": "Gamified Learning",
+        "learning_management": "Learning Management",
+        "assessment_hub": "Assessment Hub",
+        "aI_zedny": "AI at Zedny",
+        "our_solutions": "Our Solutions",
+        "for_business": "For Business",
+        "for_individuals": "For Individuals",
+        "latest_news": "Get Our Latest News",
+        "email_address": "E-mail Address",
+        "company": "Company",
+        "our_story": "Our Story",
+        "our_method": "Our Method",
+        "contact_us": "Contact Us",
+        "terms_service": "Terms Of Service",
+        "manage_privacy": "Manage Privacy",
+        "manage_cookies": "Manage Cookies"
+    }
+}

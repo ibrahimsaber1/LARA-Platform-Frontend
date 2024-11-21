@@ -1,6 +1,7 @@
 // src/index.js
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import './i18n'; // Import the i18n configuration
 
 // Import Bootstrap and FontAwesome
 import 'bootstrap/dist/css/bootstrap.min.css';

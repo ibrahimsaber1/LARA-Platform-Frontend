@@ -183,6 +183,7 @@
     .create-assistant-btn,
     .filter-btn,
     .sort-btn {
+        width: 10% ;
         padding: 7px 10px;
         font-size: 0.80rem;
     }
