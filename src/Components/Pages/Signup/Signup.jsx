@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../../../assets/styles/Login.css"; 
-import appIcon from '../../../assets/images/lara-icon.png'; // Adjust the path as needed
+import appIcon from '../../../assets/images/z_logo.svg'; // Adjust the path as needed
 
 export default function Signup() {
   const [passwordVisible, setPasswordVisible] = useState(false);

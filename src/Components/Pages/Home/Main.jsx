@@ -29,7 +29,7 @@ const Main = ({ onShowCreateAssistant }) => {
 
 
           <select className="filter-btn">
-                <option>Type</option>
+                <option value="hide">Type</option>
                 <option>Option 1</option>
                 <option>Option 2</option>
               </select>

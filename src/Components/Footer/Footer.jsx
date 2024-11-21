@@ -21,21 +21,20 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-
+    <footer className=''>
     <div
     className="zedny-footer w-full bg-cover bg-no-repeat"
     style={{
       backgroundImage: `url(${FooterBackground})`,
-    }}
-  >
+    }}>
     <div className="footer-content">
       <div className="post-landing-footer w-10">
         <div className="row">
           {/* Logo and Subscribe Section */}
-          <div className="col-lg-5 mb-4">
+          <div className="col-lg-4 mb-4">
             <div className="logo">
               <img src={Logo} alt="Zedny Logo" />
-              <p>Latest News</p>
+              <p className='Latest-News' >{t("Get Our Latest News")}</p>
               <div className="subscribe">
                 <input
                   className="input"
@@ -48,64 +47,84 @@ const Footer = () => {
           </div>
 
           {/* Products & Services */}
-          <div className="col-lg col-md-6 mb-4">
+          <div className="col-lg-2 col-md-6 mb-4">
             <div className="products">
               <div className="head">
-                <p>Products & Services</p>
+                <p  >Products & Services</p>
               </div>
               <Link to="/about-pages/products-services/competency-management">
-                <p>Competency Management</p>
+                <p className='fot-link'>Competency Management</p>
               </Link>
               <Link to="/about-pages/products-services/persinalized-learning">
-                <p>Personalized Learning</p>
+                <p className='fot-link'>Personalized Learning</p>
               </Link>
               <Link to="/about-pages/products-services/gamification">
-                <p>Gamified Learning</p>
+                <p className='fot-link'>Gamified Learning</p>
               </Link>
               <Link to="/about-pages/products-services/learning-management">
-                <p>Learning Management</p>
+                <p className='fot-link'>Learning Management</p>
               </Link>
               <Link to="/about-pages/products-services/assessment-hub">
-                <p>Assessment Hub</p>
+                <p className='fot-link'>Assessment Hub</p>
               </Link>
               <Link to="/about-pages/products-services/AI-Zedny">
-                <p>AI Zedny</p>
+                <p className='fot-link'>AI Zedny</p>
               </Link>
             </div>
           </div>
 
           {/* Our Solutions */}
-          <div className="col-lg col-md-6 mb-4">
+          <div className="col-lg-2 col-md-6 mb-4">
             <div className="our-solutions">
               <div className="head">
                 <p>Our Solutions</p>
               </div>
               <Link to="/about-pages/our-solutions/for-business">
-                <p>For Business</p>
+                <p className='fot-link'>For Business</p>
               </Link>
               <Link to="/about-pages/our-solutions/for-individuals">
-                <p>For Individuals</p>
+                <p className='fot-link'>For Individuals</p>
               </Link>
             </div>
           </div>
 
           {/* Company */}
-          <div className="col-lg col-md-6 mb-4">
+          <div className="col-lg-2 col-md-6 mb-4">
             <div className="company">
               <div className="head">
-                <p>Company</p>
+                <p >Company</p>
               </div>
               <Link to="/about-pages/compony/our-story">
-                <p>Our Story</p>
+                <p className='fot-link'> Our Story</p>
               </Link>
               <Link to="/about-pages/compony/our-method">
-                <p>Our Method</p>
+                <p className='fot-link'>Our Method</p>
               </Link>
               <Link to="/about-pages/compony/contact-us">
-                <p>Contact Us</p>
+                <p className='fot-link' >Contact Us</p>
               </Link>
             </div>
           </div>
+
+
+
+          {/* Our Policies */}
+          <div className="col-lg-2 col-md-6 mb-4">
+          <div className="company">
+
+          <div className="head">
+          <p className="footer-heading">Our Policies</p>
+          </div>
+             <Link to="/policies/academic-integrity"><p className='fot-link' >Academic Integrity Policy</p></Link>
+             <Link to="/policies/attendance-policy"><p className='fot-link' >Attendance Policy For Virtual Learning</p></Link>
+             <Link to="/policies/intellectual-property"><p className='fot-link' >Intellectual Property and Copyright</p></Link>
+             <Link to="/policies/technical-support"><p className='fot-link' >Technical Support Policy</p></Link>
+             <Link to="/policies/user-manual"><p className='fot-link' >User Manual</p></Link>
+             <Link to="/policies/academic-supervision"><p className='fot-link' >Academic Supervision</p></Link>
+             <Link to="/policies/staff-responsibilities"><p className='fot-link' >Staff Preparations Responsibilities</p></Link>
+          </div>
+        </div>
+        
         </div>
       </div>
 
@@ -158,7 +177,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="copy-right flex justify-content-center w-full">
-          <p>
+          <p  >
             Copyright © 2020 Zedny Educational Services S.A.E - All Rights
             Reserved
           </p>
@@ -167,19 +186,20 @@ const Footer = () => {
         {/* Legal Links */}
         <div className="pages">
           <Link to="/about-pages/legal-stuff/terms-of-service">
-            <p className="terms-of-service">Terms of Service</p>
+            <p className="terms-of-service lol">Terms of Service</p>
           </Link>
           <Link to="/about-pages/legal-stuff/manage-privacy">
-            <p className="manage-privacy">Manage Privacy</p>
+            <p className="manage-privacy lol">Manage Privacy</p>
           </Link>
           <Link to="/about-pages/legal-stuff/manage-cookies">
             <p className="manage-cookies">Manage Cookies</p>
+
           </Link>
         </div>
       </div>
     </div>
   </div>
-
+  </footer>
   );
 };
 

@@ -15,7 +15,7 @@ export default function Login() {
       <div className="container d-flex justify-content-center align-items-center vh-100">
         <div className="card-signup shadow-lg col-lg-4 col-md-8 col-sm-10">
           <div className="card-body text-center p-4">
-            <img src="src/assets/images/lara-icon.png" alt="App Icon" className="form-img mb-3" />
+            <img src="src/assets/images/z_logo.svg" alt="App Icon" className="form-img mb-3" />
             <form>
           <div className="mb-3">
             <input type="email" className="form-control-1" placeholder="Email Address" required />

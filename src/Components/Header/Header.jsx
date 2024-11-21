@@ -15,7 +15,7 @@ const Header = () => {
         <div className="container-fluid">
           {/* the logo */}
           <Link className="navbar-brand mylogo" to="/">
-            <img src="src/assets/images/lara-icon.png" alt="LARA AI voice assistance icon" />
+            <img src="src/assets/images/z_logo.svg" alt="LARA AI voice assistance icon" />
           </Link>
           <button
             className="navbar-toggler"

@@ -1,367 +1,290 @@
-/* -----------------------the footer section --------------- */
-
 /* Footer Styling */
+
+
+
 .footer-section {
-  background-color: #000000; /* Black background as in the design */
-  color: white; /* White text */
-  padding: 1rem 0; /* Add padding for spacing */
-  border-radius: 32px 32px 0 0; /* Rounded top corners */
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1500;
+    background-color: #000000; /* Black background as in the design */
+    color: white; /* White text */
+    padding: 1rem 0; /* Add padding for spacing */
+    border-radius: 32px 32px 0 0; /* Rounded top corners */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1500;
+  }
+  
+  .footer-section .footer-text {
+    font-size: 0.9rem; /* Adjust font size for better readability */
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Zedny Footer Styling */
+  .zedny-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    height: fit-content;
+    padding-top: 1rem;
+    border-top-left-radius: 32px ;
+    border-top-right-radius: 32px ;
+  }
+  
+.Latest-News{
+    margin: 2rem 0;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
 }
+  
+  .zedny-footer a {
+    text-decoration: none;
 
-.footer-section .footer-text {
-  font-size: 0.9rem; /* Adjust font size for better readability */
-  margin: 0;
-  text-align: center;
+
+  }
+  
+  .zedny-footer p {
+    text-transform: capitalize;
+  }
+
+
+  
+
+.fot-link {
+    text-transform: capitalize;
+    color: #fff9;
+    transition: transform 0.3s ease;
+  }
+
+  .fot-link:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transform: translateX(10%);
+
 }
-
-/* ----------------------- the zedny-footer ----------------------- */
-
-.zedny-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background: #000;
-  height: fit-content;
-  padding-top: 1rem; /* Default padding, overridden in media queries */
-}
-
-.zedny-footer input {
-  color: #fff !important;
-  padding: 0 0.5rem;
-  padding-inline-start: 14px !important;
-}
-
-.zedny-footer a {
-  text-decoration: none;
-}
-
-.zedny-footer p {
-  text-transform: capitalize;
-}
-
-.zedny-footer .footer-content {
-  text-overflow: ellipsis;
-  background: rgba(0, 0, 0, 0.36);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  width: 100%;
-  padding: 0 4.5%;
-  padding-top: 3rem;
-}
-
-.zedny-footer .post-landing-footer {
-  /* Logo Section */
-  .logo a img {
-      width: 12rem;
-      height: 5.125rem;
+  
+  
+  .zedny-footer .footer-content {
+    background: rgba(0, 0, 0, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
+    padding: 3rem 4.5%;
   }
-
-  .logo a img {
-      width: 12rem;
-      height: 5.125rem;
-  }
-
-  .logo p {
-      margin: 2rem 0;
-      color: #fff;
-      font-size: 1.25rem;
-      font-style: normal;
-      font-weight: 400;
-  }
-
-  /* Subscribe Section */
-  .logo .subscribe {
-      position: relative;
-  }
-
-  .logo .subscribe .input {
-      position: relative;
-      width: 100%;
-      height: 3.125rem;
-      background-color: #000;
-      padding-left: 2rem;
-      border: 1.5px solid #515050;
-      border-radius: 10px;
-      color: #fff; /* Ensures text is visible on dark background */
-  }
-
-  .logo .subscribe .input::placeholder {
-      color: #dcdcdc;
-      font-size: 1rem;
-      font-weight: 200;
-  }
-
-  .logo .subscribe .input:focus {
-      outline: none;
-  }
-
-  /* Subscribe Button */
-  .logo .subscribe button {
-      position: absolute;
-      width: 10.125rem;
-      margin-inline-start: -10.125rem;
-      border-radius: 10px;
-      height: 3.125rem;
-      border: none;
-      color: #fff;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 500;
-      background: linear-gradient(
-          132.32deg,
-          #bf0645 -6.2%,
-          #51163f 19.74%,
-          #311442 41.42%,
-          #0b2655 63.84%,
-          #147891 101.6%
-      );
-      cursor: pointer;
-      transition: background 0.3s ease, color 0.3s ease;
-  }
-
-  /* Products, Our Solutions, Company Sections */
-  .zedny-footer .post-landing-footer .products,
-  .zedny-footer .post-landing-footer .our-solutions,
-  .zedny-footer .post-landing-footer .company {
-      /* Headings */
-      .head {
-          margin: 2rem 0 0.5rem;
-      }
-
-      .head p {
-          color: #f3f3f4;
-          font-size: 1.25rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 28px;
-          margin-bottom: 18px;
-      }
-
-      /* Links */
-      a p {
-          text-transform: capitalize;
-          margin-bottom: 12px;
-          color: rgba(255, 255, 255, 0.6);
-          font-size: 1rem;
-          font-style: normal;
-          transition: all 0.3s;
-      }
-
-      a p:hover {
-          transform: translateX(10px);
-          color: #fff;
-          cursor: pointer;
-      }
-  }
-
-  /* Our Solutions and Company Specific Styles */
-  .zedny-footer .post-landing-footer .our-solutions,
-  .zedny-footer .post-landing-footer .company {
-      /* Additional styles can be added here if needed */
-  }
-
+  
   /* Pre-Landing Footer Section */
   .zedny-footer .pre-landing-footer {
-      padding-bottom: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Space between sections */
   }
-
+  
   .zedny-footer .pre-landing-footer .icons {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      position: relative; /* To position ::before and ::after */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: #bf0645; */
   }
-
+  
   .zedny-footer .pre-landing-footer .icons img.footer-icon {
-      width: 3.8rem;
-      height: 3.8rem;
-      margin: 4px;
-      transition: width 0.3s ease, height 0.3s ease;
+    width: 60px; /* Adjust size for icons */
+    height: 60px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
   }
-
-  /* Before and After Lines */
+  
+  .zedny-footer .pre-landing-footer .icons img.footer-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
   .zedny-footer .pre-landing-footer .icons::before,
   .zedny-footer .pre-landing-footer .icons::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      height: 1px;
-      background-color: rgba(99, 99, 99, 0.4);
-      width: 50%;
-      transform: translateY(-50%);
-  }
-
-  .zedny-footer .pre-landing-footer .icons::before {
-      left: 0;
-      margin-right: 5px;
-  }
-
-  .zedny-footer .pre-landing-footer .icons::after {
-      right: 0;
-      margin-left: 5px;
-  }
-
-  /* Copy Right Section */
-  .zedny-footer .pre-landing-footer .copy-right p {
-      text-align: center;
-      color: #fff;
-      font-size: 1rem;
-      font-style: normal;
-      margin: 2rem 0 1rem;
-  }
-
-  /* Pages Section */
-  .zedny-footer .pre-landing-footer .pages {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-  }
-
-  .zedny-footer .pre-landing-footer .pages .verify-certificate,
-  .zedny-footer .pre-landing-footer .pages .terms-of-services,
-  .zedny-footer .pre-landing-footer .pages .manage-privacy,
-  .zedny-footer .pre-landing-footer .pages .manage-cookies {
-      text-align: center;
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: #fff;
-      padding: 0 1rem;
-      transition: font-size 0.3s ease;
-  }
-
-  /* Add border-right except for the last child */
-  .zedny-footer .pre-landing-footer .pages a:not(:last-child) p {
-      border-right: 2px solid #fff;
-  }
-
-  .zedny-footer .pre-landing-footer .pages .verify-certificate,
-  .zedny-footer .pre-landing-footer .pages .terms-of-services,
-  .zedny-footer .pre-landing-footer .pages .manage-privacy,
-  .zedny-footer .pre-landing-footer .pages .manage-cookies {
-      /* Default font size */
-      font-size: 0.9rem;
-  }
-
-  /* Responsive Adjustments */
-
-  /* Small Devices (sm: max-width 576px) */
-  @media (max-width: 576px) {
-      .zedny-footer {
-          padding-top: 1rem; /* Already set, can adjust if needed */
-      }
-
-      .zedny-footer .post-landing-footer {
-          flex-direction: column;
-          align-items: flex-start !important;
-      }
-
-      .zedny-footer .post-landing-footer .sm {
-          display: flex !important;
-          justify-content: space-between;
-          width: 100%;
-          align-items: flex-start;
-      }
-
-      .zedny-footer .post-landing-footer .sm .our-solutions,
-      .zedny-footer .post-landing-footer .sm .company {
-          width: 50%;
-      }
-
-      .zedny-footer .post-landing-footer .our-solutionss,
-      .zedny-footer .post-landing-footer .companyy {
-          /* display: none !important; */
-      }
-
-      /* Adjust logo image size */
-      .zedny-footer .post-landing-footer .logo a img {
-          width: 7rem;
-          height: 2rem;
-      }
-
-      /* Adjust subscribe button positioning */
-      .zedny-footer .post-landing-footer .logo .subscribe button {
-          position: static;
-          margin: 0;
-          margin-top: 24px;
-          width: 100%;
-      }
-
-      /* Adjust font sizes */
-      .zedny-footer .post-landing-footer .logo p {
-          font-size: 2rem;
-      }
-
-      .zedny-footer .pre-landing-footer .pages .verify-certificate,
-      .zedny-footer .pre-landing-footer .pages .terms-of-services,
-      .zedny-footer .pre-landing-footer .pages .manage-privacy,
-      .zedny-footer .pre-landing-footer .pages .manage-cookies {
-          font-size: 0.7rem;
-      }
-
-      /* Adjust icons size */
-      .zedny-footer .pre-landing-footer .icons img.footer-icon {
-          width: 5rem;
-          height: 5rem;
-      }
-
-      /* Remove before and after lines */
-      .zedny-footer .pre-landing-footer .icons::before,
-      .zedny-footer .pre-landing-footer .icons::after {
-          width: 0 !important;
-      }
-  }
-
-  /* Medium Devices (max-md: max-width 768px) */
-  @media (max-width: 768px) {
-      .zedny-footer {
-          padding-top: 1rem; /* Already set */
-      }
-
-      /* You can add additional styles for medium devices here if needed */
-  }
-
-  /* Hover Effects for Links */
-  .zedny-footer .post-landing-footer .products a p,
-  .zedny-footer .post-landing-footer .our-solutions p,
-  .zedny-footer .post-landing-footer .company p {
-      text-transform: capitalize;
-      margin-bottom: 12px;
-      transition: all 0.3s;
-  }
-
-  .zedny-footer .post-landing-footer .products a p:hover,
-  .zedny-footer .post-landing-footer .our-solutions p:hover,
-  .zedny-footer .post-landing-footer .company p:hover {
-      transform: translateX(10px);
-      color: #fff;
-      cursor: pointer;
-  }
-
-  /* Additional Footer Content Styling */
-  .zedny-footer .pre-landing-footer .icons img.footer-icon {
-      margin: 4px;
-  }
-}
-
-
-.f-icon img{
-    /* background-color: green; */
-    width: 63px;
-}
-
-
-.line{
-    flex-grow: 1;
+    content: "";
+    top: 0;
     height: 1px;
-    background-color: white;
-    margin: 0 10px;
+    width: 50%;
+    right: 0;
+    background-color: #63636366;
+    display: flex;
+    position: relative;
+    margin-left: 5px;
+  }
+  
+  .zedny-footer .pre-landing-footer .icons::before {
+    width: 38%;
+    left: 0;
+    margin-right: 10px;
+  }
+  
+  .zedny-footer .pre-landing-footer .icons::after {
+    width: 38%;
+    right: 0;
+    margin-left: 10px;
+  }
+  
+  .zedny-footer .pre-landing-footer .copy-right p {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .zedny-footer .pre-landing-footer .pages {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between links */
+  }
+  
+  .zedny-footer .pre-landing-footer .pages a p {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding-right: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .zedny-footer .pre-landing-footer .pages a p:last-child {
+    border-right: none; /* Remove border for last item */
+  }
+  
+  .zedny-footer .pre-landing-footer .pages a p:hover {
+    color: #ddd; /* Slight color change on hover */
+  }
+  
+  /* Subscribe Section */
+  .logo .subscribe {
+    position: relative;
+}
+
+.logo .subscribe .input {
+    position: relative;
+    width: 100%;
+    height: 3.125rem;
+    background-color: #000;
+    padding-left: 2rem;
+    border: 1.5px solid #515050;
+    border-radius: 10px;
+    color: #fff; /* Ensures text is visible on dark background */
+}
+
+.logo .subscribe .input::placeholder {
+    color: #dcdcdc;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.logo .subscribe .input:focus {
+    outline: none;
+}
+
+/* Subscribe Button */
+.logo .subscribe button {
+    position: absolute;
+    width: 10.125rem;
+    margin-inline-start: -10.125rem;
+    border-radius: 10px;
+    height: 3.125rem;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background: linear-gradient(
+        132.32deg,
+        #bf0645 -6.2%,
+        #51163f 19.74%,
+        #311442 41.42%,
+        #0b2655 63.84%,
+        #147891 101.6%
+    );
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.lol::after{
+    content: "";
+    top: 0;
+    height: 1px;
+    width: 50%;
+    right: 0;
+
+    margin-left: 20%; 
+    border-inline-end: 2px solid #fff;
+    font-size: .9rem;
+
+}
+
+
+
+/* Products, Our Solutions, Company Sections */
+.zedny-footer .post-landing-footer .products,
+.zedny-footer .post-landing-footer .our-solutions,
+.zedny-footer .post-landing-footer .company {
+    /* Headings */
+    .head {
+        margin: 2rem 0 0.5rem;
+    }
+}
+    .head p {
+        color: #f3f3f4;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+.zedny-footer .post-landing-footer {
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.zedny-footer .post-landing-footer .logo a img {
+    width: 7rem;
+    height: 2rem;
+}
+
+.zedny-footer .post-landing-footer .logo .subscribe button {
+    position: static;
+    margin: 0;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.zedny-footer .pre-landing-footer .pages a p {
+    font-size: 0.7rem;
+}
+
+.zedny-footer .pre-landing-footer .icons img.footer-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.zedny-footer .pre-landing-footer .icons::before,
+.zedny-footer .pre-landing-footer .icons::after {
+    width: 0 !important;
+}
+}
+
+@media (max-width: 768px) {
+.zedny-footer {
+    padding-top: 1rem;
+}
 }
