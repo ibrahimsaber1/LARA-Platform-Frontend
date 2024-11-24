@@ -1,0 +1,107 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.54) 0%, rgba(255, 255, 255, 0.16) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.4s ease-out;
+    overflow-y: auto;
+  }
+  
+  .sidebarCollapsed {
+    width: 88px;
+    background: #000;
+  }
+  
+  .sidebarCollapsed ul li a span {
+    opacity: 0;
+    position: absolute;
+    left: 55px;
+  }
+  
+  .logo {
+    padding: 24px;
+  }
+  
+  .logo img {
+    width: 40px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 20px;
+  }
+  
+  ul li {
+    margin: 8px 0;
+  }
+   
+  ul li a {
+    padding: 8px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+  }
+  
+  ul li a:hover,
+  ul li a.active {
+    background: #ba1654;
+    color: #fff;
+  }
+  
+  ul li a div {
+    display: flex;
+  }
+  
+  ul li a span {
+    display: inline-block;
+    padding-left: 12px;
+    transition: opacity 0.4s ease-out;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+  }
+  
+  ul li a i {
+    font-size: 24px;
+  }
+  
+  .collapse {
+    display: none;
+    padding-left: 20px;
+  }
+  
+  .collapse.show {
+    display: block;
+  }
+  
+  .toggle-icon {
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .toggle-icon i {
+    font-size: 24px;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .toggle-icon i.rotate {
+    transform: rotate(180deg);
+  }
+  
