@@ -11,8 +11,9 @@
     min-height: calc(100vh - 80px); /* Adjust height for header */
     margin: 0 auto; /* Center horizontally */
     max-width: 100%; /* Adjust the width */
-    padding: 3rem 1rem;
-    padding-left: 6rem ;
+    padding: 3rem 0rem;
+    padding-inline-start: 6rem; 
+    padding-inline-end: 1rem;  
     margin-top: 130px; /* Push content below the fixed header */
     /* border-radius: 32px; */
     border: 1px solid rgb(216, 216, 216);
