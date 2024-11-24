@@ -42,6 +42,8 @@ const Sidebar = () => {
             >
               <div>
                 <i className="bi bi-speedometer2"></i>
+                <i class="fa fa-home"></i>
+
                 <span>Dashboard</span>
               </div>
               <i
@@ -58,6 +60,9 @@ const Sidebar = () => {
               <li>
                 <a href="/dashboard/learning-progress">
                   <i className="bi bi-bar-chart"></i>
+                  
+                  <i class="fa fa-home"></i>
+
                   <span>Learning Progress</span>
                 </a>
               </li>

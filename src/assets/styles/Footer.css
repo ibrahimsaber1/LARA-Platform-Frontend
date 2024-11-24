@@ -9,8 +9,8 @@
     border-radius: 32px 32px 0 0; /* Rounded top corners */
     position: fixed;
     bottom: 0;
-    right: 0;
-    left: 0;
+    /* right: 0; */
+    /* left: 0; */
     width: 100%;
     z-index: 1500;
 
@@ -31,6 +31,8 @@
     background: #000;
     height: fit-content;
     padding-top: 1rem;
+    padding-left: 5rem ;
+
     /* border-top-left-radius: 32px ;
     border-top-right-radius: 32px ; */
   }
