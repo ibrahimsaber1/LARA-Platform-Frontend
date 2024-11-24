@@ -1,126 +1,129 @@
 /* General Header Styling */
 .header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #000000; /* Match the black background */
-    padding: 24px 50px;
-
-  }
-  
-  .main-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-left: auto;
-    gap: 20px;
-    /* background-color: green; */
-  }
-  
-  li {
-    position: relative;
-  }
-
-  .h-icon{
-    transition: transform 0.3s ease;
-
-  }
-
-  .h-icon:hover{
-    transform: translatey(-10%);
-
-  }
-
-  /* Icon Styling */
-  .icon-container img {
-    width: 53px;
-    transition: all .3s;
-    cursor: pointer;
-  }
-  
-  .icon-container {
-    position: relative;
-  }
-  
-  /* Notification Badge */
-  .notification-badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    font-size: 12px;
-    padding: 2px 8px;
-    font-weight: bold;
-  }
-  
-  /* Dropdown Styling */
-  .dropdown {
-    position: relative;
-  }
-  
-.search-btn{
-    background-color: transparent;
-    border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #000000; /* Match the black background */
+  padding: 24px 50px;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top */
+  left: 0;
+  width: 100%; /* Ensure the header spans the full width of the viewport */
+  z-index: 1000; /* Ensure the header stays on top of other elements */
+  height: 80px; /* Define the height of the header */
 }
 
-  .dropdown .btn {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-  }
-  
-  .dropdown .btn:hover {
-    background-color: #444;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 35px;
-    right: 0;
-    background-color: #333;
-    color: white;
-    list-style: none;
+/* Navigation List */
+.main-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: auto;
+  gap: 20px;
+}
+
+/* List Items */
+li {
+  position: relative;
+}
+
+.h-icon {
+  transition: transform 0.3s ease;
+}
+
+.h-icon:hover {
+  transform: translateY(-10%);
+}
+
+/* Icon Styling */
+.icon-container img {
+  width: 53px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.icon-container {
+  position: relative;
+}
+
+/* Notification Badge */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 8px;
+  font-weight: bold;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown .btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdown .btn:hover {
+  background-color: #444;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #333;
+  color: white;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #444;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header {
     padding: 10px;
-    border-radius: 5px;
-    display: none;
   }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
+
+  .icon-container img {
+    width: 20px;
+    height: 20px;
   }
-  
-  .dropdown-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
+
+  .main-list {
+    gap: 15px;
   }
-  
-  .dropdown-menu a:hover {
-    background-color: #444;
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .header {
-      padding: 10px;
-    }
-  
-    .icon-container img {
-      width: 20px;
-      height: 20px;
-    }
-  
-    .main-list {
-      gap: 15px;
-    }
-  }
-  
+}

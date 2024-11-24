@@ -2,63 +2,46 @@
 /* ------------------- Add responsiveness for smaller screens ------------- */
 
 
-
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .create-assistant-wrapper ,.create-assistant {
-    width: 100%; /* Adjust width for medium screens */
-  }
-}
-
-@media (max-width: 576px) {
-  .create-assistant-wrapper ,.create-assistant{
-    width: 100%; /* Full width for small screens */
-  }
+.Assistant-header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: #ff4949; */
+  padding: 15px 10px;
 }
 
 /* ----------------form  */
 
 
-/* Wrapper for sliding effect */
+/* Create Assistant Wrapper */
 .create-assistant-wrapper {
   position: fixed;
   top: 0;
-  right: -100%;
-  min-width: 40%;
-  min-height: 150vh;
-  background-color: var(--background-color);
+  right: -100%; /* Initially hidden */
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease-in-out;
   z-index: 1500;
 }
 
 .create-assistant-wrapper.open {
-  right: 0;
+  right: 0; /* Slide in effect */
 }
 
-
-/* Styling for the CreateAssistant Content */
+/* Create Assistant Form Content */
 .create-assistant {
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 100%; /* Adjust width of the sliding panel */
-  height: 100vh; /* Take full height of the viewport */
-  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-  overflow-y: auto; /* Allow vertical scrolling within the panel */
   padding: 20px;
+  height: 100%;
+  overflow-y: auto; /* Allow vertical scrolling */
 }
+
 
 /* Header inside the form */
 /* ------------------------------- */
 /* ------------------------------- */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
+
 
 
 /* ------------------------------- */
@@ -238,3 +221,18 @@ textarea.form-control {
   background-color: #fff;
   color: #000;
 }
+
+
+
+/* Responsive Adjustments */
+/* @media (max-width: 768px) {
+  .create-assistant-wrapper ,.create-assistant {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 576px) {
+  .create-assistant-wrapper ,.create-assistant{
+    width: 100%;
+  }
+} */

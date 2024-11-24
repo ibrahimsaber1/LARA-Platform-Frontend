@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
 import "../../assets/styles/Sidebar.css";
 
-
 const Sidebar = () => {
-  const [sidemenu, setSidemenu] = useState([]);
-  const [collapsedStates, setCollapsedStates] = useState({});
   const [isCollapsed, setIsCollapsed] = useState(true);
-
-  useEffect(() => {
-    // Retrieve sidemenu from localStorage
-    const storedSidemenu = localStorage.getItem('sidemune');
-    if (storedSidemenu) {
-      setSidemenu(JSON.parse(storedSidemenu));
-    }
-  }, []);
+  const [collapsedStates, setCollapsedStates] = useState({});
 
   const toggleCollapse = (id) => {
     setCollapsedStates((prevState) => ({
@@ -22,74 +12,154 @@ const Sidebar = () => {
     }));
   };
 
-  const toggleMenu = () => {
-    setIsCollapsed(!isCollapsed);
+  const handleMouseEnter = () => {
+    setIsCollapsed(false);
   };
 
-  const closeMenu = () => {
+  const handleMouseLeave = () => {
     setIsCollapsed(true);
-  };
-
-  const goToHome = () => {
-    window.location.replace(`https://${window.location.hostname}/landing/post-login`);
-  };
-
-  const getFullUrl = (path) => {
-    return `https://${window.location.hostname}${path}`;
   };
 
   return (
     <aside
-      className={`sidebar ${isCollapsed ? 'sidebarCollapsed' : ''}`}
-      onMouseLeave={closeMenu}
+      className={`sidebar ${isCollapsed ? "sidebarCollapsed" : ""}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <div>
-        <div className="logo" onClick={goToHome}>
-          <img src="assets/shared/logo.svg" alt="Logo" />
+        {/* Logo */}
+        <div className="fixed-logo">
+          <img src="src/assets/images/z_logo.svg" alt="Logo" />
         </div>
-        <ul>
-          {sidemenu.map((item) => (
-            <li key={item.id}>
-              {/* Parent Item */}
-              {!item.children || item.children.length === 0 ? (
-                <a href={getFullUrl(item.pagePath)} title={item.enName}>
-                  <div>
-                    <i className={item.iconPath}></i>
-                    <span>{item.enName}</span>
-                  </div>
+
+        {/* Static Menu Items */}
+        <ul className="sidebar-menu">
+          {/* Dashboard */}
+          <li>
+            <a
+              href="javascript:void(0)"
+              onClick={() => toggleCollapse("dashboard")}
+            >
+              <div>
+                <i className="bi bi-speedometer2"></i>
+                <span>Dashboard</span>
+              </div>
+              <i
+                className={`bi bi-chevron-down ${
+                  collapsedStates["dashboard"] ? "rotate" : ""
+                }`}
+              ></i>
+            </a>
+            <ul
+              className={`collapse ${
+                collapsedStates["dashboard"] ? "show" : ""
+              }`}
+            >
+              <li>
+                <a href="/dashboard/learning-progress">
+                  <i className="bi bi-bar-chart"></i>
+                  <span>Learning Progress</span>
                 </a>
-              ) : (
-                // Item with children
-                <>
-                  <a
-                    href="javascript:void(0)"
-                    onClick={() => toggleCollapse(item.id)}
-                    title={item.enName}
-                  >
-                    <div>
-                      <i className={item.iconPath}></i>
-                      <span>{item.enName}</span>
-                    </div>
-                    <i className={`bi bi-chevron-down ${collapsedStates[item.id] ? 'rotate' : ''}`}></i>
-                  </a>
-                  <ul className={`collapse ${collapsedStates[item.id] ? 'show' : ''}`}>
-                    {item.children.map((child) => (
-                      <li key={child.id}>
-                        <a href={getFullUrl(child.pagePath)} title={child.enName}>
-                          <i className={child.iconPath}></i>
-                          <span>{child.enName}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </li>
-          ))}
+              </li>
+              <li>
+                <a href="/dashboard/gamified-performance">
+                  <i className="bi bi-trophy"></i>
+                  <span>Gamified Performance</span>
+                </a>
+              </li>
+              <li>
+                <a href="/dashboard/leaderboard">
+                  <i className="bi bi-graph-up"></i>
+                  <span>Leader Board</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          {/* Content Catalogue */}
+          <li>
+            <a
+              href="javascript:void(0)"
+              onClick={() => toggleCollapse("contentCatalogue")}
+            >
+              <div>
+                <i className="bi bi-journal"></i>
+                <span>Content Catalogue</span>
+              </div>
+              <i
+                className={`bi bi-chevron-down ${
+                  collapsedStates["contentCatalogue"] ? "rotate" : ""
+                }`}
+              ></i>
+            </a>
+            <ul
+              className={`collapse ${
+                collapsedStates["contentCatalogue"] ? "show" : ""
+              }`}
+            >
+              <li>
+                <a href="/content/pathways">
+                  <i className="bi bi-diagram-3"></i>
+                  <span>Pathways</span>
+                </a>
+              </li>
+              <li>
+                <a href="/content/courses">
+                  <i className="bi bi-book"></i>
+                  <span>Courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="/content/books">
+                  <i className="bi bi-bookmark"></i>
+                  <span>Books</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          {/* Other Menu Items */}
+          <li>
+            <a href="/status-summary">
+              <div>
+                <i className="bi bi-card-list"></i>
+                <span>Status Summary</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/assignments">
+              <div>
+                <i className="bi bi-pencil-square"></i>
+                <span>Assignments</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/certificates">
+              <div>
+                <i className="bi bi-award"></i>
+                <span>Certificates</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/assessment">
+              <div>
+                <i className="bi bi-clipboard-check"></i>
+                <span>Assessment</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/instructors">
+              <div>
+                <i className="bi bi-person-workspace"></i>
+                <span>Instructors</span>
+              </div>
+            </a>
+          </li>
         </ul>
-      </div>
-      <div className="toggle-icon" onClick={toggleMenu}>
-        <i className={`bi bi-chevron-left ${!isCollapsed ? 'rotate' : ''}`}></i>
       </div>
     </aside>
   );

@@ -4,8 +4,8 @@ import "../../../assets/styles/CreateAssistant.css";
 const CreateAssistant = ({ onClose }) => {
   return (
     <div className="create-assistant">
-      <div className="header d-flex justify-content-between align-items-center">
-        <h2>Create Your New Assistant</h2>
+      <div className="Assistant-header d-flex justify-content-between align-items-center">
+        <h3>Create Your New Assistant</h3>
         <div className="go-back">
           <button className="go-back-btn" onClick={onClose}>
             <i className="fa-sharp fa-solid fa-arrow-right"></i> Go Back

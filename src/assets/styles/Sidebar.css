@@ -11,40 +11,52 @@
     left: 0;
     z-index: 99;
     transition: all 0.4s ease-out;
-    overflow-y: auto;
+    /* overflow-y: auto; */
   }
   
-  .sidebarCollapsed {
+  .sidebar.sidebarCollapsed {
     width: 88px;
     background: #000;
   }
   
-  .sidebarCollapsed ul li a span {
+  .sidebar.sidebarCollapsed ul li a span {
     opacity: 0;
     position: absolute;
     left: 55px;
   }
   
-  .logo {
+  .fixed-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: start;
     padding: 24px;
+    z-index: 100;
+    background-color: #000;
   }
-  
-  .logo img {
+  .fixed-logo img{
     width: 40px;
+    /* margin-bottom: 50px; */
   }
-  
+
+  .sidebar-menu{
+    /* background-color: #ba1654; */
+    position: relative;
+    top: 105px;
+  }
   ul {
     list-style: none;
     padding: 0;
-    margin: 15px 20px;
+    /* margin-top: 150px; */
   }
   
   ul li {
     margin: 8px 0;
   }
-   
+  
   ul li a {
-    padding: 8px 10px;
+    padding: 10px 15px;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
@@ -63,6 +75,7 @@
   
   ul li a div {
     display: flex;
+    align-items: center;
   }
   
   ul li a span {
@@ -76,7 +89,7 @@
   }
   
   ul li a i {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   .collapse {
@@ -88,20 +101,7 @@
     display: block;
   }
   
-  .toggle-icon {
-    background-color: black;
-    text-align: center;
-    color: #fff;
-    padding: 15px 0;
-    cursor: pointer;
-  }
-  
-  .toggle-icon i {
-    font-size: 24px;
-    transition: transform 0.4s ease-out;
-  }
-  
-  .toggle-icon i.rotate {
+  .bi-chevron-down.rotate {
     transform: rotate(180deg);
   }
   
