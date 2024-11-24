@@ -1,19 +1,24 @@
 /* Error Page Styles */
+.error-container{
+  /* background-color: #000000;  */
+
+}
+
 .error-page {
 
     align-items: center;
-    height: 100vh;
+    height: auto;
     background-color: #ffffff; 
     text-align: center;
     font-family: 'Arial', sans-serif;
     padding: 20px;
-    position: absolute;
     z-index: 100;
-    left: 0;
-    right: 0;
+
     width: 100%;
-    margin-top: -9rem;
+    margin-top: 130px;
     border-radius: 32px;
+    padding-inline-start: 5rem; 
+    padding-inline-end: 1rem;  
   }
   
   .error-content {
@@ -44,7 +49,7 @@
     color: #000;
   }
   
-  /* Responsive Adjustments */
+  /* 
   @media (max-width: 768px) {
     h1 {
       font-size: 20px;
@@ -63,15 +68,13 @@
   
 
 
-/* Small Devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 600px) {
   .error-page {
 
     margin-top: -12rem;
   }
 }
 
-/* Medium Devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .error-page {
 
@@ -93,7 +96,6 @@
 }
 
 
-/* Large Devices (desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .error-page {
 
@@ -107,5 +109,5 @@
 
     margin-top: -20rem;
   }
-  }
+  } */
 
