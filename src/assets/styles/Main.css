@@ -8,7 +8,7 @@
     background-color: var(--background-color);
     position: relative; /* Changed from absolute to relative */
     top: 0; /* Removed top as it is no longer necessary */
-    margin-top: -16rem;
+    /* margin-top: -16rem; */
     right: 25%;
     transform: translateX(28%); /* Only horizontally center the main section */
     z-index: 10;
@@ -161,7 +161,7 @@
     .main {
         max-width: 100%;
         padding: 2rem;
-        margin-top: -14rem; /* Adjusted margin for smaller screens */
+        /* margin-top: -14rem;  */
         right: 20%;
         transform: translateX(20%);
     }
@@ -206,7 +206,7 @@
     .main {
         max-width: 100%;
         padding: 2rem;
-        margin-top: -12rem; /* Adjusted margin for smaller screens */
+        /* margin-top: -12rem;  */
         right: 20%;
         transform: translateX(20%);
     }
@@ -250,7 +250,7 @@
     .main {
         max-width: 90%;
         padding: 2.5rem;
-        margin-top: -16rem;
+        /* margin-top: -16rem; */
         right: 25%;
         transform: translateX(28%);
     }
@@ -295,7 +295,7 @@
         background-color: var(--background-color);
         position: relative; 
         top: 0; 
-        margin-top: -8rem;
+        /* margin-top: -8rem; */
         right: 25%;
         transform: translateX(28%); /* Only horizontally center the main section */
         z-index: 10;
@@ -354,6 +354,6 @@
 
 @media only screen and (min-width: 1400px) {
     .main {
-        margin-top: -16rem;
+        /* margin-top: -16rem; */
     }
 }

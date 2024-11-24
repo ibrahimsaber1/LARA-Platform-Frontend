@@ -30,8 +30,8 @@
     background: #000;
     height: fit-content;
     padding-top: 1rem;
-    border-top-left-radius: 32px ;
-    border-top-right-radius: 32px ;
+    /* border-top-left-radius: 32px ;
+    border-top-right-radius: 32px ; */
   }
   
 .Latest-News{

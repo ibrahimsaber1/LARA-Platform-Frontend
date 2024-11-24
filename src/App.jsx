@@ -11,6 +11,7 @@ import Error404 from "./Components/Error404/Error404";
 import AssistantsSpace from "./Components/Pages/AssistantsSpace/AssistantsSpace";
 import Subscriptions from "./Components/Pages/Subscriptions/Subscriptions";
 import StatisticsHistory from "./Components/Pages/AssistantsSpace/StatisticsHistory";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
     <>
       {/* Conditionally render Header and Footer */}
       {!noHeaderOrFooter.includes(location.pathname) && <Header />}
+      {!noHeaderOrFooter.includes(location.pathname) && <Sidebar />}
 
       {/* App Routes */}
       <Routes>
