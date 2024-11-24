@@ -13,7 +13,7 @@
     max-width: 100%; /* Adjust the width */
     padding: 3rem 1rem;
     padding-left: 6rem ;
-    margin-top: 80px; /* Push content below the fixed header */
+    margin-top: 130px; /* Push content below the fixed header */
     /* border-radius: 32px; */
     border: 1px solid rgb(216, 216, 216);
   }
