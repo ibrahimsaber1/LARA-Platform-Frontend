@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../assets/styles/Sidebar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -120,6 +121,59 @@ const Sidebar = () => {
                   <i className="bi bi-bookmark"></i>
                   <span>Books</span>
                 </a>
+              </li>
+            </ul>
+          </li>
+
+                        {/* lara */}
+          <li>
+            <a
+              href="javascript:void(0)"
+              onClick={() => toggleCollapse("lara")}
+            >
+              <div>
+                <i className="bi bi-box-seam sidebar-icon"></i>
+                <span>Lara Voice Assistant</span>
+              </div>
+              <i
+                className={`bi bi-chevron-down ${
+                  collapsedStates["lara"] ? "rotate" : ""
+                }`}
+                style={{ display: isCollapsed ? "none" : "inline-block" }}
+              ></i>
+            </a>
+            <ul
+              className={`collapse ${
+                collapsedStates["lara"] ? "show" : ""
+              }`}
+            >
+              <li>
+
+                <Link className="nav-link active text-white" aria-current="page" to="/assistantsspace">
+                <i className="bi bi-alexa"></i>
+                <span>Assistants Space</span>
+              </Link>
+
+              </li>
+              <li>
+                <Link className="nav-link active text-white" aria-current="page" to="/">
+                <i className="bi bi-ui-checks-grid"></i>
+                <span>Dashboard</span>
+              </Link>
+              </li>
+              <li>
+
+              <Link className="nav-link active text-white" aria-current="page" to="subscriptions">
+              <i className="bi bi-coin"></i>
+              <span>Subscriptions</span>
+              </Link>
+              </li>
+
+              <li>
+                <Link className="nav-link active text-white" aria-current="page" to="/">
+                <i className="bi bi-info-circle"></i>
+                <span>General Info</span>
+              </Link>
               </li>
             </ul>
           </li>

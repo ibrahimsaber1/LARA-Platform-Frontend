@@ -9,7 +9,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0.1) 100%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  height: 100vh; /* Full viewport height */
+  height: 100%; /* Full viewport height */
   position: fixed;
   top: 0;
   left: 0;
@@ -70,13 +70,36 @@
   transition: all 0.3s;
 }
 
-.sidebar-menu li a:hover,
+.sidebar-menu li Link {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+ .sidebar-menu li a:hover,
 .sidebar-menu li a.active {
   background: #ba1654;
   color: #fff;
 }
 
+/* .sidebar-menu li Link:hover,
+.sidebar-menu li Link.active {
+  background: #ba1654;
+  color: #fff;
+}  */
+
 .sidebar-menu li a div {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu li Link div {
   display: flex;
   align-items: center;
 }
@@ -91,9 +114,24 @@
   width: 200px;
 }
 
+.sidebar-menu li Link span {
+  display: inline-block;
+  padding-left: 12px;
+  transition: opacity 0.4s ease-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
 .sidebar-menu li a {
   font-size: 1.1rem;
 }
+
+.sidebar-menu li Link {
+  font-size: 1.1rem;
+}
+
 
 .sidebar-menu i {
   font-size: 1.4rem;
@@ -141,6 +179,12 @@
   position: absolute;
   left: 55px;
 }
+.sidebar.sidebarCollapsed ul li Link span {
+  opacity: 0;
+  position: absolute;
+  left: 55px;
+}
+
 
 /* Scrollbar Styling (Optional) */
 .sidebar-menu-container::-webkit-scrollbar {

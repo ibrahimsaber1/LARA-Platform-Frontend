@@ -14,9 +14,10 @@
     padding: 3rem 0rem;
     padding-inline-start: 6rem; 
     padding-inline-end: 1rem;  
-    margin-top: 130px; /* Push content below the fixed header */
+    margin-top: 7rem; /* Push content below the fixed header */
     /* border-radius: 32px; */
-    border: 1px solid rgb(216, 216, 216);
+    /* border: 1px solid rgb(216, 216, 216); */
+    color: aliceblue;
   }
 /* Container styling */
 .assistants-space {
@@ -31,7 +32,7 @@
 .header-section h1 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--text-color);
+    color: white;
 }
 
 /* Create Assistant Button */
