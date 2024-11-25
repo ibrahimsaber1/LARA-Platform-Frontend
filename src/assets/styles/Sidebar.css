@@ -92,14 +92,19 @@
     width: 200px;
   }
   
-  ul li a i {
-    font-size: 20px;
+  ul li a {
+    font-size: 1.1rem;
   }
   
+  i{
+    font-size: 1.4rem;
+    padding-inline-start: 10px;
+  }
   .collapse {
     display: none;
     padding-left: 20px;
   }
+
   
   .collapse.show {
     display: block;

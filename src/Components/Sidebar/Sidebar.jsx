@@ -42,7 +42,7 @@ const Sidebar = () => {
             >
               <div>
                 
-                <i className="bi bi-speedometer2"></i>
+                <i className="bi bi-speedometer2 sidebar-icon"></i>
 
                 <span>Dashboard</span>
               </div>
@@ -50,6 +50,7 @@ const Sidebar = () => {
                 className={`bi bi-chevron-down ${
                   collapsedStates["dashboard"] ? "rotate" : ""
                 }`}
+                style={{ display: isCollapsed ? "none" : "inline-block" }}
               ></i>
             </a>
             <ul
@@ -86,13 +87,14 @@ const Sidebar = () => {
               onClick={() => toggleCollapse("contentCatalogue")}
             >
               <div>
-                <i className="bi bi-journal"></i>
+                <i className="bi bi-journal-bookmark sidebar-icon"></i>
                 <span>Content Catalogue</span>
               </div>
               <i
                 className={`bi bi-chevron-down ${
-                  collapsedStates["contentCatalogue"] ? "rotate" : ""
+                  collapsedStates["dashboard"] ? "rotate" : ""
                 }`}
+                style={{ display: isCollapsed ? "none" : "inline-block" }}
               ></i>
             </a>
             <ul
@@ -123,9 +125,9 @@ const Sidebar = () => {
 
           {/* Other Menu Items */}
           <li>
-            <a href="/status-summary">
+            <a href="/status-summary ">
               <div>
-                <i className="bi bi-card-list"></i>
+                <i className="bi bi-view-list sidebar-icon"></i>
                 <span>Status Summary</span>
               </div>
             </a>
@@ -133,7 +135,7 @@ const Sidebar = () => {
           <li>
             <a href="/assignments">
               <div>
-                <i className="bi bi-pencil-square"></i>
+                <i className="bi bi-mortarboard sidebar-icon"></i>
                 <span>Assignments</span>
               </div>
             </a>
@@ -141,7 +143,7 @@ const Sidebar = () => {
           <li>
             <a href="/certificates">
               <div>
-                <i className="bi bi-award"></i>
+                <i className="bi bi-award sidebar-icon"></i>
                 <span>Certificates</span>
               </div>
             </a>
@@ -149,7 +151,7 @@ const Sidebar = () => {
           <li>
             <a href="/assessment">
               <div>
-                <i className="bi bi-clipboard-check"></i>
+                <i className="bi bi-clipboard-check sidebar-icon"></i>
                 <span>Assessment</span>
               </div>
             </a>
@@ -157,7 +159,7 @@ const Sidebar = () => {
           <li>
             <a href="/instructors">
               <div>
-                <i className="bi bi-person-workspace"></i>
+                <i className="bi bi-person-workspace sidebar-icon"></i>
                 <span>Instructors</span>
               </div>
             </a>
