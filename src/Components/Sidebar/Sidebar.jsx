@@ -19,7 +19,9 @@ const Sidebar = () => {
   const handleMouseLeave = () => {
     setIsCollapsed(true);
   };
-
+  const toggleSidebar = () => {
+    setIsCollapsed((prev) => !prev);
+  };
   return (
     <aside
       className={`sidebar ${isCollapsed ? "sidebarCollapsed" : ""}`}
@@ -165,9 +167,17 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
+        <div className="rigth-arrow" onClick={toggleSidebar}>
+          <i
+            className={`bi bi-chevron-right ${
+              isCollapsed ? "" : "rotate-arrow"
+            }`}style={{ display: isCollapsed ? "" : "inline-block" }}
+          ></i>
+        </div>
       </div>
     </aside>
   );
 };
 
 export default Sidebar;
+
