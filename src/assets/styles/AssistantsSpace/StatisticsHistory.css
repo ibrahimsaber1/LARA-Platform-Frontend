@@ -62,6 +62,7 @@
 /* Form Styling */
 .statistics-form {
     margin-bottom: 20px;
+    
 }
 
 /* Progress Section */
@@ -70,6 +71,8 @@
     background-color: gray;
     border-radius: 10px;
     overflow: hidden;
+        background-color: green;
+
 }
 
 .statistics-progress-section .progress-bar {
@@ -82,6 +85,7 @@
     margin-top: 5px;
     font-size: 14px;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
 /* Tabs Section */
@@ -91,6 +95,16 @@
     margin-bottom: 20px;
 }
 
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+  
+  }
 .tab-btn {
     background-color: #000000;
     border: 1px solid gray;

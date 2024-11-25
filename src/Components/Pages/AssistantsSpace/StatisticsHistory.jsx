@@ -26,14 +26,14 @@ function StatisticsHistory({ onClose }) {
         <div className="row mb-3">
           <div className="col-md-6 col-12 form-group">
             <label className="form-label">Assistant Voice</label>
-            <select className="form-select">
+            <select className="form-select form-control">
               <option>Voice Drop Down</option>
             </select>
           </div>
           <div className="col-md-6 col-12 form-group">
             <label className="form-label">Assistant Domain</label>
-            <select className="form-select">
-              <option>Business Administration</option>
+            <select className="form-select form-control">
+              <option >Business Administration</option>
             </select>
           </div>
         </div>
