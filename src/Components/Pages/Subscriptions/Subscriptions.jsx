@@ -32,7 +32,7 @@ const Subscriptions = () => {
       {/* Subscription Cards */}
       <div className="row justify-content-center mt-5">
         {/* Free Plan */}
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-4 col-sm-12">
           <div className="subscriptions-card">
             <h5 className="subscriptions-card-title">Free</h5>
             <h2 className="subscriptions-card-price">$0</h2>
@@ -56,7 +56,7 @@ const Subscriptions = () => {
         </div>
 
         {/* Podcaster Plan */}
-        <div className="col-md-6 col-sm-12 ">
+        <div className="col-md-4 col-sm-12 ">
           <div className="subscriptions-card highlighted-subscriptions-card">
             <p className="most-chosen-badge">Most Chosen</p>
             <h5 className="subscriptions-card-title">Podcaster</h5>
@@ -84,7 +84,7 @@ const Subscriptions = () => {
         </div>
 
         {/* Pro Plan */}
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-4 col-sm-12">
           <div className="subscriptions-card">
             <h5 className="subscriptions-card-title">Pro</h5>
             <h2 className="subscriptions-card-price">$15</h2>

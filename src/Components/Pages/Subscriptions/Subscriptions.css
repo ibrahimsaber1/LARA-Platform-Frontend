@@ -1,16 +1,17 @@
 /* Main Container */
 .subscriptions-container {
-  background-color: #fff;
+  background-color: #1b1a1a;
   position: relative;
-  margin-top: -20rem;
-  right: 25%;
-  transform: translateX(33%); /* Adjust horizontal centering */
+
+
   z-index: 10;
   min-height: 100vh;
-  max-width: 90%;
-  border-radius: 32px;
-  padding: 3rem;
-  border: 1px solid #ddd;
+  max-width: 100%;
+
+  padding: 3rem 0rem;
+  padding-inline-start: 6rem; 
+  padding-inline-end: 1rem; 
+  margin-top: 7rem;
   transition: all 0.3s ease;
 }
 
@@ -18,17 +19,17 @@
 .toggle-container {
   display: flex;
   justify-content: space-between;
-  background-color: #f4f4f4;
+  background-color: #585858;
   border-radius: 12px;
-  padding: 5px;
-  max-width: 27rem;
-  margin: 20px auto;
+  padding: 3px 0;
+  max-width: 26rem;
+  margin: 10px auto;
 }
 
 /* Toggle Buttons */
 .toggle-btn {
   flex: 1; /* Make both buttons take equal width */
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 12px;
   background-color: #f4f4f4;
   color: #333;
@@ -51,11 +52,12 @@
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 16px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(138, 131, 131, 0.2);
   padding: 2rem;
   margin: 1rem;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 24rem;
 }
 
 /* Hover effect for cards */
@@ -96,7 +98,7 @@
 }
 
 .subscriptions-card-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -166,27 +168,9 @@
 }
 
 /* ------------------------- Responsive Adjustments ---------------------------*/
-@media (max-width: 768px) {
-  .subscriptions-container {
-    max-width: 100%;
-    right: 0%;
-    padding: 1rem;
-    transform: translateX(0%); /* Adjust horizontal centering */
-  }
 
-  .subscriptions-card {
-    margin-bottom: 1.5rem;
-  }
+/*
 
-  .subscriptions-card-price {
-    font-size: 1.8rem;
-  }
-}
-
-/* --------------------------------------------------*/
-/* -------------Responsive Adjustments------------------*/
-
-/* Extra Small Devices */
 @media only screen and (max-width: 599px) {
   .subscriptions-container {
     margin-top: -14rem;
@@ -197,15 +181,13 @@
 
 
 
-/* Small Devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 600px) {
   .subscriptions-container {
     margin-top: -12rem;
 
   }
 }
 
-/* Medium Devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .subscriptions-container {
     margin-top: -14rem;
@@ -214,7 +196,6 @@
 }
 
 
-/* Large Devices (desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .subscriptions-container {
     margin-top: -8rem;
@@ -231,4 +212,4 @@
   }
 
 
-
+ */
