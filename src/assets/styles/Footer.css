@@ -5,7 +5,6 @@
 .footer-section {
     background-color: #000000; /* Black background as in the design */
     color: white; /* White text */
-    padding: 1rem 0; /* Add padding for spacing */
     border-radius: 32px 32px 0 0; /* Rounded top corners */
     position: fixed;
     bottom: 0;
@@ -31,8 +30,8 @@
     background: #000;
     height: fit-content;
     padding-top: 1rem;
-    padding-inline-start: 5rem; 
-    padding-inline-end: 1rem;  
+    padding-inline-start: 2rem; 
+    padding-inline-end: 0rem;  
     width: 100%;
 }
   
