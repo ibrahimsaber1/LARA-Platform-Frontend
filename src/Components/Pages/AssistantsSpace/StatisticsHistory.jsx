@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { History, FileText, Trash2, Download, ChevronDown, ArrowLeft } from 'lucide-react';
-import "../../../assets/styles/StatisticsHistory.css";
+import "../../../assets/styles/AssistantsSpace/StatisticsHistory.css";
 
 function StatisticsHistory({ onClose }) {
   const [activeTab, setActiveTab] = useState("dataSources");

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../../../assets/styles/Subscriptions.css";
+import "./Subscriptions.css";
 
 const Subscriptions = () => {
   const [activeToggle, setActiveToggle] = useState("monthly"); // Default to "monthly"

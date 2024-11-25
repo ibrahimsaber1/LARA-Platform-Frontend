@@ -1,6 +1,6 @@
 // AssistantsSpace.jsx
 import React, { useState } from 'react';
-import "../../../assets/styles/AssistantsSpace.css"; 
+import "../../../assets/styles/AssistantsSpace/AssistantsSpace.css"; 
 import { Link } from "react-router-dom";
 import StatisticsHistoryPortal from './StatisticsHistory.jsx'; // Adjust the path accordingly
 
@@ -12,7 +12,7 @@ export default function AssistantsSpace({ onOpenHistory }) {
       <div className="assistants-header-section d-flex justify-content-between align-items-center">
         <h1 className="assistants-title">Lara Assistant Title</h1>
         <div className="assistants-buttons">
-          <Link to={'/'} className="assistants-btn go-back-btn">Back</Link>
+          <Link to={'/'} className="assistants-btn go-back-btn">Back to home</Link>
 
           <div className="content">
             {/* Other content */}
@@ -24,7 +24,7 @@ export default function AssistantsSpace({ onOpenHistory }) {
 
       {/* AI Voice Section */}
       <div className="ai-voice-section d-flex align-items-center justify-content-center mt-5">
-        <img src="src/assets/images/ai_voice.gif" alt="AI Voice" className="ai-voice-image" />
+        <img src="src/assets/images/ai_voice2.gif" alt="AI Voice" className="ai-voice-image" />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../assets/styles/Overlay.css"; 
+import "../../../assets/styles/Home/Overlay.css"; 
 
 
 export default function Overlay() {

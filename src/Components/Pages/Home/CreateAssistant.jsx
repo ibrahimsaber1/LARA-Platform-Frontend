@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../assets/styles/CreateAssistant.css";
+import "../../../assets/styles/Home/CreateAssistant.css";
 
 const CreateAssistant = ({ onClose }) => {
   return (

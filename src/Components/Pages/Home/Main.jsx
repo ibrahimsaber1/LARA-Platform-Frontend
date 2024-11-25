@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../assets/styles/Main.css";
+import "../../../assets/styles/Home/Main.css";
 
 const Main = ({ onShowCreateAssistant }) => {
   return (
