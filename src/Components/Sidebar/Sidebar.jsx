@@ -41,8 +41,9 @@ const Sidebar = () => {
         <ul className="sidebar-menu">
           {/* Dashboard */}
           <li>
-            <a
-              href="javascript:void(0)"
+            <button
+              type="button"
+              className="sidebar-link"
               onClick={() => toggleCollapse("dashboard")}
             >
               <div>
@@ -55,26 +56,26 @@ const Sidebar = () => {
                 }`}
                 style={{ display: isCollapsed ? "none" : "inline-block" }}
               ></i>
-            </a>
+            </button>
             <ul
               className={`collapse ${
                 collapsedStates["dashboard"] ? "show" : ""
               }`}
             >
               <li>
-                <a href="/dashboard/learning-progress">
+                <a href="/dashboard/learning-progress" className="sidebar-link">
                   <i className="bi bi-bar-chart"></i>
                   <span>Learning Progress</span>
                 </a>
               </li>
               <li>
-                <a href="/dashboard/gamified-performance">
+                <a href="/dashboard/gamified-performance" className="sidebar-link">
                   <i className="bi bi-trophy"></i>
                   <span>Gamified Performance</span>
                 </a>
               </li>
               <li>
-                <a href="/dashboard/leaderboard">
+                <a href="/dashboard/leaderboard" className="sidebar-link">
                   <i className="bi bi-graph-up"></i>
                   <span>Leader Board</span>
                 </a>
@@ -84,8 +85,9 @@ const Sidebar = () => {
 
           {/* Content Catalogue */}
           <li>
-            <a
-              href="javascript:void(0)"
+            <button
+              type="button"
+              className="sidebar-link"
               onClick={() => toggleCollapse("contentCatalogue")}
             >
               <div>
@@ -98,26 +100,26 @@ const Sidebar = () => {
                 }`}
                 style={{ display: isCollapsed ? "none" : "inline-block" }}
               ></i>
-            </a>
+            </button>
             <ul
               className={`collapse ${
                 collapsedStates["contentCatalogue"] ? "show" : ""
               }`}
             >
               <li>
-                <a href="/content/pathways">
+                <a href="/content/pathways" className="sidebar-link">
                   <i className="bi bi-diagram-3"></i>
                   <span>Pathways</span>
                 </a>
               </li>
               <li>
-                <a href="/content/courses">
+                <a href="/content/courses" className="sidebar-link">
                   <i className="bi bi-book"></i>
                   <span>Courses</span>
                 </a>
               </li>
               <li>
-                <a href="/content/books">
+                <a href="/content/books" className="sidebar-link">
                   <i className="bi bi-bookmark"></i>
                   <span>Books</span>
                 </a>
@@ -125,10 +127,11 @@ const Sidebar = () => {
             </ul>
           </li>
 
-                        {/* lara */}
+          {/* Lara Voice Assistant */}
           <li>
-            <a
-              href="javascript:void(0)"
+            <button
+              type="button"
+              className="sidebar-link"
               onClick={() => toggleCollapse("lara")}
             >
               <div>
@@ -141,46 +144,42 @@ const Sidebar = () => {
                 }`}
                 style={{ display: isCollapsed ? "none" : "inline-block" }}
               ></i>
-            </a>
+            </button>
             <ul
               className={`collapse ${
                 collapsedStates["lara"] ? "show" : ""
               }`}
             >
               <li>
-
-                <Link className="nav-link active text-white" aria-current="page" to="/assistantsspace">
-                <i className="bi bi-alexa"></i>
-                <span>Assistants Space</span>
-              </Link>
-
+                <Link className="sidebar-link" to="/assistantsspace">
+                  <i className="bi bi-alexa"></i>
+                  <span>Assistants Space</span>
+                </Link>
               </li>
               <li>
-                <Link className="nav-link active text-white" aria-current="page" to="/">
-                <i className="bi bi-ui-checks-grid"></i>
-                <span>Dashboard</span>
-              </Link>
+                <Link className="sidebar-link" to="/">
+                  <i className="bi bi-ui-checks-grid"></i>
+                  <span>Dashboard</span>
+                </Link>
               </li>
               <li>
-
-              <Link className="nav-link active text-white" aria-current="page" to="subscriptions">
-              <i className="bi bi-coin"></i>
-              <span>Subscriptions</span>
-              </Link>
+                <Link className="sidebar-link" to="subscriptions">
+                  <i className="bi bi-coin"></i>
+                  <span>Subscriptions</span>
+                </Link>
               </li>
-
               <li>
-                <Link className="nav-link active text-white" aria-current="page" to="/">
-                <i className="bi bi-info-circle"></i>
-                <span>General Info</span>
-              </Link>
+                <Link className="sidebar-link" to="/">
+                  <i className="bi bi-info-circle"></i>
+                  <span>General Info</span>
+                </Link>
               </li>
             </ul>
           </li>
 
           {/* Other Menu Items */}
           <li>
-            <a href="/status-summary ">
+            <a href="/status-summary" className="sidebar-link">
               <div>
                 <i className="bi bi-view-list sidebar-icon"></i>
                 <span>Status Summary</span>
@@ -188,7 +187,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a href="/assignments">
+            <a href="/assignments" className="sidebar-link">
               <div>
                 <i className="bi bi-mortarboard sidebar-icon"></i>
                 <span>Assignments</span>
@@ -196,7 +195,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a href="/certificates">
+            <a href="/certificates" className="sidebar-link">
               <div>
                 <i className="bi bi-award sidebar-icon"></i>
                 <span>Certificates</span>
@@ -204,7 +203,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a href="/assessment">
+            <a href="/assessment" className="sidebar-link">
               <div>
                 <i className="bi bi-clipboard-check sidebar-icon"></i>
                 <span>Assessment</span>
@@ -212,7 +211,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a href="/instructors">
+            <a href="/instructors" className="sidebar-link">
               <div>
                 <i className="bi bi-person-workspace sidebar-icon"></i>
                 <span>Instructors</span>
