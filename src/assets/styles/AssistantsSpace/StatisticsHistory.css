@@ -1,6 +1,12 @@
 /* StatisticsHistory.css */
 
 /* Container Styling */
+
+
+.statistics-history::-webkit-scrollbar {
+    display: none;
+  }
+
 .statistics-history {
     position: fixed; /* Changed to fixed */
     top: 0;
@@ -8,7 +14,7 @@
     width: 40%;
     height: 100vh;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.97); /* Optional: semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.85);
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     z-index: 1500; /* Increased z-index */
@@ -24,7 +30,7 @@
 
 .statistics-title {
     font-size: 25px;
-    color: #000;
+    color: #ffffff;
 }
 
 /* Go Back Button Styling */
@@ -40,11 +46,12 @@
     border-radius: 25px;
     border: 1px solid gray;
     transition: background-color 0.3s, color 0.3s;
+    color: white;
 }
 
 .statistics-go-back-btn:hover {
-    background-color: #000;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .statistics-go-back-btn .icon {
@@ -60,21 +67,21 @@
 /* Progress Section */
 .statistics-progress-section .progress {
     height: 20px;
-    background-color: #e0e0e0;
+    background-color: gray;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .statistics-progress-section .progress-bar {
     height: 100%;
-    background-color: #000;
+    background-color: white;
     width: 50%; /* Dynamic width as per usage */
 }
 
 .statistics-progress-section .progress-info {
     margin-top: 5px;
     font-size: 14px;
-    color: #555;
+    color: #ffffff;
 }
 
 /* Tabs Section */
@@ -85,8 +92,9 @@
 }
 
 .tab-btn {
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
+    background-color: #000000;
+    border: 1px solid gray;
+    color: white;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -147,12 +155,12 @@
 
 .file-name {
     font-size: 16px;
-    color: #000;
+    color: #ffffff;
 }
 
 .file-size {
     font-size: 14px;
-    color: #555;
+    color: #ffffff;
 }
 
 .file-actions .file-action-btn {
@@ -164,13 +172,13 @@
 }
 
 .file-actions .file-action-btn:hover {
-    color: #000;
+    color: #ffffff;
 }
 
 /* History Content */
 .statistics-history-content {
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Responsive Adjustments */
