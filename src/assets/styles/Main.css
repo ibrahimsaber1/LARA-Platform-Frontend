@@ -42,17 +42,17 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    color: var(--button-text);
-    background-color: var(--button-bg);
-    border: 1px solid gray;
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .create-assistant-btn:hover {
-    color: var(--button-hover-text);
-    background-color: var(--button-hover-bg);
+    color: black;
+    background-color: white;
     border: 1px solid gray;
 }
 
@@ -67,8 +67,8 @@
     font-size: 0.9rem;
     border-radius: 8px;
     border: 1px solid gray;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: black;
+    color: white;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -76,24 +76,28 @@
     padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid gray;
-    background-color: var(--button-bg);
-    color: var(--button-text);
+    background-color: black;
+    min-height: 45px;
+    color: gray ;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .filter-btn:hover, .sort-btn:hover {
-    color: var(--button-hover-text);
-    background-color: var(--button-hover-bg);
+    color: black;
+    background-color: white;
+    /* border: 1px solid rgb(79, 9, 97); */
+
 }
 
 /*------------------------- Assistant Card ----------------------------------- */
 .assistant-card {
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--background-color);
-    color: var(--text-color);
+    box-shadow: 0px 4px 10px rgba(136, 127, 127, 0.2);
+    background-color: black;
+    color: white;
+    border: 1px solid white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -107,12 +111,12 @@
     font-size: 0.95rem;
     font-weight: bold;
     margin-bottom: 0rem;
-    color: var(--text-color);
+    color: white;
 }
 
 .status-badge {
-    background-color: var(--badge-bg); /* Green color for 'Just Created' */
-    color: var(--badge-text);
+    background-color: green; /* Green color for 'Just Created' */
+    color: white;
     padding: 4px 10px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -122,18 +126,18 @@
 .card-text {
     margin-top: 10px;
     font-size: 0.85rem;
-    color: var(--text-color);
+    color: white;
 }
 
 .progress {
     height: 8px;
     border-radius: 5px;
-    background-color: var(--progress-bg);
+    background-color: gray;
     margin-top: 10px;
 }
 
 .progress-bar {
-    background-color: var(--progress-bar-bg);
+    background-color: white;
 }
 
 .usage-info {

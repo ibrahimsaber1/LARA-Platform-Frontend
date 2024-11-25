@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../assets/styles/Header.css";
+import "./Header.css";
 
 const Header = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");

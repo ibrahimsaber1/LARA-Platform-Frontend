@@ -1,7 +1,7 @@
 /* src/assets/styles/variables.css */
 
 /* Light Theme Variables */
-:root {
+/* :root {
   --background-color: #ffffff;
   --text-color: #000000;
   --navbar-bg: #f8f9fa;
@@ -18,7 +18,7 @@
   --badge-text: #ffffff;
   --progress-bg: #e0e0e0;
   --progress-bar-bg: #757575;
-}
+} */
 
 /* Dark Theme Overrides */
 .dark-theme {

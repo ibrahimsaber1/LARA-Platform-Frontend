@@ -1,7 +1,7 @@
 import React from 'react';
-import "../../assets/styles/Error404.css"; 
+import "./Notfound.css"; 
 
-const Error404 = () => {
+const Notfound = () => {
   return (
     <main className="error-container ">
     <div className="error-page">
@@ -18,4 +18,4 @@ const Error404 = () => {
   );
 };
 
-export default Error404;
+export default Notfound;

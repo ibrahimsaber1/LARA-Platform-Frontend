@@ -46,7 +46,7 @@
 
 /* Menu Container */
 .sidebar-menu-container {
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   overflow-y: auto; /* Enable vertical scrolling */
   padding-top: 88px; /* Adjusted to account for fixed logo */
 }

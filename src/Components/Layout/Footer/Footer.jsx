@@ -5,15 +5,15 @@ import { useTranslation } from 'react-i18next';
 
 // Import images
 // import Logo from 'src/assets/images/footer/Logo.svg';
-import Logo from '../../assets/images/footer/Logo.svg';
-import FacebookIcon from '../../assets/images/footer/logos/f.png';
-import YouTubeIcon from '../../assets/images/footer/logos/Y.png';
-import LinkedInIcon from '../../assets/images/footer/logos/L.png';
-import InstagramIcon from '../../assets/images/footer/logos/I.png';
-import WhatsAppIcon from '../../assets/images/footer/logos/w.png';
-import FooterBackground from '../../assets/images/footer/background.svg';
+import Logo from '../../../assets/images/footer/Logo.svg';
+import FacebookIcon from '../../../assets/images/footer/logos/f.png';
+import YouTubeIcon from '../../../assets/images/footer/logos/Y.png';
+import LinkedInIcon from '../../../assets/images/footer/logos/L.png';
+import InstagramIcon from '../../../assets/images/footer/logos/I.png';
+import WhatsAppIcon from '../../../assets/images/footer/logos/w.png';
+import FooterBackground from '../../../assets/images/footer/background.svg';
 
-import "../../assets/styles/Footer.css"; 
+import "./Footer.css"; 
 
 
 
