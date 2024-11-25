@@ -1,142 +1,149 @@
+/* Import Bootstrap Icons */
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
-
-
+/* Sidebar Styling */
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    width: 310px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0.1) 100%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    transition: all 0.4s ease-out;
-    /* overflow-y: auto; */
-  }
-  
-  .sidebar.sidebarCollapsed {
-    width: 88px;
-    background: #000;
-  }
-  
-  .sidebar.sidebarCollapsed ul li a span {
-    opacity: 0;
-    position: absolute;
-    left: 55px;
-  }
-  
-  .fixed-logo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: start;
-    padding: 24px;
-    z-index: 100;
-    background-color: #000;
-  }
-  .fixed-logo img{
-    width: 40px;
-    /* margin-bottom: 50px; */
-  }
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0.1) 100%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  height: 100vh; /* Full viewport height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  transition: all 0.4s ease-out;
+  overflow: hidden; /* Hide default overflow */
+}
 
-  .sidebar-menu{
-    /* background-color: #ba1654; */
-    position: relative;
-    top: 105px;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    /* margin-top: 150px; */
-  }
-  
-  ul li {
-    margin: 8px 0;
-  }
-  
-  ul li a {
-    padding: 10px 15px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.3s;
-  }
-  
-  ul li a:hover,
-  ul li a.active {
-    background: #ba1654;
-    color: #fff;
-    
-  }
-  
-  ul li a div {
-    display: flex;
-    align-items: center;
-  }
-  
-  ul li a span {
-    display: inline-block;
-    padding-left: 12px;
-    transition: opacity 0.4s ease-out;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 200px;
-  }
-  
-  ul li a {
-    font-size: 1.1rem;
-  }
-  
-  i{
-    font-size: 1.4rem;
-    padding-inline-start: 10px;
-  }
-  .collapse {
-    display: none;
-    padding-left: 20px;
-  }
+/* Collapsed Sidebar */
+.sidebar.sidebarCollapsed {
+  width: 88px;
+  background: #000;
+}
 
-  
-  .collapse.show {
-    display: block;
-  }
-  
-  .bi-chevron-down.rotate {
-    transform: rotate(180deg);
-  }
-  
+/* Logo Section */
+.fixed-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: start;
+  padding: 24px;
+  z-index: 100;
+  background-color: #000;
+}
 
-  .rigth-arrow {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    padding: 15px 0;
-    cursor: pointer;
-    z-index: 1000;
-    flex-shrink: 0;
-    transition: transform 0.4s ease;
-  }
-  
-  .rigth-arrow i {
-    font-size: 1.5rem;
-    transition: transform 0.4s ease;
-  }
-  
-  .rigth-arrow i.rotate-arrow {
-    transform: rotate(180deg);
-  }
-  
+.fixed-logo img {
+  width: 40px;
+}
+
+/* Menu Container */
+.sidebar-menu-container {
+  flex: 1; /* Take up remaining space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-top: 88px; /* Optional spacing */
+}
+
+/* Sidebar Menu Styling */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 8px 0;
+}
+
+.sidebar-menu li a {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+  background: #ba1654;
+  color: #fff;
+}
+
+.sidebar-menu li a div {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu li a span {
+  display: inline-block;
+  padding-left: 12px;
+  transition: opacity 0.4s ease-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+.sidebar-menu li a {
+  font-size: 1.1rem;
+}
+
+.sidebar-menu i {
+  font-size: 1.4rem;
+  padding-inline-start: 10px;
+}
+
+/* Collapse Menu Styling */
+.collapse {
+  display: none;
+  padding-left: 20px;
+}
+
+.collapse.show {
+  display: block;
+}
+
+.bi-chevron-down.rotate {
+  transform: rotate(180deg);
+}
+
+/* Toggle Arrow Styling */
+.rigth-arrow {
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevent shrinking */
+  transition: transform 0.4s ease;
+}
+
+.rigth-arrow i {
+  font-size: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.rigth-arrow i.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+/* Collapsed Sidebar Styles */
+.sidebar.sidebarCollapsed ul li a span {
+  opacity: 0;
+  position: absolute;
+  left: 55px;
+}
+
+/* Scrollbar Styling (Optional) */
+.sidebar-menu-container::-webkit-scrollbar {
+ display: none;
+}
+

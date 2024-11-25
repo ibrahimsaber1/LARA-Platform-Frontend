@@ -19,22 +19,24 @@ const Sidebar = () => {
   const handleMouseLeave = () => {
     setIsCollapsed(true);
   };
+
   const toggleSidebar = () => {
     setIsCollapsed((prev) => !prev);
   };
+
   return (
     <aside
       className={`sidebar ${isCollapsed ? "sidebarCollapsed" : ""}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div>
-        {/* Logo */}
-        <div className="fixed-logo">
-          <img src="src/assets/images/z_logo.svg" alt="Logo" />
-        </div>
+      {/* Logo Section */}
+      <div className="fixed-logo">
+        <img src="src/assets/images/z_logo.svg" alt="Logo" />
+      </div>
 
-        {/* Static Menu Items */}
+      {/* Menu Section */}
+      <div className="sidebar-menu-container">
         <ul className="sidebar-menu">
           {/* Dashboard */}
           <li>
@@ -43,9 +45,7 @@ const Sidebar = () => {
               onClick={() => toggleCollapse("dashboard")}
             >
               <div>
-                
                 <i className="bi bi-speedometer2 sidebar-icon"></i>
-
                 <span>Dashboard</span>
               </div>
               <i
@@ -63,7 +63,6 @@ const Sidebar = () => {
               <li>
                 <a href="/dashboard/learning-progress">
                   <i className="bi bi-bar-chart"></i>
-                  
                   <span>Learning Progress</span>
                 </a>
               </li>
@@ -94,7 +93,7 @@ const Sidebar = () => {
               </div>
               <i
                 className={`bi bi-chevron-down ${
-                  collapsedStates["dashboard"] ? "rotate" : ""
+                  collapsedStates["contentCatalogue"] ? "rotate" : ""
                 }`}
                 style={{ display: isCollapsed ? "none" : "inline-block" }}
               ></i>
@@ -167,17 +166,19 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
-        <div className="rigth-arrow" onClick={toggleSidebar}>
-          <i
-            className={`bi bi-chevron-right ${
-              isCollapsed ? "" : "rotate-arrow"
-            }`}style={{ display: isCollapsed ? "" : "inline-block" }}
-          ></i>
-        </div>
+      </div>
+
+      {/* Toggle Section */}
+      <div className="rigth-arrow" onClick={toggleSidebar}>
+        <i
+          className={`bi bi-chevron-right ${
+            isCollapsed ? "" : "rotate-arrow"
+          }`}
+          style={{ display: isCollapsed ? "" : "inline-block" }}
+        ></i>
       </div>
     </aside>
   );
 };
 
 export default Sidebar;
-
