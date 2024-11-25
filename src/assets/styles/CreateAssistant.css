@@ -1,6 +1,17 @@
 /* ------------------------------------------------------------------------ */
 /* ------------------- Add responsiveness for smaller screens ------------- */
 
+.create-assistant::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Create Assistant Form Content */
+.create-assistant {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
 
 .Assistant-header{
   display: flex;
@@ -20,7 +31,7 @@
   right: -100%; /* Initially hidden */
   width: 40%;
   height: 100%;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease-in-out;
   z-index: 1500;
@@ -30,63 +41,48 @@
   right: 0; /* Slide in effect */
 }
 
-/* Create Assistant Form Content */
-.create-assistant {
-  padding: 20px;
-  height: 100%;
-  overflow-y: auto; /* Allow vertical scrolling */
-}
 
 
 /* Header inside the form */
-/* ------------------------------- */
-/* ------------------------------- */
-
-
 
 /* ------------------------------- */
 .header h2 {
-  font-size: 25px;
-      color: var(--text-color);
+  font-size: 1.5rem;
+      color: white;
 
 
 }
-.go-back{
-  /* background-color: red; */
-  padding: 8px;
-  border-radius: 25px;
-  border: 1px gray solid;
 
+.go-back-btn {
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  width: 8rem;  
+  border-radius: 1.5rem;
+  border: 1px solid gray;
 }
 
-.go-back:hover {
-  background-color: #000;
-  color: white;
+
+.go-back-btn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+
 
 }
-
-
-.go-back:hover .go-back-btn {
-  background-color: #000;
-  color: white;
-
-}
-
 
 .go-back-btn i{
   margin-right: 5px;
 }
 
-.go-back-btn {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  /* color: #000; */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
+
+
+
 
 /* -------------------- form styling  ----------------------- */
 
@@ -113,17 +109,22 @@
   border: 1px solid gray;
   border-radius: 5px;
   font-size: 14px;
-  color: #000;
+  color: #ffffff;
+  background-color: #000000;
 
 }
 
+.form-control :focus{
+  background-color: #000;
+}
+
 .form-control:focus::placeholder{
-  color: #fff; 
+  color: #ffffff; 
   opacity: 1; 
 }
 
 .form-control::placeholder {
-  color: #000; /* Black color for the placeholder */
+  color: #ffffff; /* Black color for the placeholder */
   opacity: 1; /* Ensures full opacity */
 }
 
@@ -203,7 +204,7 @@ textarea.form-control {
 
 .file-note i {
   font-size: 18px;
-  color: #000;
+  color: #ffffff;
 } 
 
 
@@ -211,15 +212,18 @@ textarea.form-control {
   cursor: pointer;
 }
 
+
+
+
 .custom-btn{
-  background-color: #000;
+  background-color: #ffffff;
   border: 1ps solid gray;
 }
 
 
 .custom-btn:hover{
-  background-color: #fff;
-  color: #000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 
