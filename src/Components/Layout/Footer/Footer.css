@@ -1,4 +1,17 @@
+
 /* Footer Styling */
+
+
+/* For the Arabic language */
+.footer-section[lang="ar"] {
+  direction: rtl; 
+  text-align: right; 
+}
+
+.footer-section[lang="en"] {
+  direction: ltr; 
+  text-align: left; 
+}
 
 
 
@@ -29,7 +42,7 @@
     align-items: center;
     background: #000;
     height: fit-content;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     padding-inline-start: 2rem; 
     padding-inline-end: 0rem;  
     width: 100%;
@@ -289,3 +302,7 @@
     padding-top: 1rem;
 }
 }
+
+
+
+

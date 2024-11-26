@@ -1,31 +1,21 @@
-// src/i18n.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Import your translation files
-import translationEN from './locales/en.json';
-import translationES from './locales/ar.json'; 
+import translationEN from './locales/en.json';  // English Translations
+import translationAR from './locales/ar.json';  // Arabic Translations
 
 const resources = {
-  en: {
-    translation: translationEN,
-  },
-  es: { translation: translationES,
-
-  },
-  // Add more languages here
+  en: { translation: translationEN },
+  ar: { translation: translationAR },
 };
 
 i18n
-  .use(initReactI18next) // Passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
     resources,
-    lng: 'en', // Default language
+    lng: 'en',  // Default language
     fallbackLng: 'en',
-
-    interpolation: {
-      escapeValue: false, // React already safes from xss
-    },
+    interpolation: { escapeValue: false },
   });
 
 export default i18n;

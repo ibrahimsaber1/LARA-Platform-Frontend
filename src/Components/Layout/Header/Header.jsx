@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import i18n from "../../../i18n";
 
 const Header = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
@@ -50,13 +51,15 @@ const Header = () => {
   const onLanguageChange = (lang) => {
     setSelectedLanguage(lang);
     localStorage.setItem("selectedLanguage", lang);
+    i18n.changeLanguage(lang);  // Changes language dynamically without reload
+
     // Call API to change language if necessary
     // Example:
     // changeLanguageAPI(lang).then(() => {
     //   window.location.reload();
     // });
     // For demonstration, we'll just reload the page
-    window.location.reload();
+    // window.location.reload();
   };
 
   // Toggle search input visibility

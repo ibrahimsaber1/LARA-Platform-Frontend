@@ -1,6 +1,7 @@
 // src/App.jsx
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import i18n from "./i18n";
 
 import Login from "./Components/Pages/Login/Login";
 import Signup from "./Components/Pages/Signup/Signup";
@@ -14,7 +15,6 @@ import Sidebar from "./Components/Layout/Sidebar/Sidebar";
 import Notfound from "./Components/Pages/Notfound/Notfound";
 
 
-
 function App() {
   const location = useLocation();
   const [showSidebar, setShowSidebar] = useState(false);
@@ -24,6 +24,12 @@ function App() {
 
   // Define routes where the Header and Footer should NOT appear
   const noHeaderOrFooter = ["/login", "/signup"];
+
+  // changing language 
+  useEffect(() => {
+    const lang = i18n.language;
+    document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  }, [i18n.language]);
 
   return (
     <>
