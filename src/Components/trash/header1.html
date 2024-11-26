@@ -1,0 +1,113 @@
+<header>
+    <ul class="main-list">
+        <li>
+            <div class="search-container">
+                <a (click)="toggleSearchInput()">
+                    <img src="assets/header/search.svg" alt="" srcset="">
+                </a>
+                <div class="search-parent" *ngIf="inputVisible">
+                    <div class="close-btn" *ngIf="inputVisible">
+                        <button (click)="toggleSearchInput()">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
+                    </div>
+                    <div *ngIf="inputVisible" class="input-wrapper">
+                        <input [(ngModel)]="searchText" placeholder="Enter search text" class="search-input"
+                            (keyup.enter)="performSearch()" />
+                        <button class="inner-search-icon" (click)="performSearch()">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+    
+                    <div *ngIf="resultsVisible && searchResults.length > 0" class="search-results">
+                        <a *ngFor="let result of searchResults" [href]="getFullUrl(result.path)" class="result-item-link">
+                            <div class="result-item">
+                                <img [src]="fileUrl + result.coverPath" alt="Cover" />
+                                <div>
+                                    <h3>{{ result.productsName }}</h3>
+                                    <p *ngFor="let instructor of result.instructors">
+                                        Instructor: {{ instructor.fName }} {{ instructor.lName }}
+                                    </p>
+                                    <p>
+                                        <strong>Type : </strong>
+                                        <span>Book</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li *ngIf="homeNavbar.helpPath">
+            <a [href]="getFullUrl(homeNavbar.helpPath)">
+                <img src="assets/header/info.svg" alt="" srcset="">
+            </a>
+        </li>
+        <li *ngIf="homeNavbar.notificationPath">
+            <a [href]="getFullUrl(homeNavbar.notificationPath)">
+                <img src="assets/header/notif.svg" alt="" srcset="">
+            </a>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    {{ selectedLanguage.toUpperCase() }}
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void(0)" (click)="onLanguageChange('en')">English</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="javascript:void(0)" (click)="onLanguageChange('ar')">Arabic</a>
+                    </li>
+                </ul>
+
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/header/profile.svg" alt="" srcset="">
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <i class="bi bi-person-fill"></i>
+                        <a class="dropdown-item" [href]="getFullUrl(homeNavbar.profilePath)">Profile</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <i class="bi bi-gear-fill"></i>
+                        <a class="dropdown-item" [href]="getFullUrl(homeNavbar.settingsPath)">Setting</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <i class="bi bi-patch-question-fill"></i>
+                        <a class="dropdown-item" [href]="getFullUrl(homeNavbar.supportPath)">Support</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <a class="dropdown-item" (click)="onLogout()">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+        <li *ngIf="isDevEnvironment">
+            <a>
+                <img src="assets/header/test.png" alt="" srcset="">
+            </a>
+        </li>
+    </ul>
+</header>

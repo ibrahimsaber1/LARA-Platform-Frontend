@@ -1,50 +1,191 @@
+/* Import Bootstrap Icons */
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 /* General Header Styling */
 .header {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   background-color: #000000; /* Match the black background */
-  padding: 24px 0px;
+  padding: 24px 50px;
   position: fixed; /* Make the header fixed */
   top: 0; /* Position it at the top */
   width: 100%; /* Ensure the header spans the full width of the viewport */
   z-index: 1000; /* Ensure the header stays on top of other elements */
   min-height: 80px;
-  padding-inline-start: 5rem; 
-  padding-inline-end: 3rem;  
 }
 
-/* Navigation List */
 .main-list {
   display: flex;
   align-items: center;
   list-style: none;
-  margin-left: auto;
+  margin: 0;
   gap: 20px;
 }
 
-/* List Items */
-li {
+.main-list li {
   position: relative;
 }
 
-.h-icon {
-  transition: transform 0.3s ease;
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-.h-icon:hover {
+.icon-button img {
+  width: 53px;
+  transition: all 0.3s;
+}
+
+.icon-button:hover img {
   transform: translateY(-10%);
 }
 
-/* Icon Styling */
+/* Search Container */
+.search-container {
+  position: relative;
+}
+
+.search-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.search-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.search-input {
+  padding: 10px 35px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.inner-search-icon {
+  position: absolute;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.search-results {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 800px;
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 9px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.search-results::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.search-results::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.result-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  border-bottom: 1px solid #3b3737;
+}
+
+.result-item-link:last-child {
+  border-bottom: none;
+}
+
+.result-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.result-item img {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.result-item h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.result-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.result-item strong {
+  font-weight: 400;
+}
+
+/* Icon Container Styling */
 .icon-container img {
   width: 53px;
   transition: all 0.3s;
   cursor: pointer;
 }
 
-.icon-container {
-  position: relative;
+.icon-container:hover img {
+  transform: translateY(-10%);
 }
 
 /* Notification Badge */
@@ -56,7 +197,7 @@ li {
   color: white;
   border-radius: 50%;
   font-size: 12px;
-  padding: 2px 8px;
+  padding: 2px 6px;
   font-weight: bold;
 }
 
@@ -65,21 +206,17 @@ li {
   position: relative;
 }
 
-.search-btn {
-  background-color: transparent;
-  border: none;
-}
-
 .dropdown .btn {
   background-color: #333;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 6px 10px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  height: 45px;
 }
 
 .dropdown .btn:hover {
@@ -88,7 +225,7 @@ li {
 
 .dropdown-menu {
   position: absolute;
-  top: 35px;
+  top: 50px;
   right: 0;
   background-color: #333;
   color: white;
@@ -102,16 +239,35 @@ li {
   display: block;
 }
 
-.dropdown-menu a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  display: block;
+.dropdown-menu li {
+  margin: 0;
+  text-align: start;
 }
 
-.dropdown-menu a:hover {
+.dropdown-menu a,
+.dropdown-menu button {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
   background-color: #444;
 }
+
+.dropdown-menu i {
+  margin-right: 8px;
+  color: white;
+}
+
+    
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
