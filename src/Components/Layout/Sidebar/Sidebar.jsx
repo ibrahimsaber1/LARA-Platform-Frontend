@@ -189,8 +189,8 @@ const Sidebar = () => {
           <li>
             <a href="/assignments" className="sidebar-link">
               <div>
-                <i className="bi bi-mortarboard sidebar-icon"></i>
-                <span>Assignments</span>
+              <i className="bi bi-pencil-square sidebar-icon"></i>
+              <span>Assignments</span>
               </div>
             </a>
           </li>
@@ -213,7 +213,7 @@ const Sidebar = () => {
           <li>
             <a href="/instructors" className="sidebar-link">
               <div>
-                <i className="bi bi-person-workspace sidebar-icon"></i>
+              <i className="bi bi-mortarboard sidebar-icon"></i>
                 <span>Instructors</span>
               </div>
             </a>
