@@ -198,13 +198,14 @@ const Header = () => {
         {/* Language Selector */}
         <li>
           <div className="dropdown">
+            
             <button
-              className="btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              {selectedLanguage.toUpperCase()} <i className="bi bi-chevron-down"></i>
+              className="btn "type="button"
+              data-bs-toggle="dropdown" aria-expanded="false"
+              >
+              {selectedLanguage.toUpperCase()} 
+              <i className="bi bi-chevron-down "></i>
+
             </button>
             <ul className="dropdown-menu">
               <li>
