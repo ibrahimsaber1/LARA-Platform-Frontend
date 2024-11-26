@@ -28,6 +28,7 @@ const Header = () => {
         !searchContainerRef.current.contains(event.target)
       ) {
         setResultsVisible(false);
+        setInputVisible(false); // Optional: Hide search input when clicking outside
       }
     };
 
@@ -96,87 +97,75 @@ const Header = () => {
 
   return (
     <header className="header">
-      <ul className="main-list">
-        {/* Search Icon */}
-        <li ref={searchContainerRef}>
-          <div className={`search-container ${inputVisible ? "active" : ""}`}>
-            <button
-              className="icon-button search-toggle"
-              onClick={toggleSearchInput}
-              aria-label="Toggle Search"
-            >
-              <img
-                src="src/assets/images/header/search.svg"
-                alt="Search"
-                className="search-icon"
+    <ul className="main-list">
+      {/* Search Icon */}
+      <li ref={searchContainerRef} className="search-list-item">
+        <div className={`search-container ${inputVisible ? "active" : ""}`}>
+          <button
+            className="icon-button search-toggle"
+            onClick={toggleSearchInput}
+            aria-label="Toggle Search"
+          >
+            <img
+              src="src/assets/images/header/search.svg"
+              alt="Search"
+              className="search-icon"
+            />
+          </button>
+          <div className={`search-parent ${inputVisible ? "visible" : ""}`}>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                placeholder="Enter search text"
+                className="header-search-input"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+                onKeyUp={(e) => {
+                  if (e.key === "Enter") performSearch();
+                }}
               />
-            </button>
-            {inputVisible && (
-              <div className="search-parent">
-                <div className="close-btn">
-                  <button
-                    className="close-button"
-                    onClick={toggleSearchInput}
-                    aria-label="Close Search"
-                  >
-                    <i className="bi bi-x-circle"></i>
-                  </button>
-                </div>
-                <div className="input-wrapper">
-                  <input
-                    type="text"
-                    placeholder="Enter search text"
-                    className="search-input"
-                    value={searchText}
-                    onChange={(e) => setSearchText(e.target.value)}
-                    onKeyUp={(e) => {
-                      if (e.key === "Enter") performSearch();
-                    }}
-                  />
-                  <button
-                    className="inner-search-icon"
-                    onClick={performSearch}
-                    aria-label="Perform Search"
-                  >
-                    <i className="bi bi-search"></i>
-                  </button>
-                </div>
+              <button
+                className="inner-search-icon"
+                onClick={performSearch}
+                aria-label="Perform Search"
+              >
+                <i className="bi bi-search"></i>
+              </button>
+            </div>
 
-                {resultsVisible && searchResults.length > 0 && (
-                  <div className="search-results">
-                    {searchResults.map((result) => (
-                      <a
-                        key={result.id}
-                        href={result.path}
-                        className="result-item-link"
-                      >
-                        <div className="result-item">
-                          <img
-                            src={`${result.coverPath}`}
-                            alt={result.productsName}
-                          />
-                          <div>
-                            <h3>{result.productsName}</h3>
-                            {result.instructors.map((instructor) => (
-                              <p key={instructor.id}>
-                                Instructor: {instructor.fName}{" "}
-                                {instructor.lName}
-                              </p>
-                            ))}
-                            <p>
-                              <strong>Type : </strong>
-                              <span>Book</span>
-                            </p>
-                          </div>
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                )}
+            {resultsVisible && searchResults.length > 0 && (
+              <div className="search-results">
+                {searchResults.map((result) => (
+                  <a
+                    key={result.id}
+                    href={result.path}
+                    className="result-item-link"
+                  >
+                    <div className="result-item">
+                      <img
+                        src={`${result.coverPath}`}
+                        alt={result.productsName}
+                      />
+                      <div>
+                        <h3>{result.productsName}</h3>
+                        {result.instructors.map((instructor) => (
+                          <p key={instructor.id}>
+                            Instructor: {instructor.fName} {instructor.lName}
+                          </p>
+                        ))}
+                        <p>
+                          <strong>Type : </strong>
+                          <span>Book</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
               </div>
             )}
           </div>
-        </li>
+        </div>
+      </li>
 
         {/* Help Icon */}
         <li>
@@ -198,14 +187,14 @@ const Header = () => {
         {/* Language Selector */}
         <li>
           <div className="dropdown">
-            
             <button
-              className="btn "type="button"
-              data-bs-toggle="dropdown" aria-expanded="false"
-              >
+              className="btn"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               {selectedLanguage.toUpperCase()} 
-              <i className="bi bi-chevron-down "></i>
-
+              <i className="bi bi-chevron-down"></i>
             </button>
             <ul className="dropdown-menu">
               <li>
