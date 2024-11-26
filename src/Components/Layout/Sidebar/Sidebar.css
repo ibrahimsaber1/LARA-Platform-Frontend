@@ -6,13 +6,10 @@
   display: flex;
   flex-direction: column;
   width: 310px;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
+  background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.5412289916) 10%, rgb(255 255 255 / 16%) 100%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
+
   height: 100vh; /* Full viewport height */
   position: fixed;
   top: 0;
@@ -30,15 +27,14 @@
 
 /* Logo Section */
 .fixed-logo {
-  position: fixed;
-  top: 0;
-  left: 0;
+
   width: 100%;
   text-align: start;
   padding: 24px;
   z-index: 100;
-  background-color: #000;
-}
+
+  background-color:rgba(0, 0, 0, 0.9) 0%,;
+  }
 
 .fixed-logo img {
   width: 40px;
@@ -48,21 +44,29 @@
 .sidebar-menu-container {
   flex: 1; 
   overflow-y: auto; /* Enable vertical scrolling */
-  padding-top: 88px; /* Adjusted to account for fixed logo */
+  /* padding-top: 88px; */
 }
 
 /* Sidebar Menu Styling */
 .sidebar-menu {
   list-style: none;
   padding: 0;
+  padding-inline-start: 10px;
   margin: 0;
+  text-align: center;
+
 }
+
+
+/* to prevent the dot shape in nexg to the list sup list elments*/
 ul {
-  list-style-type: none;
+  list-style-type: none; 
 }
+
 .sidebar-menu li {
   margin: 8px 0;
 }
+
 
 /* Unified Link Styles */
 .sidebar-menu li .sidebar-link {
@@ -70,7 +74,7 @@ ul {
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 17px;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,6 +84,7 @@ ul {
   border: none;
   width: 100%;
   text-align: left;
+  /* background-color: violet; */
 }
 
 .sidebar-menu li .sidebar-link:hover,
@@ -88,7 +93,7 @@ ul {
   color: #fff;
 }
 
-.sidebar-menu li .sidebar-link div {
+.sidebar-menu li .sidebar-link div {  
   display: flex;
   align-items: center;
 }
@@ -181,4 +186,12 @@ ul {
 .sidebar-menu li button.sidebar-link.active {
   background: #ba1654;
   color: #fff;
+}
+
+
+/* When sidebar is collapsed, adjust sub-menu padding */
+.sidebar.sidebarCollapsed .collapse {
+  padding-left: 0; /* Removes indentation */
+  /* Alternatively, set to a smaller value to maintain slight indentation */
+  /* padding-left: 10px; */
 }
