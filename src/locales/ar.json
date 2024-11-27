@@ -48,6 +48,20 @@
       "certificates": "الشهادات",
       "assessment": "التقييمات",
       "instructors": "المدربون"
+    },
+    "main": {
+      "assistantsSpace": "مساحة المساعدين",
+      "createNewAssistant": "إنشاء مساعد جديد",
+      "searchAssistantName": "ابحث عن اسم المساعد",
+      "type": "النوع",
+      "option1": "الخيار 1",
+      "option2": "الخيار 2",
+      "title": "العنوان",
+      "statusJustCreated": "تم الإنشاء للتو",
+      "defaultGeneralPurpose": "غرض عام افتراضي",
+      "scriptAssistantDescription": "مساعد النص مخصص في كتابة النص...",
+      "tokensUsed": "التوكنات المستخدمة",
+      "availableRequests": "الطلبات المتاحة"
     }
   }
   

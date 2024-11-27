@@ -53,6 +53,20 @@
       "certificates": "Certificates",
       "assessment": "Assessment",
       "instructors": "Instructors"
-    }
+    },
+    "main": {
+    "assistantsSpace": "Assistants Space",
+    "createNewAssistant": "Create new assistant",
+    "searchAssistantName": "Search the assistant name",
+    "type": "Type",
+    "option1": "Option 1",
+    "option2": "Option 2",
+    "title": "Title",
+    "statusJustCreated": "Just Created",
+    "defaultGeneralPurpose": "Default General Purpose",
+    "scriptAssistantDescription": "Script Assistant Specific in writing script...",
+    "tokensUsed": "Tokens Used",
+    "availableRequests": "Available Requests"
+  }
   }
   
