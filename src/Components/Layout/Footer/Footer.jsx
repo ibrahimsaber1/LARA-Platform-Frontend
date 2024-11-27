@@ -186,7 +186,7 @@ const Footer = () => {
               {/* Copyright */}
               <div className="copy-right flex justify-content-center w-full">
                 <p>
-                  {t("shared.copyright")} Zedny Educational Services S.A.E - All Rights Reserved
+                   Copyright © Zedny Educational Services S.A.E - All Rights Reserved
                 </p>
               </div>
 
