@@ -72,7 +72,10 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>      
+
+      {/* Assistant Card 1 -2*/}
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -100,7 +103,9 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>
+      {/* Assistant Card 1 -3*/}
+            <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -128,7 +133,9 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>
+      {/* Assistant Card 1 -4 */}
+            <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -156,7 +163,10 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>
+      {/* Assistant Card 1 -5*/}
+      
+            <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -184,7 +194,9 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>
+      {/* Assistant Card 1 -6 */}
+            <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -212,7 +224,9 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>   
+      {/* Assistant Card 1 -7*/}   
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -240,7 +254,9 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>      
+      {/* Assistant Card 1 -8*/}
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">
@@ -268,7 +284,9 @@ const Main = ({ onShowCreateAssistant }) => {
             </div>
           </div>
         </div>
-      </div>      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
+      </div>      
+      {/* Assistant Card 1 -9*/}
+      <div className="col-lg-4 col-md-6 col-sm-12 assistant-card-col">
         <div className="assistant-card card">
           <div className="card-body">
             <div className="cart-title-badge">

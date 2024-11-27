@@ -67,6 +67,36 @@
     "scriptAssistantDescription": "Script Assistant Specific in writing script...",
     "tokensUsed": "Tokens Used",
     "availableRequests": "Available Requests"
+  },
+  "createAssistant": {
+    "title": "Create Your New Assistant",
+    "goBack": "Go Back",
+    "assistantName": "Assistant Name",
+    "titlePlaceholder": "Title",
+    "assistantType": "Assistant Type",
+    "typePlaceholder": "Type / Drop Down",
+    "option1": "Option 1",
+    "option2": "Option 2",
+    "assistantColor": "Assistant Color",
+    "assistantVoice": "Assistant Voice",
+    "voicePlaceholder": "Voice Drop Down",
+    "voiceOption1": "Voice Drop Down1",
+    "voiceOption2": "Voice Drop Down2",
+    "voiceOption3": "Voice Drop Down3",
+    "assistantDomain": "Assistant Domain",
+    "domainPlaceholder": "Domain Drop Down",
+    "domainOption1": "Business Administration",
+    "domainOption2": "Business Administration2",
+    "domainOption3": "Business Administration3",
+    "assistantDescription": "Assistant Description",
+    "descriptionPlaceholder": "Enter description...",
+    "uploadFile": "Upload File",
+    "dragDrop": "Drag & Drop or Click to Upload",
+    "fileSizeNote": "Maximum File Size is 25 MB",
+    "dataSource1": "Data Source 1",
+    "dataSource2": "Data Source 2",
+    "addMoreFiles": "Add More Files (It must be readable Word files or PDFs)",
+    "saveAndCreate": "Save & Create"
   }
   }
   

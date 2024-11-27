@@ -28,7 +28,7 @@
 .create-assistant-wrapper {
   position: fixed;
   top: 0;
-  right: -100%; /* Initially hidden */
+  inset-inline-end: -100%; /* Initially hidden */
   width: 40%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
@@ -38,7 +38,7 @@
 }
 
 .create-assistant-wrapper.open {
-  right: 0; /* Slide in effect */
+  inset-inline-end: 0; /* Slide in effect */
 }
 
 
