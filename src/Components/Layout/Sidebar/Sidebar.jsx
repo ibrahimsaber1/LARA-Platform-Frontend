@@ -155,13 +155,13 @@ const Sidebar = () => {
               }`}
             >
               <li>
-                <Link to="/assistants-space" className="sidebar-link">
+                <Link to="/assistantsspace" className="sidebar-link">
                   <i className="bi bi-alexa"></i>
                   <span>{t("sidebar.assistantsSpace")}</span>
                 </Link>
               </li>
               <li>
-                <Link to="/dashboard" className="sidebar-link">
+                <Link to="/" className="sidebar-link">
                   <i className="bi bi-ui-checks-grid"></i>
                   <span>{t("sidebar.dashboard")}</span>
                 </Link>
@@ -173,7 +173,7 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/general-info" className="sidebar-link">
+                <Link to="/" className="sidebar-link">
                   <i className="bi bi-info-circle"></i>
                   <span>{t("sidebar.generalInfo")}</span>
                 </Link>
