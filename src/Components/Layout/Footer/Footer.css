@@ -90,7 +90,7 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width: 100%;
-    padding: 2rem 1% 0rem 4.5%;
+    padding: 3rem 4.5%;
   }
   
   /* Pre-Landing Footer Section */
@@ -229,18 +229,19 @@
 }
 
 
-.lol::after{
+.footer-legal::after{
     content: "";
     top: 0;
     height: 1px;
     width: 50%;
     right: 0;
 
-    margin-left: 20%; 
-    border-inline-end: 2px solid #fff;
+    margin-inline-start: 20%; 
+    border-inline-end: 2px solid #ffffff;
     font-size: .9rem;
 
 }
+
 
 
 

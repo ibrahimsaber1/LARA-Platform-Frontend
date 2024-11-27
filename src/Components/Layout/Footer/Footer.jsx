@@ -193,10 +193,10 @@ const Footer = () => {
               {/* Legal Links */}
               <div className="pages">
                 <Link to="/about-pages/legal-stuff/terms-of-service">
-                  <p className="terms-of-service lol">{t("shared.terms_service")}</p>
+                  <p className="terms-of-service footer-legal">{t("shared.terms_service")}</p>
                 </Link>
                 <Link to="/about-pages/legal-stuff/manage-privacy">
-                  <p className="manage-privacy lol">{t("shared.manage_privacy")}</p>
+                  <p className="manage-privacy footer-legal">{t("shared.manage_privacy")}</p>
                 </Link>
                 <Link to="/about-pages/legal-stuff/manage-cookies">
                   <p className="manage-cookies">{t("shared.manage_cookies")}</p>
