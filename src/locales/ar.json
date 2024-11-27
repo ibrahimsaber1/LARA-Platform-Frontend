@@ -22,6 +22,15 @@
         "contact_us": "تواصل معنا",
         "terms_service": "شروط الخدمة",
         "manage_privacy": "إدارة الخصوصية",
-        "manage_cookies": "إدارة ملفات تعريف الارتباط"
+        "manage_cookies": "إدارة ملفات تعريف الارتباط",
+
+        "our_policies" : "سياساتنا",
+        "academic_integrity" : "سياسة النزاهة الأكاديمية",
+        "attendance_policy" : "سياسة الحضور الافتراضي",
+        "intellectual_property" : "حقوق الملكية الفكرية",
+        "technical_support" : "سياسة الدعم الفني",
+        "user_manual" : "الدعم والأدلة الإرشادية",
+        "academic_supervision" : "كادر الاشراف الاكاديمي",
+        "staff_responsibilities" : "الإعدادت والمسئوليات للكادر"
     }
 }
