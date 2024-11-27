@@ -31,7 +31,8 @@
   inset-inline-end: -100%; /* Initially hidden */
   width: 40%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.70);
+  backdrop-filter: blur(5px);
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease-in-out;
   z-index: 1500;
@@ -62,9 +63,9 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  width: 8rem;  
-  border-radius: 1.5rem;
+  padding: 0.4rem 0.7rem;
+  min-width: 8rem;
+  border-radius: 18px;
   border: 1px solid gray;
 }
 
@@ -77,7 +78,8 @@
 }
 
 .go-back-btn i{
-  margin-right: 5px;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
 }
 
 
@@ -216,14 +218,16 @@ textarea.form-control {
 
 
 .custom-btn{
-  background-color: #ffffff;
-  border: 1ps solid gray;
+  background-color: #000000;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 18px;
+  color: white;
 }
 
 
 .custom-btn:hover{
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 
