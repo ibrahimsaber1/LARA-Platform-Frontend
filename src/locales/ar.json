@@ -93,6 +93,11 @@
       "dataSource2": "مصدر البيانات 2",
       "addMoreFiles": "إضافة المزيد من الملفات (يجب أن تكون ملفات Word قابلة للقراءة أو ملفات PDF)",
       "saveAndCreate": "حفظ وإنشاء"
+    }  ,
+    "assistant_space":{
+      "lara_assistant_title": "عنوان مساعد لارا",
+      "back_to_home": "العودة إلى الصفحة الرئيسية",
+      "show_statistics": "عرض الإحصائيات"
     }
   }
   

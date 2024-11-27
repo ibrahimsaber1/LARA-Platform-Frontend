@@ -98,5 +98,11 @@
     "addMoreFiles": "Add More Files (It must be readable Word files or PDFs)",
     "saveAndCreate": "Save & Create"
   }
+  ,
+  "assistant_space":{
+    "lara_assistant_title":"Lara Assistant Title",
+    "back_to_home":"Back to home",
+    "show_statistics":"Show Statistics"
+  }
   }
   
