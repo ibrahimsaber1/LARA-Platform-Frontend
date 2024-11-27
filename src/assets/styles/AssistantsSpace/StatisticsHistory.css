@@ -10,7 +10,7 @@
 .statistics-history {
     position: fixed; /* Changed to fixed */
     top: 0;
-    right: 0;
+    inset-inline-end: 0;
     width: 40%;
     height: 100vh;
     padding: 20px;
@@ -35,18 +35,18 @@
 
 /* Go Back Button Styling */
 .statistics-go-back-btn {
-    background-color: transparent;
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #000000;
     cursor: pointer;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 8px;
-    border-radius: 25px;
+    padding: 0.4rem 0.7rem;
+    min-width: 8rem;
+    border-radius: 18px;
     border: 1px solid gray;
-    transition: background-color 0.3s, color 0.3s;
-    color: white;
 }
 
 .statistics-go-back-btn:hover {
@@ -71,7 +71,7 @@
     background-color: gray;
     border-radius: 10px;
     overflow: hidden;
-        background-color: green;
+    background-color: gray;
 
 }
 
