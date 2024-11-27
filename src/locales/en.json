@@ -103,6 +103,29 @@
     "lara_assistant_title":"Lara Assistant Title",
     "back_to_home":"Back to home",
     "show_statistics":"Show Statistics"
+  },
+  "statisticsHistory": {
+    "title": "Statistics & History",
+    "goBack": "Go Back",
+    "assistantVoice": "Assistant Voice",
+    "voicePlaceholder": "Voice Drop Down",
+    "assistantDomain": "Assistant Domain",
+    "domainPlaceholder": "Domain Drop Down",
+    "tokensUsed": "Tokens Used",
+    "availableRequests": "Available Requests",
+    "history": "History",
+    "dataSources": "Data Sources",
+    "addMoreFiles": "Add More Files",
+    "deleteFile": "Delete File",
+    "downloadFile": "Download File",
+    "dataSource": "Data Source",
+    "historyContent": "History content goes here...",
+    "assistantVoiceOption1": "Voice Option 1",
+    "assistantVoiceOption2": "Voice Option 2",
+    "assistantVoiceOption3": "Voice Option 3",
+    "assistantDomainOption1": "Business Administration",
+    "assistantDomainOption2": "Business Administration 2",
+    "assistantDomainOption3": "Business Administration 3"
   }
   }
   

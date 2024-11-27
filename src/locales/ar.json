@@ -98,6 +98,29 @@
       "lara_assistant_title": "عنوان مساعد لارا",
       "back_to_home": "العودة إلى الصفحة الرئيسية",
       "show_statistics": "عرض الإحصائيات"
+    },
+    "statisticsHistory": {
+      "title": "الإحصائيات والتاريخ",
+      "goBack": "العودة",
+      "assistantVoice": "صوت المساعد",
+      "voicePlaceholder": "قائمة منسدلة للصوت",
+      "assistantDomain": "مجال المساعد",
+      "domainPlaceholder": "قائمة منسدلة للمجال",
+      "tokensUsed": "عدد الرموز المستخدمة",
+      "availableRequests": "طلبات متاحة",
+      "history": "التاريخ",
+      "dataSources": "مصادر البيانات",
+      "addMoreFiles": "إضافة المزيد من الملفات",
+      "deleteFile": "حذف الملف",
+      "downloadFile": "تنزيل الملف",
+      "dataSource": "مصدر البيانات",
+      "historyContent": "محتوى التاريخ هنا...",
+      "assistantVoiceOption1": "خيار الصوت 1",
+      "assistantVoiceOption2": "خيار الصوت 2",
+      "assistantVoiceOption3": "خيار الصوت 3",
+      "assistantDomainOption1": "إدارة الأعمال",
+      "assistantDomainOption2": "إدارة الأعمال 2",
+      "assistantDomainOption3": "إدارة الأعمال 3"
     }
   }
   
