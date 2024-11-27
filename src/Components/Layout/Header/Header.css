@@ -60,7 +60,7 @@
 .search-parent {
   position: absolute;
   top: 0;
-  right: 60px; 
+  inset-inline-end: 60px;  /*to make the search input smoth with the language changing*/
   width: 0;
   height: 100%;
   /* background: rgba(206, 0, 0, 0.75); */
@@ -107,7 +107,9 @@
 }
 
 .header-search-input {
-  /* padding: 10px 35px 10px 10px; */
+  padding: 10px  0px;
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
@@ -118,12 +120,14 @@
 
 .inner-search-icon {
   position: absolute;
-  right: 15px;
+  inset-inline-end: 10px;
   background: none;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
   color: #333;
+  /* background-color: green; */
+
 }
 
 .search-results {

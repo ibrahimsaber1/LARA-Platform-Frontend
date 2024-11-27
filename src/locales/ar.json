@@ -1,7 +1,4 @@
 {
-    "terms_service": "شروط الخدمة",
-    "manage_privacy": "إدارة الخصوصية",
-    "manage_cookies": "إدارة ملفات تعريف الارتباط",
     "shared": {
       "assessment_hub": "مركز التقييم",
       "aI_zedny": "الذكاء الاصطناعي في زدني",
@@ -28,6 +25,9 @@
       "user_manual": "الدعم والأدلة الإرشادية",
       "academic_supervision": "كادر الاشراف الاكاديمي",
       "staff_responsibilities": "الإعدادت والمسئوليات للكادر",
+      "terms_service": "شروط الخدمة",
+      "manage_privacy": "إدارة الخصوصية",
+      "manage_cookies": "إدارة ملفات تعريف الارتباط",
       "logoAlt": "شعار الشركة"
     },
     "sidebar": {

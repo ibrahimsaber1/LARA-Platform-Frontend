@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import i18n from "../../../i18n";
 
 const Header = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language || "en");
   const [inputVisible, setInputVisible] = useState(false);
   const [searchText, setSearchText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -59,7 +59,7 @@ const Header = () => {
     //   window.location.reload();
     // });
     // For demonstration, we'll just reload the page
-    // window.location.reload();
+    window.location.reload();
   };
 
   // Toggle search input visibility
