@@ -1,8 +1,12 @@
 import React, { useState } from "react";
-import "./Sidebar.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
+import "./Sidebar.css";
 
 const Sidebar = () => {
+  const { t } = useTranslation();
+
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [collapsedStates, setCollapsedStates] = useState({});
 
@@ -33,7 +37,7 @@ const Sidebar = () => {
     >
       {/* Logo Section */}
       <div className="fixed-logo">
-        <img src="src/assets/images/z_logo.svg" alt="Logo" />
+        <img src="src/assets/images/z_logo.svg" alt={t("shared.logoAlt")} />
       </div>
 
       {/* Menu Section */}
@@ -48,7 +52,7 @@ const Sidebar = () => {
             >
               <div>
                 <i className="bi bi-speedometer2 sidebar-icon"></i>
-                <span>Dashboard</span>
+                <span>{t("sidebar.dashboard")}</span>
               </div>
               <i
                 className={`bi bi-chevron-down ${
@@ -63,22 +67,22 @@ const Sidebar = () => {
               }`}
             >
               <li>
-                <a href="/dashboard/learning-progress" className="sidebar-link">
+                <Link to="/dashboard/learning-progress" className="sidebar-link">
                   <i className="bi bi-bar-chart"></i>
-                  <span>Learning Progress</span>
-                </a>
+                  <span>{t("sidebar.learningProgress")}</span>
+                </Link>
               </li>
               <li>
-                <a href="/dashboard/gamified-performance" className="sidebar-link">
+                <Link to="/dashboard/gamified-performance" className="sidebar-link">
                   <i className="bi bi-trophy"></i>
-                  <span>Gamified Performance</span>
-                </a>
+                  <span>{t("sidebar.gamifiedPerformance")}</span>
+                </Link>
               </li>
               <li>
-                <a href="/dashboard/leaderboard" className="sidebar-link">
+                <Link to="/dashboard/leaderboard" className="sidebar-link">
                   <i className="bi bi-graph-up"></i>
-                  <span>Leader Board</span>
-                </a>
+                  <span>{t("sidebar.leaderboard")}</span>
+                </Link>
               </li>
             </ul>
           </li>
@@ -92,7 +96,7 @@ const Sidebar = () => {
             >
               <div>
                 <i className="bi bi-journal-bookmark sidebar-icon"></i>
-                <span>Content Catalogue</span>
+                <span>{t("sidebar.contentCatalogue")}</span>
               </div>
               <i
                 className={`bi bi-chevron-down ${
@@ -107,22 +111,22 @@ const Sidebar = () => {
               }`}
             >
               <li>
-                <a href="/content/pathways" className="sidebar-link">
+                <Link to="/content/pathways" className="sidebar-link">
                   <i className="bi bi-diagram-3"></i>
-                  <span>Pathways</span>
-                </a>
+                  <span>{t("sidebar.pathways")}</span>
+                </Link>
               </li>
               <li>
-                <a href="/content/courses" className="sidebar-link">
+                <Link to="/content/courses" className="sidebar-link">
                   <i className="bi bi-book"></i>
-                  <span>Courses</span>
-                </a>
+                  <span>{t("sidebar.courses")}</span>
+                </Link>
               </li>
               <li>
-                <a href="/content/books" className="sidebar-link">
+                <Link to="/content/books" className="sidebar-link">
                   <i className="bi bi-bookmark"></i>
-                  <span>Books</span>
-                </a>
+                  <span>{t("sidebar.books")}</span>
+                </Link>
               </li>
             </ul>
           </li>
@@ -136,7 +140,7 @@ const Sidebar = () => {
             >
               <div>
                 <i className="bi bi-box-seam sidebar-icon"></i>
-                <span>Lara Voice Assistant</span>
+                <span>{t("sidebar.laraVoiceAssistant")}</span>
               </div>
               <i
                 className={`bi bi-chevron-down ${
@@ -151,27 +155,27 @@ const Sidebar = () => {
               }`}
             >
               <li>
-                <Link className="sidebar-link" to="/assistantsspace">
+                <Link to="/assistants-space" className="sidebar-link">
                   <i className="bi bi-alexa"></i>
-                  <span>Assistants Space</span>
+                  <span>{t("sidebar.assistantsSpace")}</span>
                 </Link>
               </li>
               <li>
-                <Link className="sidebar-link" to="/">
+                <Link to="/dashboard" className="sidebar-link">
                   <i className="bi bi-ui-checks-grid"></i>
-                  <span>Dashboard</span>
+                  <span>{t("sidebar.dashboard")}</span>
                 </Link>
               </li>
               <li>
-                <Link className="sidebar-link" to="subscriptions">
+                <Link to="/subscriptions" className="sidebar-link">
                   <i className="bi bi-coin"></i>
-                  <span>Subscriptions</span>
+                  <span>{t("sidebar.subscriptions")}</span>
                 </Link>
               </li>
               <li>
-                <Link className="sidebar-link" to="/">
+                <Link to="/general-info" className="sidebar-link">
                   <i className="bi bi-info-circle"></i>
-                  <span>General Info</span>
+                  <span>{t("sidebar.generalInfo")}</span>
                 </Link>
               </li>
             </ul>
@@ -179,44 +183,44 @@ const Sidebar = () => {
 
           {/* Other Menu Items */}
           <li>
-            <a href="/status-summary" className="sidebar-link">
+            <Link to="/status-summary" className="sidebar-link">
               <div>
                 <i className="bi bi-view-list sidebar-icon"></i>
-                <span>Status Summary</span>
+                <span>{t("sidebar.statusSummary")}</span>
               </div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/assignments" className="sidebar-link">
+            <Link to="/assignments" className="sidebar-link">
               <div>
-              <i className="bi bi-pencil-square sidebar-icon"></i>
-              <span>Assignments</span>
+                <i className="bi bi-pencil-square sidebar-icon"></i>
+                <span>{t("sidebar.assignments")}</span>
               </div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/certificates" className="sidebar-link">
+            <Link to="/certificates" className="sidebar-link">
               <div>
                 <i className="bi bi-award sidebar-icon"></i>
-                <span>Certificates</span>
+                <span>{t("sidebar.certificates")}</span>
               </div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/assessment" className="sidebar-link">
+            <Link to="/assessment" className="sidebar-link">
               <div>
                 <i className="bi bi-clipboard-check sidebar-icon"></i>
-                <span>Assessment</span>
+                <span>{t("sidebar.assessment")}</span>
               </div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/instructors" className="sidebar-link">
+            <Link to="/instructors" className="sidebar-link">
               <div>
-              <i className="bi bi-mortarboard sidebar-icon"></i>
-                <span>Instructors</span>
+                <i className="bi bi-mortarboard sidebar-icon"></i>
+                <span>{t("sidebar.instructors")}</span>
               </div>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

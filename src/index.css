@@ -7,4 +7,42 @@ body[dir="rtl"] {
     direction: rtl;
     text-align: right;
   }
+
+
+/* Common Scrollbar Styles */
+::-webkit-scrollbar {
+    width: var(--scrollbar-width, 10px); /* Vertical scrollbar width */
+    height: var(--scrollbar-height, 12px); /* Horizontal scrollbar height */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color, #f1f1f1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color, #888);
+    border-radius: var(--scrollbar-thumb-radius, 6px);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover-color, #555);
+  }
+  
+  /* RTL Specific Scrollbar Positioning (if needed) */
+  html[dir="rtl"] ::-webkit-scrollbar {
+    /* For vertical scrollbars, browsers automatically handle the positioning.
+       However, if you need to adjust any specific styles based on direction,
+       you can do so here. */
+  }
+  
+  /* Example of changing scrollbar size based on direction */
+  html[dir="ltr"] {
+    --scrollbar-width: 12px;
+    --scrollbar-height: 12px;
+  }
+  
+  html[dir="rtl"] {
+    --scrollbar-width: 16px; /* Increased width for RTL */
+    --scrollbar-height: 16px;
+  }
   

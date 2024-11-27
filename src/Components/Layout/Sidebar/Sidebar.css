@@ -120,7 +120,7 @@ ul {
 /* Collapse Menu Styling */
 .collapse {
   display: none;
-  padding-left: 20px;
+  padding-inline-start: 20px;
 }
 
 .collapse.show {
@@ -191,6 +191,6 @@ ul {
 
 /* When sidebar is collapsed, adjust sub-menu padding */
 .sidebar.sidebarCollapsed .collapse {
-  padding-left: 0; /* Removes indentation */
+  padding-inline-start: 0; /* Removes indentation */
 
 }
