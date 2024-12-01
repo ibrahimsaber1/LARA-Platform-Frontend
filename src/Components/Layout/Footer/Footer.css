@@ -274,13 +274,6 @@
 /* Responsive Adjustments */
 
 /* Extra Large Devices (Desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .zedny-footer .post-landing-footer .col-lg-4,
-    .zedny-footer .post-landing-footer .col-lg-2 {
-        flex: 0 0 auto;
-        width: auto;
-    }
-}
 
 /* Large Devices (Laptops, 992px and up) */
 @media (max-width: 1199.98px) and (min-width: 992px) {
@@ -307,6 +300,10 @@
 
 /* Medium Devices (Tablets, 768px to 991.98px) */
 @media (max-width: 991.98px) and (min-width: 768px) {
+  .zedny-footer .footer-content{
+    padding-inline-start: 10%;
+
+  }
     .zedny-footer .post-landing-footer {
         flex-direction: row;
         flex-wrap: wrap;
@@ -331,6 +328,10 @@
 
 /* Small Devices (Large Phones, 576px to 767.98px) */
 @media (max-width: 767.98px) and (min-width: 576px) {
+  .zedny-footer .footer-content{
+    padding-inline-start: 11%;
+
+  }
     .zedny-footer .post-landing-footer {
         flex-direction: column;
         align-items: center;
@@ -354,6 +355,10 @@
 
 /* Extra Small Devices (Phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .zedny-footer .footer-content{
+    padding-inline-start: 15%;
+
+  }
     .zedny-footer .post-landing-footer {
         flex-direction: column;
         align-items: center;
