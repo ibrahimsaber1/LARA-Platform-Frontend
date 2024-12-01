@@ -272,43 +272,137 @@
 
 
 /* Responsive Adjustments */
-@media (max-width: 576px) {
-.zedny-footer .post-landing-footer {
-    flex-direction: column;
-    align-items: flex-start !important;
+
+/* Extra Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .zedny-footer .post-landing-footer .col-lg-4,
+    .zedny-footer .post-landing-footer .col-lg-2 {
+        flex: 0 0 auto;
+        width: auto;
+    }
 }
 
-.zedny-footer .post-landing-footer .logo a img {
-    width: 7rem;
-    height: 2rem;
+/* Large Devices (Laptops, 992px and up) */
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    .zedny-footer .post-landing-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .zedny-footer .post-landing-footer .col-lg-4,
+    .zedny-footer .post-landing-footer .col-lg-2 {
+        width: 23%; /* Adjust width to fit nicely within the container */
+    }
+
+    .zedny-footer .pre-landing-footer .icons img.footer-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .zedny-footer .pre-landing-footer .pages a p {
+        font-size: 0.8rem;
+    }
 }
 
-.zedny-footer .post-landing-footer .logo .subscribe button {
-    position: static;
-    margin: 0;
-    margin-top: 24px;
-    width: 100%;
+/* Medium Devices (Tablets, 768px to 991.98px) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .zedny-footer .post-landing-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .zedny-footer .post-landing-footer .col-lg-4,
+    .zedny-footer .post-landing-footer .col-lg-2 {
+        width: 45%; /* Two columns per row */
+        margin-bottom: 1.5rem;
+    }
+
+    .zedny-footer .pre-landing-footer .icons img.footer-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .zedny-footer .pre-landing-footer .pages a p {
+        font-size: 0.75rem;
+    }
 }
 
-.zedny-footer .pre-landing-footer .pages a p {
-    font-size: 0.7rem;
+/* Small Devices (Large Phones, 576px to 767.98px) */
+@media (max-width: 767.98px) and (min-width: 576px) {
+    .zedny-footer .post-landing-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zedny-footer .post-landing-footer .col-lg-4,
+    .zedny-footer .post-landing-footer .col-lg-2 {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .zedny-footer .pre-landing-footer .icons img.footer-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .zedny-footer .pre-landing-footer .pages a p {
+        font-size: 0.7rem;
+    }
 }
 
-.zedny-footer .pre-landing-footer .icons img.footer-icon {
-    width: 5rem;
-    height: 5rem;
+/* Extra Small Devices (Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .zedny-footer .post-landing-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zedny-footer .post-landing-footer .col-lg-4,
+    .zedny-footer .post-landing-footer .col-lg-2 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+
+      .zedny-footer .post-landing-footer .logo .subscribe button {
+          position: static;
+          margin: 0;
+          margin-top: 24px;
+          width: 100%;
+      }
+    
+    .zedny-footer .logo .subscribe {
+        width: 100%;
+    }
+
+    .zedny-footer .logo .subscribe .input {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .zedny-footer .logo .subscribe button {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .zedny-footer .pre-landing-footer .icons img.footer-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .zedny-footer .pre-landing-footer .pages {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .zedny-footer .pre-landing-footer .pages a p {
+        border: none;
+        padding: 0;
+        font-size: 0.65rem;
+    }
 }
 
-.zedny-footer .pre-landing-footer .icons::before,
-.zedny-footer .pre-landing-footer .icons::after {
-    width: 0 !important;
-}
-}
-
-@media (max-width: 768px) {
-.zedny-footer {
-    padding-top: 1rem;
-}
-}
 
 
