@@ -49,22 +49,22 @@ const Footer = () => {
                   <div className="head">
                     <p>{t("shared.products_services")}</p>
                   </div>
-                  <Link to="/about-pages/products-services/competency-management">
+                  <Link to="https://zedny.com/products-services/competency-management">
                     <p className='fot-link'>{t("shared.competency_management")}</p>
                   </Link>
-                  <Link to="/about-pages/products-services/persinalized-learning">
+                  <Link to="https://zedny.com/products-services/persinalized-learning">
                     <p className='fot-link'>{t("shared.personalized_learning")}</p>
                   </Link>
-                  <Link to="/about-pages/products-services/gamification">
+                  <Link to="https://zedny.com/products-services/gamification">
                     <p className='fot-link'>{t("shared.gamified_learning")}</p>
                   </Link>
-                  <Link to="/about-pages/products-services/learning-management">
+                  <Link to="https://zedny.com/products-services/learning-management">
                     <p className='fot-link'>{t("shared.learning_management")}</p>
                   </Link>
-                  <Link to="/about-pages/products-services/assessment-hub">
+                  <Link to="https://zedny.com/products-services/assessment-hub">
                     <p className='fot-link'>{t("shared.assessment_hub")}</p>
                   </Link>
-                  <Link to="/about-pages/products-services/AI-Zedny">
+                  <Link to="https://zedny.com/products-services/AI-Zedny">
                     <p className='fot-link'>{t("shared.aI_zedny")}</p>
                   </Link>
                 </div>
@@ -76,10 +76,10 @@ const Footer = () => {
                   <div className="head">
                     <p>{t("shared.our_solutions")}</p>
                   </div>
-                  <Link to="/about-pages/our-solutions/for-business">
+                  <Link to="https://zedny.com/our-solutions/For-Business">
                     <p className='fot-link'>{t("shared.for_business")}</p>
                   </Link>
-                  <Link to="/about-pages/our-solutions/for-individuals">
+                  <Link to="https://zedny.com/our-solutions/for-individuals">
                     <p className='fot-link'>{t("shared.for_individuals")}</p>
                   </Link>
                 </div>
@@ -91,16 +91,16 @@ const Footer = () => {
                   <div className="head">
                     <p>{t("shared.company")}</p>
                   </div>
-                  <Link to="/about-pages/compony/our-story">
+                  <Link to="https://zedny.com/company/our-story">
                     <p className='fot-link'>{t("shared.our_story")}</p>
                   </Link>
-                  <Link to="/about-pages/compony/our-method">
+                  <Link to="https://zedny.com/company/our-method">
                     <p className='fot-link'>{t("shared.our_method")}</p>
                   </Link>
-                  <Link to="/about-pages/compony/contact-us">
+                  <Link to="https://zedny.com/company/contact-us">
                     <p className='fot-link'>{t("shared.contact_us")}</p>
                   </Link>
-                  <Link to="/about-pages/compony/our-team">
+                  <Link to="https://zedny.com/company/our-team">
                     <p className='fot-link'>{t("shared.our_team")}</p>
                   </Link>
                 </div>
@@ -112,25 +112,25 @@ const Footer = () => {
                   <div className="head">
                     <p className="footer-heading">{t("shared.our_policies")}</p>
                   </div>
-                  <Link to="/policies/academic-integrity">
+                  <Link to="https://zedny.com/our-policies/academic-integrity-policy">
                     <p className='fot-link'>{t("shared.academic_integrity")}</p>
                   </Link>
-                  <Link to="/policies/attendance-policy">
+                  <Link to="https://zedny.com/our-policies/attendance-policyfor-virtual-learning">
                     <p className='fot-link'>{t("shared.attendance_policy")}</p>
                   </Link>
-                  <Link to="/policies/intellectual-property">
+                  <Link to="https://zedny.com/our-policies/intellectual-property-copyright">
                     <p className='fot-link'>{t("shared.intellectual_property")}</p>
                   </Link>
-                  <Link to="/policies/technical-support">
+                  <Link to="https://zedny.com/our-policies/technical-support-policy">
                     <p className='fot-link'>{t("shared.technical_support")}</p>
                   </Link>
-                  <Link to="/policies/user-manual">
+                  <Link to="https://zedny.com/our-policies/user-manual">
                     <p className='fot-link'>{t("shared.user_manual")}</p>
                   </Link>
-                  <Link to="/policies/academic-supervision">
+                  <Link to="https://zedny.com/our-policies/academic-supervision">
                     <p className='fot-link'>{t("shared.academic_supervision")}</p>
                   </Link>
-                  <Link to="/policies/staff-responsibilities">
+                  <Link to="https://zedny.com/our-policies/staff-preparations-responsibilities">
                     <p className='fot-link'>{t("shared.staff_responsibilities")}</p>
                   </Link>
                 </div>
@@ -192,13 +192,13 @@ const Footer = () => {
 
               {/* Legal Links */}
               <div className="pages">
-                <Link to="/about-pages/legal-stuff/terms-of-service">
+                <Link to="https://zedny.com/our-policies/terms-of-service">
                   <p className="terms-of-service footer-legal">{t("shared.terms_service")}</p>
                 </Link>
-                <Link to="/about-pages/legal-stuff/manage-privacy">
+                <Link to="https://zedny.com/our-policies/manage-privacy">
                   <p className="manage-privacy footer-legal">{t("shared.manage_privacy")}</p>
                 </Link>
-                <Link to="/about-pages/legal-stuff/manage-cookies">
+                <Link to="https://zedny.com/our-policies/manage-cookies">
                   <p className="manage-cookies">{t("shared.manage_cookies")}</p>
                 </Link>
               </div>

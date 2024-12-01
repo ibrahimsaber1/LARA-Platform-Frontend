@@ -72,7 +72,10 @@
 .fot-link {
     text-transform: capitalize;
     color: #fff9;
+    margin-bottom: 10px;
+
     transition: transform 0.3s ease;
+
   }
 
   .fot-link:hover {
@@ -83,6 +86,8 @@
 }
   
   
+
+  
   .zedny-footer .footer-content {
     background: rgba(0, 0, 0, 0.36);
     border-radius: 16px;
@@ -90,9 +95,11 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width: 100%;
-    padding: 3rem 4.5%;
+    padding: 3rem 1%;
+    padding-inline-start: 4.5%;
   }
-  
+
+
   /* Pre-Landing Footer Section */
   .zedny-footer .pre-landing-footer {
     padding-bottom: 2rem;
